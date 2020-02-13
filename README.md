@@ -1,3 +1,5 @@
+![Build and Deploy](https://github.com/wwt-ambassadors/testbed/workflows/Build%20and%20Deploy/badge.svg?branch=master&event=push)
+
 # WWT Ambassadors testbed Clickerator
 
 Just a quick playground for experimenting and testing out the deployment
