@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Folder MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="BUAC Stellar Life Cycles" Group="Explorer" Searchable="False" Type="Earth">
+  <VersionDependent>false</VersionDependent>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula" DataSetType="Sky" RA="5.5877777777777808" Dec="-5.423055555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="36.466666666666669" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="36.466666666666669">
+    <Target>Undefined</Target>
+    <ForegroundImageSet>
+      <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://www.worldwidetelescope.org/wwtweb/tiles.aspx?q={1},{2},{3},jn036" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="-102.69999999999992" QuadTreeMap="" Projection="Tangent" FileType=".png" CenterY="-5.388545276844563" CenterX="83.815189672738725" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="5.5653511859421947" MeanRadius="0">
+        <Credits>Copyright Jack Newton All Rights Reserved</Credits>
+        <CreditsUrl>http://www.jacknewton.com/</CreditsUrl>
+        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=jn036</ThumbnailUrl>
+      </ImageSet>
+    </ForegroundImageSet>
+    <Description Title="Chaos at the Heart of Orion">
+      <p>NASA's Spitzer and Hubble Space Telescopes have teamed up to expose the chaos that baby stars are creating 1,500 light-years away in a cosmic cloud called the Orion Nebula.</p>
+      <p>This striking infrared and visible-light composite indicates that four monstrously massive stars at the center of the cloud may be the main culprits in the familiar Orion constellation. The stars are collectively called the "Trapezium." Their community can be identified as the yellow smudge near the center of the image.</p>
+      <p>Swirls of green in Hubble's ultraviolet and visible-light view reveal hydrogen and sulfur gas that have been heated and ionized by intense ultraviolet radiation from the Trapezium's stars. Meanwhile, Spitzer's infrared view exposes carbon-rich molecules called polycyclic aromatic hydrocarbons in the cloud. These organic molecules have been illuminated by the Trapezium's stars, and are shown in the composite as wisps of red and orange. On Earth, polycyclic aromatic hydrocarbons are found on burnt toast and in automobile exhaust.</p>
+      <p>Together, the telescopes expose the stars in Orion as a rainbow of dots sprinkled throughout the image. Orange-yellow dots revealed by Spitzer are actually infant stars deeply embedded in a cocoon of dust and gas. Hubble showed less embedded stars as specks of green, and foreground stars as blue spots.</p>
+      <p>Stellar winds from clusters of newborn stars scattered throughout the cloud etched all of the well-defined ridges and cavities in Orion. The large cavity near the right of the image was most likely carved by winds from the Trapezium's stars.</p>
+      <p>Located 1,500 light-years away from Earth, the Orion Nebula is the brightest spot in the sword of the Orion, or the "Hunter" constellation. The cosmic cloud is also our closest massive star-formation factory, and astronomers believe it contains more than 1,000 young stars.</p>
+      <p>The Orion constellation is a familiar sight in the fall and winter night sky in the northern hemisphere. The nebula is invisible to the unaided eye, but can be resolved with binoculars or small telescopes.</p>
+      <p>This composite image displays light detected at wavelengths of 0.43, 0.50, and 0.53 microns in blue. Light at wavelengths of 0.6, 0.65, and 0.91 microns is green. Light at 3.6 microns is orange, and 8.0 microns is red.</p>
+    </Description>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula" DataSetType="Sky" RA="5.5808333333333344" Dec="-5.44416666666667" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="19.59" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="19.59">
+    <Target>Undefined</Target>
+    <ForegroundImageSet>
+      <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="IR" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000010231{Q}?g=131" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="0.015915112700651" QuadTreeMap="0123" Projection="Tangent" Name="Orion Nebula" FileType=".png" CenterY="-5.59338109097" CenterX="83.6383655257" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="-0.151262042234303" OffsetY="0.179267217168241" BaseTileLevel="0" BaseDegreesPerTile="0.682489467823981" MeanRadius="0">
+        <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo), M. Robberto (STScI), HST</Credits>
+        <CreditsUrl>http://gallery.spitzer.caltech.edu/Imagegallery/image.php?image_name=ssc2006-21a</CreditsUrl>
+        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1154245897</ThumbnailUrl>
+      </ImageSet>
+    </ForegroundImageSet>
+    <Description Title="Blah blah Orion">
+      <p>So much to learn!</p>
+    </Description>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Hubble Probes the Great Orion Nebula" DataSetType="Sky" RA="5.5883333333333276" Dec="-5.40555555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="3.97833333333333" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.97833333333333">
+    <Target>Undefined</Target>
+    <ForegroundImageSet>
+      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:2}.ortho.tiles.virtualearth.net/tiles/wsa0000000302{Q}?g=138" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="75.4310456965389" QuadTreeMap="0123" Projection="Tangent" Name="Hubble Probes the Great Orion Nebula" FileType=".png" CenterY="-5.4055466" CenterX="83.8268692" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0813707558539556" MeanRadius="0">
+        <Credits>Credit: C.R. O'Dell/ Rice University NASA</Credits>
+        <CreditsUrl>http://hubblesite.org/newscenter/newsdesk/archive/releases/1994/10/</CreditsUrl>
+        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1556539595</ThumbnailUrl>
+      </ImageSet>
+    </ForegroundImageSet>
+    <Description Title="Blah blah baby stars in Orion">
+      <p>So much to learn!</p>
+    </Description>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Ring Nebula (M57)" DataSetType="Sky" RA="18.893055555555591" Dec="33.0283333333333" Constellation="LYR" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="0.565" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.565">
+    <Target>Undefined</Target>
+    <ForegroundImageSet>
+      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000001201{Q}?g=138" TileLevels="3" WidthFactor="2" Sparse="True" Rotation="33.4150621086519" QuadTreeMap="0123" Projection="Tangent" Name="The Ring Nebula (M57)" FileType=".png" CenterY="33.0294929455291" CenterX="283.395104978147" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0565749886281826" MeanRadius="0">
+        <Credits>Credit: The Hubble Heritage Team (AURA/STScI/NASA)</Credits>
+        <CreditsUrl>http://hubblesite.org/newscenter/newsdesk/archive/releases/1999/01/</CreditsUrl>
+        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1808329735</ThumbnailUrl>
+      </ImageSet>
+    </ForegroundImageSet>
+    <Description Title="Ring Nebula">
+      <p>So much to learn!</p>
+    </Description>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
+    <Target>Undefined</Target>
+    <ForegroundImageSet>
+      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:3}.ortho.tiles.virtualearth.net/tiles/wsa0000001323{Q}?g=138" TileLevels="2" WidthFactor="2" Sparse="True" Rotation="138.242506357374" QuadTreeMap="0123" Projection="Tangent" Name="The Cat's Eye Nebula" FileType=".png" CenterY="66.6330405" CenterX="269.6378124" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0131133365015532" MeanRadius="0">
+        <Credits>Credit: J.P. Harrington and K.J. Borkowski (University of Maryland), and NASA</Credits>
+        <CreditsUrl>http://hubblesite.org/newscenter/newsdesk/archive/releases/1995/01/</CreditsUrl>
+        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=249096520</ThumbnailUrl>
+      </ImageSet>
+    </ForegroundImageSet>
+    <Description Title="Cat's Eye Nebula">
+      <p>So much to learn!</p>
+    </Description>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Betelgeuse" DataSetType="Sky" RA="5.9194444446666665" Dec="7.406944444" Constellation="ORI" Classification="Star" Magnitude="0.5" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <Target>Custom</Target>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Giant Hubble Mosaic of the Crab Nebula" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
+    <Target>Undefined</Target>
+    <ForegroundImageSet>
+      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000001321{Q}?g=138" TileLevels="4" WidthFactor="2" Sparse="True" Rotation="0.0135016264010856" QuadTreeMap="0123" Projection="Tangent" Name="Giant Hubble Mosaic of the Crab Nebula" FileType=".png" CenterY="22.0157690826831" CenterX="83.6351229267829" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.113275505484975" MeanRadius="0">
+        <Credits>Credit: NASA, ESA, J. Hester and A. Loll (Arizona State University)</Credits>
+        <CreditsUrl>http://hubblesite.org/newscenter/newsdesk/archive/releases/2005/37/</CreditsUrl>
+        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=314237335</ThumbnailUrl>
+      </ImageSet>
+    </ForegroundImageSet>
+    <Description Title="Betelgeuse Betelgeuse Betelgeuse">
+      <p>So much to learn!</p>
+    </Description>
+  </Place>
+</Folder>
