@@ -7,7 +7,10 @@
     <title>WWTA Sample Clickerator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <script src="https://worldwidetelescope.github.io/pywwt/wwtsdk.js"></script>
+    <!-- <script src="https://worldwidetelescope.github.io/pywwt/wwtsdk.js"></script> -->
+    <!-- see what happens if I try the standard sdk rather than pywwt-->
+    <script src="http://www.worldwidetelescope.org/webclient/sdk/wwtsdk.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
@@ -18,12 +21,12 @@
 
     <div id="wrapper">
       <div class="flex-container">
-        <div class="image" data-sourcename="AFGL4029">
-          <a href="#"><h2>AFGL4029</h2></a>
+        <div class="image" data-sourcename="Hubble Probes the Great Orion Nebula">
+          <a href="#"><h2>The Great Orion Nebula</h2></a>
         </div>
 
-        <div class="image" data-sourcename="CepA">
-          <a href="#"><h2>Cep A</h2></a>
+        <div class="image" data-sourcename="The Ring Nebula (M57)">
+          <a href="#"><h2>The Ring Nebula</h2></a>
         </div>
       </div>
 
@@ -38,6 +41,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="SLC_script.js"></script>
   </body>
 </html>
