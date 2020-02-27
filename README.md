@@ -5,6 +5,8 @@
 Just a quick playground for experimenting and testing out the deployment
 process.
 
+http://projects.wwtambassadors.org/testbed/
+
 
 ## Building and Testing
 
