@@ -68,7 +68,7 @@
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, true)
     }
 	  
-	if (sourcename=="Peering into the Heart of the Crab Nebula") {
+	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
 	  wwt_si.gotoRaDecZoom(5.57556*15,22.0148,0.1, true)
 	}
 
@@ -94,7 +94,7 @@
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, false)
     }
 
-	if (sourcename=="Peering into the Heart of the Crab Nebula") {
+	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
 	  wwt_si.gotoRaDecZoom(05.57555556*15,22.01666667,0.1, false)
 	}
 
