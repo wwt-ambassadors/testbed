@@ -47,9 +47,35 @@
     $(".image").each(function (index) {
       const dom_element = $(this);
       $(this).find("a").click(function (event) { on_image_clicked(dom_element, event) });
+      $(this).find("a").dblclick(function (event) { on_image_clicked(dom_element, event) });
     });
   }
 
+  function on_image_dblclicked(dom_element, event) {
+    if (wwt_si === null) {
+      return; // can happen if widget isn't yet fully initialized.
+    }
+
+    const sourcename = dom_element.data("sourcename");
+
+    wwt_si.setForegroundImageByName(sourcename)
+
+    if (sourcename=="Hubble Probes the Great Orion Nebula"){
+      wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, true)
+    }
+
+    if (sourcename=="The Ring Nebula (M57)"){
+      wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, true)
+    }
+	  
+	if (sourcename=="Peering into the Heart of the Crab Nebula") {
+	  wwt_si.gotoRaDecZoom(5.57556*15,22.0148,0.1, true)
+	}
+
+    // TODO: do something interesting here
+    console.log("clicked on: " + sourcename);
+    current_source = sourcename;
+  }
 
   function on_image_clicked(dom_element, event) {
     if (wwt_si === null) {
@@ -67,6 +93,10 @@
     if (sourcename=="The Ring Nebula (M57)"){
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, false)
     }
+
+	if (sourcename=="Peering into the Heart of the Crab Nebula") {
+	  wwt_si.gotoRaDecZoom(05.57555556*15,22.01666667,0.1, false)
+	}
 
     // TODO: do something interesting here
     console.log("clicked on: " + sourcename);
