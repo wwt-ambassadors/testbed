@@ -60,12 +60,22 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex: 300px;
+  justify-content: space-around;
 }
 
 .image {
   border: 1px solid #333;
   border-radius: 4px;
   padding: 6px;
+}
+
+.image:hover {
+  	border: 1px solid #000;
+	background-color: #FFF;
+}
+
+.image:hover a {
+	color: #000;
 }
 
 .image a {
