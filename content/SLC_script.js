@@ -68,8 +68,8 @@
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, true)
     }
 	  
-	if (sourcename=="Combined X-Ray and Optical Images of the Crab Nebula") {
-      wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, true)
+if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
+	  wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, true)
 	}
 
     // TODO: do something interesting here
@@ -94,8 +94,8 @@
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, false)
     }
 
-	if (sourcename=="Combined X-Ray and Optical Images of the Crab Nebula") {
-      wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, false)
+	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
+	  wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, false)
 	}
 
     // TODO: do something interesting here
