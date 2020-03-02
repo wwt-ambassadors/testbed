@@ -69,7 +69,7 @@
     }
 	  
 	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-	  wwt_si.gotoRaDecZoom(5.57556*15,22.0148,0.1, true)
+	  wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, true)
 	}
 
     // TODO: do something interesting here
@@ -95,7 +95,7 @@
     }
 
 	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-	  wwt_si.gotoRaDecZoom(05.57555556*15,22.01666667,0.1, false)
+	  wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, false)
 	}
 
     // TODO: do something interesting here
