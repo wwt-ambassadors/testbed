@@ -47,7 +47,7 @@
     $(".image").each(function (index) {
       const dom_element = $(this);
       $(this).find("a").click(function (event) { on_image_clicked(dom_element, event) });
-      $(this).find("a").dblclick(function (event) { on_image_clicked(dom_element, event) });
+      $(this).find("a").dblclick(function (event) { on_image_dblclicked(dom_element, event) });
     });
   }
 
@@ -68,7 +68,7 @@
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, true)
     }
 	  
-	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
+if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
 	  wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, true)
 	}
 
