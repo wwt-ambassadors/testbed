@@ -10,10 +10,12 @@ html {
 }
 
 body {
-  overflow: hidden;
-  margin: 0px;
-  padding: 0px;
-  color: #FFF;
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	color: #FFF;
+	height: 100%;
 }
 
 /* Generic element settings */
@@ -63,6 +65,10 @@ h1 {
   justify-content: space-around;
 }
 
+.image-container {
+	
+}
+
 .image {
   border: 1px solid #333;
   border-radius: 4px;
@@ -79,13 +85,50 @@ h1 {
 }
 
 .image a {
-  text-decoration: none;
+  	text-decoration: none;
 }
+
+
+/* Read more button appearing below thumbnail boxes */
+.image_title, .read_more {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 5px 0px;
+}
+
+.read_more {
+	display: none;
+	width: 60%;
+	border: 1px solid #666;
+	border-radius: 4px;
+	background-color: #222;
+	color: #EEE;
+}
+
+.image-container:hover .image_title {
+  	display: none;
+}
+
+.image-container:hover .read_more {
+  	display: block;
+}
+
+.read_more:hover {
+	background-color: #EEE;
+	color: #111;
+}
+
 
 /* Colophon section */
 
 #colophon {
-  margin-top: 1rem;
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	margin-top: 1rem;
 }
 
 #colophon p {
