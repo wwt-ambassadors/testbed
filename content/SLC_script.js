@@ -21,9 +21,6 @@
     );
     wwt_si.add_ready(wwt_ready);
 
-  // Load data from wtml file
-   wwt_si.loadImageCollection("BUAC_StellarLifeCycles.wtml");
-
     setup_ui();
   }
 
@@ -36,6 +33,9 @@
     wwt_si.settings.set_showConstellationFigures(false);
     wwt_si.settings.set_showConstellationSelection(false);
     wwt_si.settings.set_showCrosshairs(false);
+
+    // Load data from wtml file
+    wwt_si.loadImageCollection("BUAC_StellarLifeCycles.wtml");
 
     setup_controls();
   }
