@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Folder MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="BUAC Stellar Life Cycles" Group="Explorer" Searchable="False" Type="Earth">
   <VersionDependent>false</VersionDependent>
-  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula" DataSetType="Sky" RA="5.5877777777777808" Dec="-5.423055555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="36.466666666666669" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="36.466666666666669">
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Chaos at the Heart of Orion" DataSetType="Sky" RA="5.5877777777777808" Dec="-5.423055555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="36.466666666666669" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="36.466666666666669">
     <Target>Undefined</Target>
     <ForegroundImageSet>
       <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://www.worldwidetelescope.org/wwtweb/tiles.aspx?q={1},{2},{3},jn036" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="-102.69999999999992" QuadTreeMap="" Projection="Tangent" FileType=".png" CenterY="-5.388545276844563" CenterX="83.815189672738725" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="5.5653511859421947" MeanRadius="0">
@@ -21,19 +21,6 @@
       <p>This composite image displays light detected at wavelengths of 0.43, 0.50, and 0.53 microns in blue. Light at wavelengths of 0.6, 0.65, and 0.91 microns is green. Light at 3.6 microns is orange, and 8.0 microns is red.</p>
     </Description>
   </Place>
-  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula" DataSetType="Sky" RA="5.5808333333333344" Dec="-5.44416666666667" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="19.59" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="19.59">
-    <Target>Undefined</Target>
-    <ForegroundImageSet>
-      <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="IR" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000010231{Q}?g=131" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="0.015915112700651" QuadTreeMap="0123" Projection="Tangent" Name="Orion Nebula" FileType=".png" CenterY="-5.59338109097" CenterX="83.6383655257" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="-0.151262042234303" OffsetY="0.179267217168241" BaseTileLevel="0" BaseDegreesPerTile="0.682489467823981" MeanRadius="0">
-        <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo), M. Robberto (STScI), HST</Credits>
-        <CreditsUrl>http://gallery.spitzer.caltech.edu/Imagegallery/image.php?image_name=ssc2006-21a</CreditsUrl>
-        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1154245897</ThumbnailUrl>
-      </ImageSet>
-    </ForegroundImageSet>
-    <Description Title="Blah blah Orion">
-      <p>So much to learn!</p>
-    </Description>
-  </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Hubble Probes the Great Orion Nebula" DataSetType="Sky" RA="5.5883333333333276" Dec="-5.40555555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="3.97833333333333" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.97833333333333">
     <Target>Undefined</Target>
     <ForegroundImageSet>
@@ -44,7 +31,7 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Blah blah baby stars in Orion">
-      <p>So much to learn!</p>
+      <p>3rd orion image Hubble sees baby stars</p>
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Ring Nebula (M57)" DataSetType="Sky" RA="18.893055555555591" Dec="33.0283333333333" Constellation="LYR" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="0.565" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.565">
@@ -57,7 +44,7 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Ring Nebula">
-      <p>So much to learn!</p>
+      <p>This is the Ring Nebula</p>
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
@@ -70,7 +57,7 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Cat's Eye Nebula">
-      <p>So much to learn!</p>
+      <p>Cats Eye is also a planetary nebula</p>
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Betelgeuse" DataSetType="Sky" RA="5.9194444446666665" Dec="7.406944444" Constellation="ORI" Classification="Star" Magnitude="0.5" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
@@ -86,7 +73,7 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Betelgeuse Betelgeuse Betelgeuse">
-      <p>So much to learn!</p>
+      <p>Betelgeuse Betelgeuse Betelgeuse</p>
     </Description>
   </Place>
-</Folder>
+<head/></Folder>
