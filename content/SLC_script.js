@@ -8,6 +8,8 @@
   // The name of the most recent source whose tile has been clicked.
   var current_source = null;
 
+  var destinations = [];
+
   function initialize() {
     // This function call is
     // wwt-web-client/HTML5SDK/wwtlib/WWTControl.cs:WWTControl::InitControlParam.
@@ -35,8 +37,10 @@
     wwt_si.settings.set_showCrosshairs(false);
     setup_controls();
 
+    //(variables defined inside a function are not known to other functions)
     loadWtml(function (xml) {
       var places = $(xml).find('Place');
+      var thumbTemplate = $('<div class="col-xs-3 col-md-2"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
       var placeobject = {
         Name: null,
         RA: null,
@@ -54,7 +58,45 @@
            descText += '<p>'+item +'</p>';
          } 
         });
+        descText += '<hr><h4>Credits</h4>' + '<p><a href="' + place.find('CreditsUrl').text() + '" target=_blank >' + place.find('Credits').text() + '</p>';
        
+        var tmp = thumbTemplate.clone();
+
+        tmp.find('img').attr({
+            src: place.find('ThumbnailUrl').text(),
+            alt: place.attr('Name'),
+            'data-toggle':'tooltip',
+            'data-placement': 'top',
+            'data-container': 'body',
+            title: place.find('Description').attr('Title')
+        });
+
+        tmp.find('a')
+          .data('foreground-image', place.attr('Name'))
+          .on('click',function() {
+            wwt_si.setForegroundImageByName('foreground-image');
+            wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), true);
+           });
+
+        tmp.find('i').attr({
+          'data-toggle': 'tooltip',
+          'data-placement': 'top',
+          title: 'Image Information'
+        })
+        .on('click', function(e) {
+          bootbox.dialog({
+              message: descText,
+              title: place.find('Description').attr('Title')
+          });
+
+          e.preventDefault();
+          e.stopPropagation();
+      });
+
+        $('#divInteractive .row').append(tmp);
+        if (i<6)
+        $('.player-controls .btn').first().before(tmp.clone(true).find('a'));
+
         placeobject={
           Name: place.attr('Name'),
           RA: place.attr('RA')*15,
@@ -63,9 +105,13 @@
         };
         
         console.log("place object = ", placeobject);
+
+        // this takes the outside top level variable "destinations" and appends placeobject to the end of that array.
+        destinations.push(placeobject);
       
       });
-    })
+    //$('.thumbnail img').tooltip();
+    });
   };
 
 
@@ -111,57 +157,32 @@ function loadWtml(callback){
     // What to do when an image tile is clicked:
     $(".image").each(function (index) {
       const dom_element = $(this);
-      $(this).find("a").click(function (event) { on_image_clicked(dom_element, event) });
-      $(this).find("a").dblclick(function (event) { on_image_dblclicked(dom_element, event) });
+      $(this).find("a").click(function (event) { on_image_clicked(dom_element, event, false) });
+      $(this).find("a").dblclick(function (event) { on_image_clicked(dom_element, event, true) });
     });
   }
 
-  function on_image_dblclicked(dom_element, event) {
+
+  function on_image_clicked(dom_element, event, dblclick) {
     if (wwt_si === null) {
       return; // can happen if widget isn't yet fully initialized.
     }
 
-    const sourcename = dom_element.data("sourcename");
-
-    wwt_si.setForegroundImageByName(sourcename);
-      
-    if (sourcename=="Hubble Probes the Great Orion Nebula"){
-      wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, true)
-    }
-
-    if (sourcename=="The Ring Nebula (M57)"){
-      wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, true)
-    }
-	  
-    if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-	    wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, true)
-	  }
-
-    // TODO: do something interesting here
-    console.log("clicked on: " + sourcename);
-    current_source = sourcename;
-  }
-
-
-  function on_image_clicked(dom_element, event) {
-    if (wwt_si === null) {
-      return; // can happen if widget isn't yet fully initialized.
-    }
-
+    console.log(destinations);
     const sourcename = dom_element.data("sourcename");
 
     wwt_si.setForegroundImageByName(sourcename);
   
     if (sourcename=="Hubble Probes the Great Orion Nebula"){
-      wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, false)
+      wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, dblclick)
     }
 
     if (sourcename=="The Ring Nebula (M57)"){
-      wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, false)
+      wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, dblclick)
     }
 
   	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-	    wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, false)
+	    wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, dblclick)
     }
     // TODO: do something interesting here
     console.log("clicked on: " + sourcename);
