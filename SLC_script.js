@@ -33,12 +33,77 @@
     wwt_si.settings.set_showConstellationFigures(false);
     wwt_si.settings.set_showConstellationSelection(false);
     wwt_si.settings.set_showCrosshairs(false);
-
-    // Load data from wtml file
-    wwt_si.loadImageCollection("BUAC_StellarLifeCycles.wtml");
-
     setup_controls();
+
+    loadWtml(function (xml) {
+      var places = $(xml).find('Place');
+      var placeobject = {
+        Name: null,
+        RA: null,
+        Dec: null,
+        Descr: null
+      };
+    
+      places.each(function(i,pl){
+        var place = $(pl);
+        var descText='',desc;
+        desc = place.find('Description').text().split('\n');
+        
+        $.each(desc, function(i, item){
+         if (item != undefined) {
+           descText += '<p>'+item +'</p>';
+         } 
+        });
+       
+        placeobject={
+          Name: place.attr('Name'),
+          RA: place.attr('RA')*15,
+          Dec: place.attr('Dec'),
+          Descr: desc
+        };
+        
+        console.log("place object = ", placeobject);
+      
+      });
+    })
+  };
+
+
+// Load data from wtml file
+function loadWtml(callback){
+  var hasLoaded = false;
+//This is what Ron calls getXml
+  function getWtml(){
+    console.log("in getWtml function");
+    if (hasLoaded){return;}
+    hasLoaded=true;
+    $.ajax({
+        url: wtmlPath,
+        crossDomain: false,
+        dataType: 'xml',
+        cache: false,
+        success:function(xml){
+          callback(xml) 
+        }, 
+        error: function (a,b,c){
+          console.log({a: a, b: b, c: c});
+        }
+    });
+    console.log("ran ajax thing");
   }
+  
+  var wtmlPath = "BUACStellarLifeCycles.wtml";
+  //var wtmlPath = "GreatObservatories.wtml";
+  wwt_si.loadImageCollection(wtmlPath);
+  console.log("Loaded Image Collection");
+  getWtml();
+  setTimeout(function(){
+    getWtml();    
+  }, 1500);
+};
+
+
+
 
   // Setting up the web app user interface plumbing.
 
@@ -58,8 +123,8 @@
 
     const sourcename = dom_element.data("sourcename");
 
-    wwt_si.setForegroundImageByName(sourcename)
-
+    wwt_si.setForegroundImageByName(sourcename);
+      
     if (sourcename=="Hubble Probes the Great Orion Nebula"){
       wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, true)
     }
@@ -68,14 +133,15 @@
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, true)
     }
 	  
-if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-	  wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, true)
-	}
+    if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
+	    wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, true)
+	  }
 
     // TODO: do something interesting here
     console.log("clicked on: " + sourcename);
     current_source = sourcename;
   }
+
 
   function on_image_clicked(dom_element, event) {
     if (wwt_si === null) {
@@ -84,8 +150,8 @@ if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
 
     const sourcename = dom_element.data("sourcename");
 
-    wwt_si.setForegroundImageByName(sourcename)
-
+    wwt_si.setForegroundImageByName(sourcename);
+  
     if (sourcename=="Hubble Probes the Great Orion Nebula"){
       wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, false)
     }
@@ -94,10 +160,9 @@ if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
       wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, false)
     }
 
-	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-	  wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, false)
-	}
-
+  	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
+	    wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, false)
+    }
     // TODO: do something interesting here
     console.log("clicked on: " + sourcename);
     current_source = sourcename;
@@ -120,6 +185,9 @@ if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
 
   $(document).ready(size_content);
   $(window).resize(size_content);
+
+
+
 
   // Backend details: setting up keyboard controls.
   //
