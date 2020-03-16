@@ -6,9 +6,9 @@
   var wwt_ctl = null;
 
   // The name of the most recent source whose tile has been clicked.
-  var current_source = null;
+  //var current_source = null;
 
-  var destinations = [];
+  //var destinations = [];
 
   function initialize() {
     // This function call is
@@ -23,7 +23,8 @@
     );
     wwt_si.add_ready(wwt_ready);
 
-    setup_ui();
+    //Not calling this now - I think that's ok? (psu)
+    //setup_ui();
   }
 
   $(document).ready(initialize);
@@ -41,12 +42,14 @@
     loadWtml(function (xml) {
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col-xs-3 col-md-2"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
+      /** 
       var placeobject = {
         Name: null,
         RA: null,
         Dec: null,
         Descr: null
       };
+      */
     
       places.each(function(i,pl){
         var place = $(pl);
@@ -70,13 +73,26 @@
             'data-container': 'body',
             title: place.find('Description').attr('Title')
         });
-
+  
         tmp.find('a')
           .data('foreground-image', place.attr('Name'))
           .on('click',function() {
-            wwt_si.setForegroundImageByName('foreground-image');
-            wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), true);
+            if (wwt_si===null){
+              return;
+            }
+            wwt_si.setForegroundImageByName(place.attr('Name'));
+            wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), false);
            });
+
+        tmp.find('a')
+          .data('foreground-image', place.attr('Name'))
+          .on('dblclick',function() {
+            if (wwt_si===null){
+              return;
+            }
+            wwt_si.setForegroundImageByName(place.attr('Name'));
+            wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), true);
+          });
 
         tmp.find('i').attr({
           'data-toggle': 'tooltip',
@@ -93,10 +109,12 @@
           e.stopPropagation();
       });
 
-        $('#divInteractive .row').append(tmp);
-        if (i<6)
-        $('.player-controls .btn').first().before(tmp.clone(true).find('a'));
+        $('#destinationThumbs').append(tmp);
+        var fsThumb = tmp.clone(true).find('a');
+        fsThumb.find('label').remove();
+        $('.player-controls .btn').first().before(tmp);
 
+        /** 
         placeobject={
           Name: place.attr('Name'),
           RA: place.attr('RA')*15,
@@ -105,9 +123,11 @@
         };
         
         console.log("place object = ", placeobject);
+        */
+        console.log("place=",place);
 
         // this takes the outside top level variable "destinations" and appends placeobject to the end of that array.
-        destinations.push(placeobject);
+       // destinations.push(placeobject);
       
       });
     //$('.thumbnail img').tooltip();
@@ -120,7 +140,7 @@ function loadWtml(callback){
   var hasLoaded = false;
 //This is what Ron calls getXml
   function getWtml(){
-    console.log("in getWtml function");
+    //console.log("in getWtml function");
     if (hasLoaded){return;}
     hasLoaded=true;
     $.ajax({
@@ -135,7 +155,7 @@ function loadWtml(callback){
           console.log({a: a, b: b, c: c});
         }
     });
-    console.log("ran ajax thing");
+    //console.log("ran ajax thing");
   }
   
   var wtmlPath = "BUACStellarLifeCycles.wtml";
@@ -150,6 +170,7 @@ function loadWtml(callback){
 
 
 
+/** Old way
 
   // Setting up the web app user interface plumbing.
 
@@ -188,6 +209,7 @@ function loadWtml(callback){
     console.log("clicked on: " + sourcename);
     current_source = sourcename;
   }
+  */
 
   // Backend details: auto-resizing the WWT canvas.
 
