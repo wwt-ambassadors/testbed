@@ -36,8 +36,13 @@
         <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1808329735</ThumbnailUrl>
       </ImageSet>
     </ForegroundImageSet>
-    <Description Title="Ring Nebula">
-      <p>Medium star puffed off outer layers</p>
+    <Description Title="The Ring Nebula">
+      <p>The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star.  The Ring Nebula is about 1 light year in diameter and is about 2,300 light years from our Solar System.</p>
+      <p>The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. However, it is roughly 30 times smaller than our Sun in diameter and is only 0.6 times its mass.</p>
+      <p>The star in the middle of the nebula is mostly made of carbon, surrounded by an outer shell of helium. Nuclear fusion is no longer happening in the star. It shines brightly because it is very very hot.</p>
+      <p>The hot central star energizes the gas in the nebula and causes the atoms in the gas to emit light at specific wavelengths.  Green emission shows that there is oxygen in the gas.  Red indicates hydrogen and nitrogen. The gas in the nebula is mostly hydrogen and helium with trace amounts of heavier elements.</p>
+      <p>Measurements show that the Ring Nebula is expanding very slowly over time, with a velocity of about 25 km/s.</p>
+
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
@@ -57,24 +62,22 @@
     <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Chaos at the Heart of Orion" DataSetType="Sky" RA="5.5877777777777808" Dec="-5.423055555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="36.466666666666669" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="36.466666666666669">
     <Target>Undefined</Target>
     <ForegroundImageSet>
-      <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://www.worldwidetelescope.org/wwtweb/tiles.aspx?q={1},{2},{3},jn036" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="-102.69999999999992" QuadTreeMap="" Projection="Tangent" FileType=".png" CenterY="-5.388545276844563" CenterX="83.815189672738725" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="5.5653511859421947" MeanRadius="0">
+      <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://www.worldwidetelescope.org/wwtweb/tiles.aspx?q={1},{2},{3},jn036" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="-102.69999999999992" QuadTreeMap="" Projection="Tangent" Name="Chaos at the Heart of Orion" FileType=".png" CenterY="-5.388545276844563" CenterX="83.815189672738725" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="5.5653511859421947" MeanRadius="0">
         <Credits>Copyright Jack Newton All Rights Reserved</Credits>
         <CreditsUrl>http://www.jacknewton.com/</CreditsUrl>
         <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=jn036</ThumbnailUrl>
       </ImageSet>
     </ForegroundImageSet>
-    <Description Title="Chaos at the Heart of Orion">
-      <p>NASA's Spitzer and Hubble Space Telescopes have teamed up to expose the chaos that baby stars are creating 1,500 light-years away in a cosmic cloud called the Orion Nebula.</p>
-      <p>This striking infrared and visible-light composite indicates that four monstrously massive stars at the center of the cloud may be the main culprits in the familiar Orion constellation. The stars are collectively called the "Trapezium." Their community can be identified as the yellow smudge near the center of the image.</p>
-      <p>Swirls of green in Hubble's ultraviolet and visible-light view reveal hydrogen and sulfur gas that have been heated and ionized by intense ultraviolet radiation from the Trapezium's stars. Meanwhile, Spitzer's infrared view exposes carbon-rich molecules called polycyclic aromatic hydrocarbons in the cloud. These organic molecules have been illuminated by the Trapezium's stars, and are shown in the composite as wisps of red and orange. On Earth, polycyclic aromatic hydrocarbons are found on burnt toast and in automobile exhaust.</p>
-      <p>Together, the telescopes expose the stars in Orion as a rainbow of dots sprinkled throughout the image. Orange-yellow dots revealed by Spitzer are actually infant stars deeply embedded in a cocoon of dust and gas. Hubble showed less embedded stars as specks of green, and foreground stars as blue spots.</p>
-      <p>Stellar winds from clusters of newborn stars scattered throughout the cloud etched all of the well-defined ridges and cavities in Orion. The large cavity near the right of the image was most likely carved by winds from the Trapezium's stars.</p>
-      <p>Located 1,500 light-years away from Earth, the Orion Nebula is the brightest spot in the sword of the Orion, or the "Hunter" constellation. The cosmic cloud is also our closest massive star-formation factory, and astronomers believe it contains more than 1,000 young stars.</p>
-      <p>The Orion constellation is a familiar sight in the fall and winter night sky in the northern hemisphere. The nebula is invisible to the unaided eye, but can be resolved with binoculars or small telescopes.</p>
-      <p>This composite image displays light detected at wavelengths of 0.43, 0.50, and 0.53 microns in blue. Light at wavelengths of 0.6, 0.65, and 0.91 microns is green. Light at 3.6 microns is orange, and 8.0 microns is red.</p>
+    <Description Title="The Great Orion Nebula">
+      <p>The Orion Nebula is a large cloud of gas and dust about 1300 light years from our Solar System. You can see it with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.</p>
+      <p>The Orion Nebula contains the same amount of gas as about 2000 Suns, and it is about 24 light years across.</p>
+      <p>A group of very hot young stars (called the Trapezium) illuminates the cloud and gives extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. For example, the red emission tells us there is hydrogen in the gas. The green emission tells us there is oxygen in the gas.</p>
+      <p>By analyzing the amounts of light emitted at each wavelength (called a spectrum), astronomers have determined the composition of the gas in the Orion Nebula. Its most plentiful gases are H (71% by mass) and He (28% by mass), with C, N, O, Ne, S, Cl, and Ar also present (summing to 1% by mass). </p>
+      <p>The proportions of H, He, C, N, O, and Ne in the Orion Nebula are very similar to the proportions for those gases in our Sun’s outer layers.</p>
+      <p>Notice that some parts of the cloud appear dark. The dark parts of the cloud are colder and denser than the lit-up parts of the cloud.</p>
     </Description>
   </Place>
     <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Betelgeuse" DataSetType="Sky" RA="5.9194444446666665" Dec="7.406944444" Constellation="ORI" Classification="Star" Magnitude="0.5" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <Target>Custom</Target>
   </Place>
-<head/></Folder>
+</Folder>

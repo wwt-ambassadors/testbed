@@ -107,7 +107,7 @@
 
           e.preventDefault();
           e.stopPropagation();
-      });
+      }).tooltip();
 
         $('#destinationThumbs').append(tmp);
         var fsThumb = tmp.clone(true).find('a');
@@ -130,7 +130,7 @@
        // destinations.push(placeobject);
       
       });
-    //$('.thumbnail img').tooltip();
+    $('.thumbnail img').tooltip();
     });
   };
 
