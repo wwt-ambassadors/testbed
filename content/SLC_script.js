@@ -79,7 +79,12 @@
           .on('click',function() {
             if (wwt_si===null){
               return;
-            }
+            };
+			/* hide all descriptions, then show description specific to this target on sgl/dbl click */
+			toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
+			$("#description_box").find(".container-fluid").hide();
+			$(toggle_class).show(500);
+			
             wwt_si.setForegroundImageByName(place.attr('Name'));
             wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), false);
            });
