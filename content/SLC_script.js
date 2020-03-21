@@ -107,7 +107,7 @@
 
           e.preventDefault();
           e.stopPropagation();
-      }).tooltip();
+      });
 
         $('#destinationThumbs').append(tmp);
         var fsThumb = tmp.clone(true).find('a');
@@ -130,7 +130,7 @@
        // destinations.push(placeobject);
       
       });
-    $('.thumbnail img').tooltip();
+    //$('.thumbnail img').tooltip();
     });
   };
 
@@ -217,13 +217,19 @@ function loadWtml(callback){
     var container = $("html");
 
     // Constants here must be synced with settings in style.css
-    const new_width = (0.9 * container.width()) + "px";
-    const new_height = (0.5 * container.height()) + "px";
+    const new_wwt_width = (0.9 * container.width()) + "px";
+    const new_wwt_height = ((0.5 * container.height()) - 50) + "px";
+    const new_desc_height = (0.35 * container.height()) + "px";
 
     $("#wwtcanvas").css({
-      "width": new_width,
-      "height": new_height
+      "width": new_wwt_width,
+      "height": new_wwt_height
     });
+
+    $("#description_box").css({
+      "height": new_desc_height
+    });
+	  
   }
 
   $(document).ready(size_content);
