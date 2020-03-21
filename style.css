@@ -19,6 +19,12 @@ body {
 	background-color: #111;
 }
 
+.main_container {
+	padding: 0;
+	width: 90%;
+	margin: 0px 5%;
+}
+
 /* Generic element settings */
 
 p {
@@ -32,21 +38,44 @@ a, a:hover, a:visited {
 /* Title <h1> */
 
 h1 {
-  font-size: 150%;
-  font-weight: 700;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  margin-left: 5%;
+	font-size: 150%;
+	font-weight: 700;
+	margin: 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+#page_title {
+	position: absolute;
+	top: 30px;
+	left: 30px;
 }
 
 /* WWT canvas */
 
 #wwtcanvas {
-  width: 90%;  /* note: overridden in script.js */
-  height: 50%;  /* note: overridden in script.js */
-  margin: auto;
-  border: solid 1px #333;
+	width: 90%;  /* note: overridden in script.js */
+	height: 50%;  /* note: overridden in script.js */
+	margin: auto;
+	margin-top: 50px;
+	border: solid 1px #333;
+	position: relative;
+	box-sizing: content-box;
 }
+
+
+#description_box {
+	margin-top: 20px;
+	padding: 10px;
+	border: solid 1px #fbcb1f;
+	border-radius: 5px;
+	overflow: scroll;
+}
+
+#description_box p {
+	font-size: 0.6em;
+}
+
 
 /* Everything below the title and the WWT canvas goes inside a wrapper div to
  * set global margins that agree with the WWT canvas. */
@@ -121,6 +150,8 @@ h1 {
 	background-color: #EEE;
 	color: #111;
 }
+
+
 
 
 /* Colophon section */
