@@ -67,7 +67,7 @@ h1 {
 #description_box {
 	margin-top: 20px;
 	padding: 10px;
-	border: solid 1px #fbcb1f;
+	border: solid 1px #FBCB1F;
 	border-radius: 5px;
 	overflow: scroll;
 }
@@ -96,6 +96,7 @@ h1 {
   margin: auto;
 }
 
+
 /* Flexbox of tiles for each image */
 
 .flex-container {
@@ -108,6 +109,14 @@ h1 {
 
 .image-container {
 	
+}
+
+.thumbnail {
+	display: block;
+	padding: 2px;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	width: fit-content;
 }
 
 .image {
@@ -135,46 +144,12 @@ h1 {
 
 
 
-/* Read More button appearing below thumbnail boxes */
-.image_title, .read_more {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	text-align: center;
-	font-size: 0.8em;
-	padding: 5px 0px;
-}
-
-.read_more {
-	display: none;
-	width: 60%;
-	border: 1px solid #666;
-	border-radius: 4px;
-	background-color: #222;
-	color: #EEE;
-}
-
-.image-container:hover .image_title {
-  	display: none;
-}
-
-.image-container:hover .read_more {
-  	display: block;
-}
-
-.read_more:hover {
-	background-color: #EEE;
-	color: #111;
-}
-
-
-
 
 /* Colophon section */
 
 #colophon {
 	position: absolute;
-	bottom: 30px;
+	bottom: 55px;
 	left: 15px;
 	margin-top: 1rem;
 }

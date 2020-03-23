@@ -40,16 +40,20 @@
 
     //(variables defined inside a function are not known to other functions)
     loadWtml(function (xml) {
-      var places = $(xml).find('Place');
-      var thumbTemplate = $('<div class="col-sm-4 col-md-2 col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
-      /** 
-      var placeobject = {
-        Name: null,
-        RA: null,
-        Dec: null,
-        Descr: null
-      };
-      */
+    	var places = $(xml).find('Place');
+    	var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/></a></div>');
+    	/* the following code originally used in Ron's to include an (i) element to learn more about targets (instead of the above) 
+			var thumbTemplate = $('<div class="col-sm-4 col-md-2 col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
+		*/
+		
+		/** 
+    	var placeobject = {
+    		Name: null,
+    		RA: null,
+    		Dec: null,
+    		Descr: null
+    	};
+		*/
     
       places.each(function(i,pl){
         var place = $(pl);
@@ -84,7 +88,10 @@
 			toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
 			$('#begin_container').hide();
 			$("#description_box").find(".container-fluid").hide();
-			$(toggle_class).show(500);
+//			The following a work in progress
+//			$(".thumbnail").attr('border', '1px solid #FFF');
+//			$(this).parent().attr('border', '1px solid #FBCB1F');
+			$(toggle_class).delay(500).show(500);
 			
             wwt_si.setForegroundImageByName(place.attr('Name'));
             wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), false);
