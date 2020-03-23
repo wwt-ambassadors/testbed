@@ -41,7 +41,7 @@
     //(variables defined inside a function are not known to other functions)
     loadWtml(function (xml) {
       var places = $(xml).find('Place');
-      var thumbTemplate = $('<div class="col-xs-3 col-md-2"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
+      var thumbTemplate = $('<div class="col-sm-4 col-md-2 col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
       /** 
       var placeobject = {
         Name: null,
@@ -79,7 +79,13 @@
           .on('click',function() {
             if (wwt_si===null){
               return;
-            }
+            };
+			/* hide all descriptions, then show description specific to this target on sgl/dbl click */
+			toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
+			$('#begin_container').hide();
+			$("#description_box").find(".container-fluid").hide();
+			$(toggle_class).show(500);
+			
             wwt_si.setForegroundImageByName(place.attr('Name'));
             wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), false);
            });
@@ -107,7 +113,7 @@
 
           e.preventDefault();
           e.stopPropagation();
-      }).tooltip();
+      });
 
         $('#destinationThumbs').append(tmp);
         var fsThumb = tmp.clone(true).find('a');
@@ -130,7 +136,7 @@
        // destinations.push(placeobject);
       
       });
-    $('.thumbnail img').tooltip();
+    //$('.thumbnail img').tooltip();
     });
   };
 
@@ -217,13 +223,19 @@ function loadWtml(callback){
     var container = $("html");
 
     // Constants here must be synced with settings in style.css
-    const new_width = (0.9 * container.width()) + "px";
-    const new_height = (0.5 * container.height()) + "px";
+    const new_wwt_width = (0.9 * container.width()) + "px";
+    const new_wwt_height = ((0.5 * container.height()) - 50) + "px";
+    const new_desc_height = (0.35 * container.height()) + "px";
 
     $("#wwtcanvas").css({
-      "width": new_width,
-      "height": new_height
+      "width": new_wwt_width,
+      "height": new_wwt_height
     });
+
+    $("#description_box").css({
+      "height": new_desc_height
+    });
+	  
   }
 
   $(document).ready(size_content);

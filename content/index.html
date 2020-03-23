@@ -4,9 +4,15 @@
 		<meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge"/>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>WWT Life Cycle of Stars</title>
+		<title>WWTA | Life Cycle of Stars</title>
+		
+		<!-- load personal stylesheet and Bootstrap stylesheet -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
+		
+		<!-- import Roboto font -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		
 		<!-- Peter says to always use pywwt because it is most up to date-->
 		<script src="https://worldwidetelescope.github.io/pywwt/wwtsdk.js"></script>
 		<!--<script src="http://www.worldwidetelescope.org/webclient/sdk/wwtsdk.js"></script>-->
@@ -20,12 +26,39 @@
 	</head>
 	
 	<body>
-		<h1>Life Cycle of Stars</h1>
-
-		<div id="wwtcanvas"></div>
-		<hr/>
-		<div class="row" style="margin-top:16px" id="destinationThumbs"></div>
-		<br/>
+		<div id="wwtcanvas">
+			<h1 id="page_title">Life Cycle of Stars</h1>
+		</div>
+		<div class="container-fluid main_container">
+			<div class="row" style="margin-top:16px" id="destinationThumbs"></div>
+			<div id="description_box">
+				<div id="begin_container">
+					<p>Click on one of the thumbnails above to fly to the selected object.</p>
+					<p>Double-click on a thumbnail to arrive there immediately.</p>
+				</div>
+				<div id="orion_container" class="container-fluid">
+					<div class="row">
+						<div class="col-xs-6 col-md-6 col-lg-4">
+							<h4>The Orion Nebula</h4>
+							<p>The Orion Nebula is a large cloud of gas and dust about 1300 light years from our Solar System. You can see it with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.</p>
+      						<p>The Orion Nebula contains the same amount of gas as about 2000 Suns, and it is about 24 light years across.</p>
+							<p>A group of very hot young stars (called the Trapezium) illuminates the cloud and gives extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. For example, the red emission tells us there is hydrogen in the gas. The green emission tells us there is oxygen in the gas.</p>
+							<p>Notice that some parts of the cloud appear dark. The dark parts of the cloud are colder and denser than the lit-up parts of the cloud.</p>
+						</div>
+						<div class="col-xs-6 col-md-6 col-lg-4">
+							<h4>Elements</h4>
+							<p>By analyzing the amounts of light emitted at each wavelength (called a spectrum), astronomers have determined the composition of the gas in the Orion Nebula. Its most plentiful gases are H (71% by mass) and He (28% by mass), with C, N, O, Ne, S, Cl, and Ar also present (summing to 1% by mass). </p>
+							<p>The proportions of H, He, C, N, O, and Ne in the Orion Nebula are very similar to the proportions for those gases in our Sun’s outer layers.</p>
+						</div>
+						<div class="col-xs-12 col-md-12 col-lg-4">
+							<h4>See More Examples</h4>
+							<p>lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
 
 <!-- This copies Ron's analogous code that appears in the Planet Explorer - doesn't seem to be necessary, but keep for now just in case.
 	<div class="hide" id="destinationInfo">
@@ -77,7 +110,7 @@
 			</div>
 		</div>
 
-		-->
+-->
 
 		<div id="colophon">
 			<p>Copyright 2020 the <a href="//wwtambassadors.org">WWT Ambassadors</a> program. Powered by <a href="http://worldwidetelescope.org/">AAS WorldWide Telescope</a> from the <a href="https://aas.org/">American Astronomical Society</a>&nbsp;<a href="http://worldwidetelescope.org/"><img src="logo_wwt.png"></a> <a href="https://aas.org/"><img src="logo_aas.png"></a>
