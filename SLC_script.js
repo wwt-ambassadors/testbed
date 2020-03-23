@@ -41,7 +41,7 @@
     //(variables defined inside a function are not known to other functions)
     loadWtml(function (xml) {
       var places = $(xml).find('Place');
-      var thumbTemplate = $('<div class="col-xs-3 col-md-2"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
+      var thumbTemplate = $('<div class="col-sm-4 col-md-2 col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
       /** 
       var placeobject = {
         Name: null,
@@ -82,6 +82,7 @@
             };
 			/* hide all descriptions, then show description specific to this target on sgl/dbl click */
 			toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
+			$('#begin_container').hide();
 			$("#description_box").find(".container-fluid").hide();
 			$(toggle_class).show(500);
 			
