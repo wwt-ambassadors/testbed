@@ -14,7 +14,7 @@
       <p>3rd orion image Hubble sees baby stars</p>
     </Description>
   </Place>
-    <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula Spitzer" DataSetType="Sky" RA="5.5808333333333344" Dec="-5.44416666666667" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="19.59" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="19.59">
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula Spitzer" DataSetType="Sky" RA="5.5808333333333344" Dec="-5.44416666666667" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="19.59" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="19.59">
     <Target>Undefined</Target>
     <ForegroundImageSet>
       <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="IR" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000010231{Q}?g=131" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="0.015915112700651" QuadTreeMap="0123" Projection="Tangent" Name="Orion Nebula Spitzer" FileType=".png" CenterY="-5.59338109097" CenterX="83.6383655257" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="-0.151262042234303" OffsetY="0.179267217168241" BaseTileLevel="0" BaseDegreesPerTile="0.682489467823981" MeanRadius="0">
@@ -24,7 +24,7 @@
       </ImageSet>
     </ForegroundImageSet>
   </Place>
-    <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Giant Hubble Mosaic of the Crab Nebula" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Giant Hubble Mosaic of the Crab Nebula" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
     <Target>Undefined</Target>
     <ForegroundImageSet>
       <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000001321{Q}?g=138" TileLevels="4" WidthFactor="2" Sparse="True" Rotation="0.0135016264010856" QuadTreeMap="0123" Projection="Tangent" Name="Giant Hubble Mosaic of the Crab Nebula" FileType=".png" CenterY="22.0157690826831" CenterX="83.6351229267829" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.113275505484975" MeanRadius="0">
@@ -36,6 +36,12 @@
     <Description Title="Crab Nebula">
       <p>Big star went blam!</p>
     </Description>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Betelgeuse" DataSetType="Sky" RA="5.9194444446666665" Dec="7.406944444" Constellation="ORI" Classification="Star" Magnitude="0.5" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <ImageSet>
+      <Target>Custom</Target>
+      <ThumbnailUrl>betelgeuse_thumbnail.png</ThumbnailUrl>
+    </ImageSet>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Ring Nebula (M57)" DataSetType="Sky" RA="18.893055555555591" Dec="33.0283333333333" Constellation="LYR" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="0.565" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.565">
     <Target>Undefined</Target>
@@ -55,7 +61,13 @@
 
     </Description>
   </Place>
-  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
+    <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Sun" DataSetType="Sky" RA="0.21833333" Dec="1.41694444" Constellation="PSC" Classification="SolarSystem" Magnitude="-26.73" Distance="0.99690962291948559" ZoomLevel="4" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="4">
+    <ImageSet>
+    <Target>Undefined</Target>
+    <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=sun</ThumbnailUrl>
+    </ImageSet>
+  </Place>
+  <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
     <Target>Undefined</Target>
     <ForegroundImageSet>
       <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:3}.ortho.tiles.virtualearth.net/tiles/wsa0000001323{Q}?g=138" TileLevels="2" WidthFactor="2" Sparse="True" Rotation="138.242506357374" QuadTreeMap="0123" Projection="Tangent" Name="The Cat's Eye Nebula" FileType=".png" CenterY="66.6330405" CenterX="269.6378124" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0131133365015532" MeanRadius="0">
@@ -67,9 +79,9 @@
     <Description Title="Cat's Eye Nebula">
       <p>Cats Eye is also a planetary nebula</p>
     </Description>
-  </Place>
+  </Place2>
 
-    <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Chaos at the Heart of Orion" DataSetType="Sky" RA="5.5877777777777808" Dec="-5.423055555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="36.466666666666669" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="36.466666666666669">
+  <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Chaos at the Heart of Orion" DataSetType="Sky" RA="5.5877777777777808" Dec="-5.423055555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="36.466666666666669" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="36.466666666666669">
     <Target>orion</Target>
     <ForegroundImageSet>
       <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://www.worldwidetelescope.org/wwtweb/tiles.aspx?q={1},{2},{3},jn036" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="-102.69999999999992" QuadTreeMap="" Projection="Tangent" Name="Chaos at the Heart of Orion" FileType=".png" CenterY="-5.388545276844563" CenterX="83.815189672738725" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="5.5653511859421947" MeanRadius="0">
@@ -86,8 +98,18 @@
       <p>The proportions of H, He, C, N, O, and Ne in the Orion Nebula are very similar to the proportions for those gases in our Sun’s outer layers.</p>
       <p>Notice that some parts of the cloud appear dark. The dark parts of the cloud are colder and denser than the lit-up parts of the cloud.</p>
     </Description>
+  </Place2>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Sigma Orionis" DataSetType="Sky" RA="5.6455555553333348" Dec="-2.6" Constellation="ORI" Classification="Star" Magnitude="3.81" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <ImageSet>
+      <Target>Custom</Target>
+      <ThumbnailUrl>sigma_orionis_thumbnail.png</ThumbnailUrl>
+    </ImageSet>
   </Place>
-    <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Betelgeuse" DataSetType="Sky" RA="5.9194444446666665" Dec="7.406944444" Constellation="ORI" Classification="Star" Magnitude="0.5" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Aldebaran" DataSetType="Sky" RA="4.5986111113333337" Dec="16.50916667" Constellation="TAU" Classification="Star" Magnitude="0.85" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <ImageSet>
     <Target>Custom</Target>
+    <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
+    </ImageSet>
   </Place>
+
 </Folder>
