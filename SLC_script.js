@@ -88,9 +88,12 @@
 			toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
 			$('#begin_container').hide();
 			$("#description_box").find(".container-fluid").hide();
-//			The following a work in progress
-//			$(".thumbnail").attr('border', '1px solid #FFF');
-//			$(this).parent().attr('border', '1px solid #FBCB1F');
+			
+			//	Change the border color of the selected thumbnail
+			$(".thumbnail").css('border', '1px solid #FFF').removeClass('shadow');
+			$(this).css("border","1px solid #FBCB1F").addClass('shadow');
+			console.log(" and this");
+			
 			$(toggle_class).delay(500).show(500);
 			
             wwt_si.setForegroundImageByName(place.attr('Name'));
