@@ -133,7 +133,6 @@
   // Load data from wtml file
   function loadWtml(callback){
     var hasLoaded = false;
-    var folder = wwt_si.createFolder();
 
     //This is what Ron calls getXml
     function getWtml() {
@@ -146,7 +145,7 @@
         dataType: 'xml',
         cache: false,
         success:function(xml) {
-          callback(folder, xml)
+          callback(wwt_si._imageFolder, xml)
         },
         error: function (a,b,c) {
           console.log({a: a, b: b, c: c});
@@ -156,7 +155,7 @@
     }
 
     var wtmlPath = "BUACStellarLifeCycles.wtml";
-    folder.loadFromUrl(wtmlPath, function() {});
+    wwt_si.loadImageCollection(wtmlPath);
     console.log("Loaded Image Collection");
     getWtml();
     setTimeout(function(){
