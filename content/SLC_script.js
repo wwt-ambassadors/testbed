@@ -40,65 +40,65 @@
 
     //(variables defined inside a function are not known to other functions)
     loadWtml(function (xml) {
-    	var places = $(xml).find('Place');
-    	var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/></a></div>');
-    	/* the following code originally used in Ron's to include an (i) element to learn more about targets (instead of the above) 
-			var thumbTemplate = $('<div class="col-sm-4 col-md-2 col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
-		*/
-		
-		/** 
-    	var placeobject = {
-    		Name: null,
-    		RA: null,
-    		Dec: null,
-    		Descr: null
-    	};
-		*/
-    
+      var places = $(xml).find('Place');
+      var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/></a></div>');
+      /* the following code originally used in Ron's to include an (i) element to learn more about targets (instead of the above)
+	 var thumbTemplate = $('<div class="col-sm-4 col-md-2 col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
+      */
+
+      /**
+    	  var placeobject = {
+    	  Name: null,
+    	  RA: null,
+    	  Dec: null,
+    	  Descr: null
+    	  };
+      */
+
       places.each(function(i,pl){
         var place = $(pl);
         var descText='',desc;
         desc = place.find('Description').text().split('\n');
-        
+
         $.each(desc, function(i, item){
-         if (item != undefined) {
-           descText += '<p>'+item +'</p>';
-         } 
+          if (item != undefined) {
+            descText += '<p>'+item +'</p>';
+          }
         });
         descText += '<hr><h4>Credits</h4>' + '<p><a href="' + place.find('CreditsUrl').text() + '" target=_blank >' + place.find('Credits').text() + '</p>';
-       
+
         var tmp = thumbTemplate.clone();
 
         tmp.find('img').attr({
-            src: place.find('ThumbnailUrl').text(),
-            alt: place.attr('Name'),
-            'data-toggle':'tooltip',
-            'data-placement': 'top',
-            'data-container': 'body',
-            title: place.find('Description').attr('Title')
+          src: place.find('ThumbnailUrl').text(),
+          alt: place.attr('Name'),
+          'data-toggle':'tooltip',
+          'data-placement': 'top',
+          'data-container': 'body',
+          title: place.find('Description').attr('Title')
         });
-  
+
         tmp.find('a')
           .data('foreground-image', place.attr('Name'))
           .on('click',function() {
             if (wwt_si===null){
               return;
             };
-			/* hide all descriptions, then show description specific to this target on sgl/dbl click */
-			toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
-			$('#begin_container').hide();
-			$("#description_box").find(".container-fluid").hide();
-			
-			//	Change the border color of the selected thumbnail
-			$(".thumbnail").css('border', '1px solid #FFF').removeClass('shadow');
-			$(this).css("border","1px solid #FBCB1F").addClass('shadow');
-			console.log(" and this");
-			
-			$(toggle_class).delay(500).show(500);
-			
+	    /* hide all descriptions, then show description specific to this target on sgl/dbl click */
+	    toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
+	    $('#begin_container').hide();
+	    $("#description_box").find(".container-fluid").hide();
+
+	    //	Change the border color of the selected thumbnail
+	    $(".thumbnail").css('border', '1px solid #FFF').removeClass('shadow');
+	    $(this).css("border","1px solid #FBCB1F").addClass('shadow');
+	    console.log(" and this");
+
+	    $(toggle_class).delay(500).show(500);
+
             wwt_si.setForegroundImageByName(place.attr('Name'));
             wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), false);
-           });
+          });
 
         tmp.find('a')
           .data('foreground-image', place.attr('Name'))
@@ -115,116 +115,116 @@
           'data-placement': 'top',
           title: 'Image Information'
         })
-        .on('click', function(e) {
-          bootbox.dialog({
+          .on('click', function(e) {
+            bootbox.dialog({
               message: descText,
               title: place.find('Description').attr('Title')
-          });
+            });
 
-          e.preventDefault();
-          e.stopPropagation();
-      });
+            e.preventDefault();
+            e.stopPropagation();
+          });
 
         $('#destinationThumbs').append(tmp);
         var fsThumb = tmp.clone(true).find('a');
         fsThumb.find('label').remove();
         $('.player-controls .btn').first().before(tmp);
 
-        /** 
-        placeobject={
-          Name: place.attr('Name'),
-          RA: place.attr('RA')*15,
-          Dec: place.attr('Dec'),
-          Descr: desc
-        };
-        
-        console.log("place object = ", placeobject);
+        /**
+            placeobject={
+            Name: place.attr('Name'),
+            RA: place.attr('RA')*15,
+            Dec: place.attr('Dec'),
+            Descr: desc
+            };
+
+            console.log("place object = ", placeobject);
         */
         console.log("place=",place);
 
         // this takes the outside top level variable "destinations" and appends placeobject to the end of that array.
-       // destinations.push(placeobject);
-      
+        // destinations.push(placeobject);
+
       });
-    //$('.thumbnail img').tooltip();
+      //$('.thumbnail img').tooltip();
     });
   };
 
 
-// Load data from wtml file
-function loadWtml(callback){
-  var hasLoaded = false;
-//This is what Ron calls getXml
-  function getWtml(){
-    //console.log("in getWtml function");
-    if (hasLoaded){return;}
-    hasLoaded=true;
-    $.ajax({
+  // Load data from wtml file
+  function loadWtml(callback){
+    var hasLoaded = false;
+    //This is what Ron calls getXml
+    function getWtml(){
+      //console.log("in getWtml function");
+      if (hasLoaded){return;}
+      hasLoaded=true;
+      $.ajax({
         url: wtmlPath,
         crossDomain: false,
         dataType: 'xml',
         cache: false,
         success:function(xml){
-          callback(xml) 
-        }, 
+          callback(xml)
+        },
         error: function (a,b,c){
           console.log({a: a, b: b, c: c});
         }
-    });
-    //console.log("ran ajax thing");
-  }
-  
-  var wtmlPath = "BUACStellarLifeCycles.wtml";
-  //var wtmlPath = "GreatObservatories.wtml";
-  wwt_si.loadImageCollection(wtmlPath);
-  console.log("Loaded Image Collection");
-  getWtml();
-  setTimeout(function(){
-    getWtml();    
-  }, 1500);
-};
-
-
-
-/** Old way
-
-  // Setting up the web app user interface plumbing.
-
-  function setup_ui() {
-    // What to do when an image tile is clicked:
-    $(".image").each(function (index) {
-      const dom_element = $(this);
-      $(this).find("a").click(function (event) { on_image_clicked(dom_element, event, false) });
-      $(this).find("a").dblclick(function (event) { on_image_clicked(dom_element, event, true) });
-    });
-  }
-
-
-  function on_image_clicked(dom_element, event, dblclick) {
-    if (wwt_si === null) {
-      return; // can happen if widget isn't yet fully initialized.
+      });
+      //console.log("ran ajax thing");
     }
 
-    console.log(destinations);
-    const sourcename = dom_element.data("sourcename");
+    var wtmlPath = "BUACStellarLifeCycles.wtml";
+    //var wtmlPath = "GreatObservatories.wtml";
+    wwt_si.loadImageCollection(wtmlPath);
+    console.log("Loaded Image Collection");
+    getWtml();
+    setTimeout(function(){
+      getWtml();
+    }, 1500);
+  };
 
-    wwt_si.setForegroundImageByName(sourcename);
-  
-    if (sourcename=="Hubble Probes the Great Orion Nebula"){
-      wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, dblclick)
-    }
 
-    if (sourcename=="The Ring Nebula (M57)"){
-      wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, dblclick)
-    }
 
-  	if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-	    wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, dblclick)
-    }
-    // TODO: do something interesting here
-    console.log("clicked on: " + sourcename);
-    current_source = sourcename;
-  }
+  /** Old way
+
+   // Setting up the web app user interface plumbing.
+
+   function setup_ui() {
+   // What to do when an image tile is clicked:
+   $(".image").each(function (index) {
+   const dom_element = $(this);
+   $(this).find("a").click(function (event) { on_image_clicked(dom_element, event, false) });
+   $(this).find("a").dblclick(function (event) { on_image_clicked(dom_element, event, true) });
+   });
+   }
+
+
+   function on_image_clicked(dom_element, event, dblclick) {
+   if (wwt_si === null) {
+   return; // can happen if widget isn't yet fully initialized.
+   }
+
+   console.log(destinations);
+   const sourcename = dom_element.data("sourcename");
+
+   wwt_si.setForegroundImageByName(sourcename);
+
+   if (sourcename=="Hubble Probes the Great Orion Nebula"){
+   wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, dblclick)
+   }
+
+   if (sourcename=="The Ring Nebula (M57)"){
+   wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, dblclick)
+   }
+
+   if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
+   wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, dblclick)
+   }
+   // TODO: do something interesting here
+   console.log("clicked on: " + sourcename);
+   current_source = sourcename;
+   }
   */
 
   // Backend details: auto-resizing the WWT canvas.
@@ -245,7 +245,7 @@ function loadWtml(callback){
     $("#description_box").css({
       "height": new_desc_height
     });
-	  
+
   }
 
   $(document).ready(size_content);
