@@ -5,11 +5,6 @@
   // The WWT WWTControl singleton.
   var wwt_ctl = null;
 
-  // The name of the most recent source whose tile has been clicked.
-  //var current_source = null;
-
-  //var destinations = [];
-
   function initialize() {
     // This function call is
     // wwt-web-client/HTML5SDK/wwtlib/WWTControl.cs:WWTControl::InitControlParam.
@@ -42,18 +37,6 @@
     loadWtml(function (xml) {
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/></a></div>');
-      /* the following code originally used in Ron's to include an (i) element to learn more about targets (instead of the above)
-	 var thumbTemplate = $('<div class="col-sm-4 col-md-2 col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/><i class="fa fa-info-circle"></i></a></div>');
-      */
-
-      /**
-    	  var placeobject = {
-    	  Name: null,
-    	  RA: null,
-    	  Dec: null,
-    	  Descr: null
-    	  };
-      */
 
       places.each(function(i,pl){
         var place = $(pl);
@@ -129,33 +112,16 @@
         var fsThumb = tmp.clone(true).find('a');
         fsThumb.find('label').remove();
         $('.player-controls .btn').first().before(tmp);
-
-        /**
-            placeobject={
-            Name: place.attr('Name'),
-            RA: place.attr('RA')*15,
-            Dec: place.attr('Dec'),
-            Descr: desc
-            };
-
-            console.log("place object = ", placeobject);
-        */
-        console.log("place=",place);
-
-        // this takes the outside top level variable "destinations" and appends placeobject to the end of that array.
-        // destinations.push(placeobject);
-
       });
-      //$('.thumbnail img').tooltip();
     });
   };
-
 
   // Load data from wtml file
   function loadWtml(callback){
     var hasLoaded = false;
+
     //This is what Ron calls getXml
-    function getWtml(){
+    function getWtml() {
       //console.log("in getWtml function");
       if (hasLoaded){return;}
       hasLoaded=true;
@@ -175,7 +141,6 @@
     }
 
     var wtmlPath = "BUACStellarLifeCycles.wtml";
-    //var wtmlPath = "GreatObservatories.wtml";
     wwt_si.loadImageCollection(wtmlPath);
     console.log("Loaded Image Collection");
     getWtml();
@@ -184,48 +149,6 @@
     }, 1500);
   };
 
-
-
-  /** Old way
-
-   // Setting up the web app user interface plumbing.
-
-   function setup_ui() {
-   // What to do when an image tile is clicked:
-   $(".image").each(function (index) {
-   const dom_element = $(this);
-   $(this).find("a").click(function (event) { on_image_clicked(dom_element, event, false) });
-   $(this).find("a").dblclick(function (event) { on_image_clicked(dom_element, event, true) });
-   });
-   }
-
-
-   function on_image_clicked(dom_element, event, dblclick) {
-   if (wwt_si === null) {
-   return; // can happen if widget isn't yet fully initialized.
-   }
-
-   console.log(destinations);
-   const sourcename = dom_element.data("sourcename");
-
-   wwt_si.setForegroundImageByName(sourcename);
-
-   if (sourcename=="Hubble Probes the Great Orion Nebula"){
-   wwt_si.gotoRaDecZoom(5.5883333333333276*15,-5.40555555555556,0.1, dblclick)
-   }
-
-   if (sourcename=="The Ring Nebula (M57)"){
-   wwt_si.gotoRaDecZoom(18.893055555555591*15,33.0283333333333,0.1, dblclick)
-   }
-
-   if (sourcename=="Giant Hubble Mosaic of the Crab Nebula") {
-   wwt_si.gotoRaDecZoom(5.575538895555591*15,22.0145333333333,0.1, dblclick)
-   }
-   // TODO: do something interesting here
-   console.log("clicked on: " + sourcename);
-   current_source = sourcename;
-   }
-  */
 
   // Backend details: auto-resizing the WWT canvas.
 
@@ -250,8 +173,6 @@
 
   $(document).ready(size_content);
   $(window).resize(size_content);
-
-
 
 
   // Backend details: setting up keyboard controls.
@@ -371,7 +292,4 @@
       }
     })(true));
   }
-
-
-
 })();
