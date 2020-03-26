@@ -17,9 +17,6 @@
       true  // use WebGL!
     );
     wwt_si.add_ready(wwt_ready);
-
-    //Not calling this now - I think that's ok? (psu)
-    //setup_ui();
   }
 
   $(document).ready(initialize);
@@ -34,7 +31,7 @@
     setup_controls();
 
     //(variables defined inside a function are not known to other functions)
-    loadWtml(function (xml) {
+    loadWtml(function (folder, xml) {
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/></a></div>');
 
@@ -79,8 +76,25 @@
 
 	    $(toggle_class).delay(500).show(500);
 
-            wwt_si.setForegroundImageByName(place.attr('Name'));
-            wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), false);
+            if (place.attr('Classification') == 'SolarSystem') {
+              // This is a solar system object. In order to view it correctly,
+              // we need to find its associated wwtlib "Place" object and seek
+              // to it thusly. The get_camParams() function calculates its
+              // current RA and Dec.
+              $.each(folder.get_children(), function (i, wwtplace) {
+                if (wwtplace.get_name() == place.attr('Name')) {
+                  wwt_ctl.gotoTarget3(wwtplace.get_camParams());
+                }
+              });
+            } else {
+              wwt_si.setForegroundImageByName(place.attr('Name'));
+              wwt_si.gotoRaDecZoom(
+                parseFloat(place.attr('RA')) * 15,
+                place.attr('Dec'),
+                parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')),
+                false
+              );
+            }
           });
 
         tmp.find('a')
@@ -119,6 +133,7 @@
   // Load data from wtml file
   function loadWtml(callback){
     var hasLoaded = false;
+    var folder = wwt_si.createFolder();
 
     //This is what Ron calls getXml
     function getWtml() {
@@ -130,10 +145,10 @@
         crossDomain: false,
         dataType: 'xml',
         cache: false,
-        success:function(xml){
-          callback(xml)
+        success:function(xml) {
+          callback(folder, xml)
         },
-        error: function (a,b,c){
+        error: function (a,b,c) {
           console.log({a: a, b: b, c: c});
         }
       });
@@ -141,7 +156,7 @@
     }
 
     var wtmlPath = "BUACStellarLifeCycles.wtml";
-    wwt_si.loadImageCollection(wtmlPath);
+    folder.loadFromUrl(wtmlPath, function() {});
     console.log("Loaded Image Collection");
     getWtml();
     setTimeout(function(){
