@@ -103,8 +103,26 @@
             if (wwt_si===null){
               return;
             }
-            wwt_si.setForegroundImageByName(place.attr('Name'));
-            wwt_si.gotoRaDecZoom(parseFloat(place.attr('RA'))*15,place.attr('Dec'),parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')), true);
+
+            if (place.attr('Classification') == 'SolarSystem') {
+              // This is a solar system object. In order to view it correctly,
+              // we need to find its associated wwtlib "Place" object and seek
+              // to it thusly. The get_camParams() function calculates its
+              // current RA and Dec.
+              $.each(folder.get_children(), function (i, wwtplace) {
+                if (wwtplace.get_name() == place.attr('Name')) {
+                  wwt_ctl.gotoTarget3(wwtplace.get_camParams());
+                }
+              });
+            } else {
+              wwt_si.setForegroundImageByName(place.attr('Name'));
+              wwt_si.gotoRaDecZoom(
+                parseFloat(place.attr('RA')) * 15,
+                place.attr('Dec'),
+                parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')),
+                true
+              );
+            }
           });
 
         tmp.find('i').attr({
