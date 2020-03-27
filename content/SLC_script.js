@@ -111,7 +111,7 @@
               // current RA and Dec.
               $.each(folder.get_children(), function (i, wwtplace) {
                 if (wwtplace.get_name() == place.attr('Name')) {
-                  wwt_ctl.gotoTarget3(wwtplace.get_camParams());
+                  wwt_ctl.gotoTarget3(wwtplace.get_camParams(),false,true);
                 }
               });
             } else {
