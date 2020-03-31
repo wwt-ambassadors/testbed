@@ -1,4 +1,4 @@
-(function() {
+(function () {
   // The WWT ScriptInterface singleton.
   var wwt_si = null;
 
@@ -35,14 +35,14 @@
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/></a></div>');
 
-      places.each(function(i,pl){
+      places.each(function (i, pl) {
         var place = $(pl);
-        var descText='',desc;
+        var descText = '', desc;
         desc = place.find('Description').text().split('\n');
 
-        $.each(desc, function(i, item){
+        $.each(desc, function (i, item) {
           if (item != undefined) {
-            descText += '<p>'+item +'</p>';
+            descText += '<p>' + item + '</p>';
           }
         });
         descText += '<hr><h4>Credits</h4>' + '<p><a href="' + place.find('CreditsUrl').text() + '" target=_blank >' + place.find('Credits').text() + '</p>';
@@ -52,85 +52,69 @@
         tmp.find('img').attr({
           src: place.find('ThumbnailUrl').text(),
           alt: place.attr('Name'),
-          'data-toggle':'tooltip',
+          'data-toggle': 'tooltip',
           'data-placement': 'top',
           'data-container': 'body',
           title: place.find('Description').attr('Title')
         });
 
-        tmp.find('a')
-          .data('foreground-image', place.attr('Name'))
-          .on('click',function() {
-            if (wwt_si===null){
-              return;
-            };
-	    /* hide all descriptions, then show description specific to this target on sgl/dbl click */
-	    toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
-	    $('#begin_container').hide();
-	    $("#description_box").find(".container-fluid").hide();
+        function on_click(is_dblclick) {
+          if (wwt_si === null) {
+            return;
+          };
+          /* hide all descriptions, then show description specific to this target on sgl/dbl click */
+          toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
+          $('#begin_container').hide();
+          $("#description_box").find(".container-fluid").hide();
 
-	    //	Change the border color of the selected thumbnail
-	    $(".thumbnail").css('border', '1px solid #FFF').removeClass('shadow');
-	    $(this).css("border","1px solid #FBCB1F").addClass('shadow');
-	    console.log(" and this");
+          //	Change the border color of the selected thumbnail
+          $(".thumbnail").css('border', '1px solid #FFF').removeClass('shadow');
+          $(this).css("border", "1px solid #FBCB1F").addClass('shadow');
+          console.log(" and this");
 
-	    $(toggle_class).delay(500).show(500);
+          $(toggle_class).delay(500).show(500);
 
-            if (place.attr('Classification') == 'SolarSystem') {
-              // This is a solar system object. In order to view it correctly,
-              // we need to find its associated wwtlib "Place" object and seek
-              // to it thusly. The get_camParams() function calculates its
-              // current RA and Dec.
-              $.each(folder.get_children(), function (i, wwtplace) {
-                if (wwtplace.get_name() == place.attr('Name')) {
-                  wwt_ctl.gotoTarget3(wwtplace.get_camParams());
-                }
-              });
-            } else {
-              wwt_si.setForegroundImageByName(place.attr('Name'));
-              wwt_si.gotoRaDecZoom(
-                parseFloat(place.attr('RA')) * 15,
-                place.attr('Dec'),
-                parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')),
-                false
-              );
-            }
-          });
+          if (place.attr('Classification') == 'SolarSystem') {
+            // This is a solar system object. In order to view it correctly,
+            // we need to find its associated wwtlib "Place" object and seek
+            // to it thusly. The get_camParams() function calculates its
+            // current RA and Dec.
+            $.each(folder.get_children(), function (i, wwtplace) {
+              if (wwtplace.get_name() == place.attr('Name')) {
+                wwt_ctl.gotoTarget3(wwtplace.get_camParams(), false, is_dblclick);
+              }
+            });
+          } else {
+            wwt_si.setForegroundImageByName(place.attr('Name'));
+            wwt_si.gotoRaDecZoom(
+              parseFloat(place.attr('RA')) * 15,
+              place.attr('Dec'),
+              parseFloat(place.find('ImageSet').attr('FOV')),
+              is_dblclick
+            );
+          }
+        }
 
         tmp.find('a')
           .data('foreground-image', place.attr('Name'))
-          .on('dblclick',function() {
-            if (wwt_si===null){
-              return;
-            }
+          //'click' - false; 'dblclick' - true.  on('click', function () { on_click(false) });
 
-            if (place.attr('Classification') == 'SolarSystem') {
-              // This is a solar system object. In order to view it correctly,
-              // we need to find its associated wwtlib "Place" object and seek
-              // to it thusly. The get_camParams() function calculates its
-              // current RA and Dec.
-              $.each(folder.get_children(), function (i, wwtplace) {
-                if (wwtplace.get_name() == place.attr('Name')) {
-                  wwt_ctl.gotoTarget3(wwtplace.get_camParams(),false,true);
-                }
-              });
-            } else {
-              wwt_si.setForegroundImageByName(place.attr('Name'));
-              wwt_si.gotoRaDecZoom(
-                parseFloat(place.attr('RA')) * 15,
-                place.attr('Dec'),
-                parseFloat(place.find('ImageSet').attr('BaseDegreesPerTile')),
-                true
-              );
-            }
+          .on('click', function(){
+            on_click(false)
+          })
+
+          .on('dblclick', function(){
+            on_click(true)
           });
 
-        tmp.find('i').attr({
-          'data-toggle': 'tooltip',
-          'data-placement': 'top',
-          title: 'Image Information'
-        })
-          .on('click', function(e) {
+
+        tmp.find('i')
+          .attr({
+            'data-toggle': 'tooltip',
+            'data-placement': 'top',
+            title: 'Image Information'
+          })
+          .on('click', function (e) {
             bootbox.dialog({
               message: descText,
               title: place.find('Description').attr('Title')
@@ -149,24 +133,24 @@
   };
 
   // Load data from wtml file
-  function loadWtml(callback){
+  function loadWtml(callback) {
     var hasLoaded = false;
 
     //This is what Ron calls getXml
     function getWtml() {
       //console.log("in getWtml function");
-      if (hasLoaded){return;}
-      hasLoaded=true;
+      if (hasLoaded) { return; }
+      hasLoaded = true;
       $.ajax({
         url: wtmlPath,
         crossDomain: false,
         dataType: 'xml',
         cache: false,
-        success:function(xml) {
+        success: function (xml) {
           callback(wwt_si._imageFolder, xml)
         },
-        error: function (a,b,c) {
-          console.log({a: a, b: b, c: c});
+        error: function (a, b, c) {
+          console.log({ a: a, b: b, c: c });
         }
       });
       //console.log("ran ajax thing");
@@ -176,7 +160,7 @@
     wwt_si.loadImageCollection(wtmlPath);
     console.log("Loaded Image Collection");
     getWtml();
-    setTimeout(function(){
+    setTimeout(function () {
       getWtml();
     }, 1500);
   };
@@ -231,12 +215,12 @@
       return event;
     }
 
-    const wheel_up = new_event("wwt-zoom", {deltaY: 53, delta: 53}, true);
-    const wheel_down = new_event("wwt-zoom", {deltaY: -53, delta: -53}, true);
-    const mouse_left = new_event("wwt-move", {movementX: 53, movementY: 0}, true);
-    const mouse_up = new_event("wwt-move", {movementX: 0, movementY: 53}, true);
-    const mouse_right = new_event("wwt-move", {movementX: -53, movementY: 0}, true);
-    const mouse_down = new_event("wwt-move", {movementX: 0, movementY: -53}, true);
+    const wheel_up = new_event("wwt-zoom", { deltaY: 53, delta: 53 }, true);
+    const wheel_down = new_event("wwt-zoom", { deltaY: -53, delta: -53 }, true);
+    const mouse_left = new_event("wwt-move", { movementX: 53, movementY: 0 }, true);
+    const mouse_up = new_event("wwt-move", { movementX: 0, movementY: 53 }, true);
+    const mouse_right = new_event("wwt-move", { movementX: -53, movementY: 0 }, true);
+    const mouse_down = new_event("wwt-move", { movementX: 0, movementY: -53 }, true);
 
     const zoomCodes = {
       "KeyZ": wheel_up,
@@ -256,7 +240,7 @@
       75: mouse_down
     };
 
-    window.addEventListener("keydown", function(event) {
+    window.addEventListener("keydown", function (event) {
       // "must check the deprecated keyCode property for Qt"
       if (zoomCodes.hasOwnProperty(event.code) || zoomCodes.hasOwnProperty(event.keyCode)) {
         var action = zoomCodes.hasOwnProperty(event.code) ? zoomCodes[event.code] : zoomCodes[event.keyCode];
@@ -286,8 +270,8 @@
       }
     });
 
-    canvas.addEventListener("wwt-move", (function(proceed) {
-      return function(event) {
+    canvas.addEventListener("wwt-move", (function (proceed) {
+      return function (event) {
         if (!proceed)
           return false;
 
@@ -296,7 +280,7 @@
         else
           delay = 100;
 
-        setTimeout(function() { proceed = true }, delay);
+        setTimeout(function () { proceed = true }, delay);
 
         if (event.altKey)
           wwt_ctl._tilt(event.movementX, event.movementY);
@@ -305,8 +289,8 @@
       }
     })(true));
 
-    canvas.addEventListener("wwt-zoom", (function(proceed) {
-      return function(event) {
+    canvas.addEventListener("wwt-zoom", (function (proceed) {
+      return function (event) {
         if (!proceed)
           return false;
 
@@ -315,7 +299,7 @@
         else
           delay = 100;
 
-        setTimeout(function() { proceed = true }, delay);
+        setTimeout(function () { proceed = true }, delay);
 
         if (event.deltaY < 0)
           wwt_ctl.zoom(1.43);
