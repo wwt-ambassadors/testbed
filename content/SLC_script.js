@@ -108,13 +108,13 @@
           });
 
 
-        tmp.find('i')
-          .attr({
-            'data-toggle': 'tooltip',
-            'data-placement': 'top',
-            title: 'Image Information'
-          })
-          .on('click', function (e) {
+		// we'll probably be able to remove this
+        tmp.find('i').attr({
+          'data-toggle': 'tooltip',
+          'data-placement': 'top',
+          title: 'Image Information'
+        })
+          .on('click', function(e) {
             bootbox.dialog({
               message: descText,
               title: place.find('Description').attr('Title')
@@ -163,6 +163,10 @@
     setTimeout(function () {
       getWtml();
     }, 1500);
+    //trigger size_content function again after thumbnails have started loading
+    setTimeout(function() {
+		size_content();
+	}, 500);
   };
 
 
@@ -172,23 +176,29 @@
     var container = $("html");
 
     // Constants here must be synced with settings in style.css
-    const new_wwt_width = (0.9 * container.width()) + "px";
-    const new_wwt_height = ((0.5 * container.height()) - 50) + "px";
-    const new_desc_height = (0.35 * container.height()) + "px";
+    const new_wwt_width = (0.9 * container.width());
+	// subtract 52 to account for the margin and border in .css file
+    const new_wwt_height = ((0.5 * container.height()) - 52);
+    const thumbs_height = $("#destinationThumbs").outerHeight(true);
+    const colophon_height = $("#colophon").height();
+	// subtract 20 to account for the margin in .css file, and give a little wiggle room
+    const new_desc_height = (0.5 * container.height()) - thumbs_height - colophon_height - 40;
+    // const new_desc_height = (0.35 * container.height());
 
     $("#wwtcanvas").css({
-      "width": new_wwt_width,
-      "height": new_wwt_height
+      "width": new_wwt_width + "px",
+      "height": new_wwt_height + "px"
     });
 
     $("#description_box").css({
-      "height": new_desc_height
+      "height": new_desc_height + "px"
     });
 
   }
 
   $(document).ready(size_content);
   $(window).resize(size_content);
+  // also triggering size_content function in the load_wtml function, because thumbnails aren't loading immediately
 
 
   // Backend details: setting up keyboard controls.
