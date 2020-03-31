@@ -121,28 +121,11 @@ h1 {
 	width: fit-content;
 }
 
-.image {
-  border: 1px solid #333;
-  border-radius: 4px;
-  padding: 6px;
-}
-
-.image:hover {
-  	border: 1px solid #000;
-	background-color: #FFF;
-}
-
-.image:hover a {
-	color: #000;
-}
-
-.image a {
-  	text-decoration: none;
-}
-
 .col_thumb {
 	margin: 5px 0px;
 }
+
+
 
 
 
@@ -153,7 +136,6 @@ h1 {
 	position: absolute;
 	bottom: 55px;
 	left: 15px;
-	margin-top: 1rem;
 }
 
 #colophon p {
