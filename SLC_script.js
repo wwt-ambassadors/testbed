@@ -199,6 +199,9 @@
   $(document).ready(size_content);
   $(window).resize(size_content);
   // also triggering size_content function in the load_wtml function, because thumbnails aren't loading immediately
+	
+	
+
 
 
   // Backend details: setting up keyboard controls.
