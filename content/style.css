@@ -101,6 +101,10 @@ h1 {
 	font-style: normal;
 }
 
+.fa-arrow-down {
+	display: none;
+}
+
 
 
 
@@ -134,12 +138,16 @@ h1 {
 	width: fit-content;
 }
 
+.border_black {
+	border: 2px solid #000;
+}
+
 .border_white {
 	border: 1px solid #FFF;
 }
 
 .border_yellow {
-	border: 1px solid #FBCB1F;
+	border: 2px solid #FBCB1F;
 }
 
 .col_thumb {

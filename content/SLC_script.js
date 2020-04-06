@@ -55,6 +55,7 @@
 
         tmp.find('img').attr({
           src: place.find('ThumbnailUrl').text(),
+		  class: 'border_black',
           alt: place.attr('Name'),
           'data-toggle': 'tooltip',
           'data-placement': 'top',
@@ -71,12 +72,22 @@
           $("#description_box").find(".obj_desc").hide();
           $('#begin_container').hide();
           $('#description_container').show();
+			
+			
+			//trying to make arrow appear only for overflow
+          if(element.scrollHeight > element.clientHeight) {
+            console.log("need arrow");
+            $('.fa-arrow-down').show();
+          }
 
           //	Change the border color of the selected thumbnail
-          $(".thumbnail").removeClass("border_yellow").addClass("border_white");
+          var element = element;
+			
+          $(".thumbnail img").removeClass("border_yellow").addClass("border_black");
+          $(element).removeClass("border_black").addClass("border_yellow");
           $(this).removeClass("border_white").addClass("border_yellow");
 
-          $("#orion_description").delay(500).show(500);
+          $(toggle_class).delay(500).show(500);
 
           if (place.attr('Classification') == 'SolarSystem') {
             // This is a solar system object. In order to view it correctly,
@@ -104,12 +115,12 @@
           //'click' - false; 'dblclick' - true.  on('click', function () { on_click(false) });
 
           .on('click', function(event){
-			element = event.target
+			var element = event.target;
             on_click(element, false)
           })
 
           .on('dblclick', function(event){
-			element = event.target
+			var element = event.target;
             on_click(element, true)
           });
 
@@ -330,9 +341,9 @@
   
   // when user scrolls to bottom of the description container, remove the down arrow icon. Add it back when scrolling back up.
   $('#description_container').on('scroll', function(event) {
-	var element = event.target
+	var element = event.target;
     
-	if(element.scrollHeight - element.scrollTop > element.clientHeight) {
+	if(element.scrollHeight - element.scrollTop === element.clientHeight) {
 	  console.log("reached bottom!");
 	  $('.fa-arrow-down').hide();
 	}
