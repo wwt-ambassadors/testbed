@@ -4,6 +4,10 @@
 
   // The WWT WWTControl singleton.
   var wwt_ctl = null;
+	
+  // track whether user has panned or zoomed yet.
+  var click_counter = 0;
+  var zoom_counter = 0;
 
   function initialize() {
     // This function call is
@@ -33,7 +37,7 @@
     //(variables defined inside a function are not known to other functions)
     loadWtml(function (folder, xml) {
       var places = $(xml).find('Place');
-      var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail"><img src=""/></a></div>');
+      var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail border_white"><img src=""/></a></div>');
 
       places.each(function (i, pl) {
         var place = $(pl);
@@ -58,21 +62,21 @@
           title: place.find('Description').attr('Title')
         });
 
-        function on_click(is_dblclick) {
+        function on_click(element, is_dblclick) {
           if (wwt_si === null) {
             return;
           };
           /* hide all descriptions, then show description specific to this target on sgl/dbl click */
-          toggle_class = "#" + place.find('Target').text().toLowerCase() + "_container";
+          toggle_class = "#" + place.find('Target').text().toLowerCase() + "_description";
+          $("#description_box").find(".obj_desc").hide();
           $('#begin_container').hide();
-          $("#description_box").find(".container-fluid").hide();
+          $('#description_container').show();
 
           //	Change the border color of the selected thumbnail
-          $(".thumbnail").css('border', '1px solid #FFF').removeClass('shadow');
-          $(this).css("border", "1px solid #FBCB1F").addClass('shadow');
-          console.log(" and this");
+          $(".thumbnail").removeClass("border_yellow").addClass("border_white");
+          $(this).removeClass("border_white").addClass("border_yellow");
 
-          $(toggle_class).delay(500).show(500);
+          $("#orion_description").delay(500).show(500);
 
           if (place.attr('Classification') == 'SolarSystem') {
             // This is a solar system object. In order to view it correctly,
@@ -99,12 +103,14 @@
           .data('foreground-image', place.attr('Name'))
           //'click' - false; 'dblclick' - true.  on('click', function () { on_click(false) });
 
-          .on('click', function(){
-            on_click(false)
+          .on('click', function(event){
+			element = event.target
+            on_click(element, false)
           })
 
-          .on('dblclick', function(){
-            on_click(true)
+          .on('dblclick', function(event){
+			element = event.target
+            on_click(element, true)
           });
 
 
@@ -321,4 +327,24 @@
       }
     })(true));
   }
+  
+  // when user scrolls to bottom of the description container, remove the down arrow icon. Add it back when scrolling back up.
+  $('#description_container').on('scroll', function(event) {
+	var element = event.target
+    
+	if(element.scrollHeight - element.scrollTop > element.clientHeight) {
+	  console.log("reached bottom!");
+	  $('.fa-arrow-down').hide();
+	}
+	else {
+	  $('.fa-arrow-down').show();
+    }
+  })
+	
+	// may use later, in order to identify when canvas has been interacted with
+	$('#wwtcanvas').on('click', function() {
+		console.log("canvas clicked");
+	})
+	
+	
 })();
