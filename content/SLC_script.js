@@ -63,11 +63,14 @@
           title: place.find('Description').attr('Title')
         });
 
+
         function on_click(element, is_dblclick) {
+
           if (wwt_si === null) {
             return;
           };
           /* hide all descriptions, then show description specific to this target on sgl/dbl click */
+
           toggle_class = "#" + place.find('Target').text().toLowerCase() + "_description";
           $("#description_box").find(".obj_desc").hide();
           $('#begin_container').hide();
@@ -86,6 +89,7 @@
           $(".thumbnail img").removeClass("border_yellow").addClass("border_black");
           $(element).removeClass("border_black").addClass("border_yellow");
           $(this).removeClass("border_white").addClass("border_yellow");
+
 
           $(toggle_class).delay(500).show(500);
 
