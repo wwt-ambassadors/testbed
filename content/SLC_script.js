@@ -76,22 +76,24 @@
           $('#begin_container').hide();
           $('#description_container').show();
 			
-			
-			//trying to make arrow appear only for overflow
-          if(element.scrollHeight > element.clientHeight) {
-            console.log("need arrow");
-            $('.fa-arrow-down').show();
-          }
+          $(toggle_class).show();
 
           //	Change the border color of the selected thumbnail
           var element = element;
 			
           $(".thumbnail img").removeClass("border_yellow").addClass("border_black");
           $(element).removeClass("border_black").addClass("border_yellow");
-          $(this).removeClass("border_white").addClass("border_yellow");
-
-
-          $(toggle_class).delay(500).show(500);
+			
+		  //trying to make arrow appear only for overflow
+		  var desc_box = $('#description_container')[0];
+		  
+          if(desc_box.scrollHeight > desc_box.clientHeight) {
+            console.log("need arrow");
+            $('.fa-arrow-down').show();
+          }
+	      else {
+            $('.fa-arrow-down').hide();
+		  }
 
           if (place.attr('Classification') == 'SolarSystem') {
             // This is a solar system object. In order to view it correctly,
@@ -349,7 +351,7 @@
     
 	if(element.scrollHeight - element.scrollTop === element.clientHeight) {
 	  console.log("reached bottom!");
-	  $('.fa-arrow-down').hide();
+	  $('.fa-arrow-down').fadeOut(200);
 	}
 	else {
 	  $('.fa-arrow-down').show();
