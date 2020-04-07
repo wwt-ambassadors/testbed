@@ -1,12 +1,12 @@
 /* Outermost wrapping elements */
 
 html {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  background-color: #111;
-  font-size: 1.375em;
-  font-family: 'Roboto', sans-serif;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #111;
+	font-size: 1.375em;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
 	color: #FFF;
 	height: 100%;
 	background-color: #111;
+	font-size: calc(12px + 0.5vw);
 }
 
 .main_container {
@@ -35,22 +36,6 @@ a, a:hover, a:visited {
   color: #FFF;
 }
 
-/* Title <h1> */
-
-h1 {
-	font-size: 150%;
-	font-weight: 700;
-	margin: 0;
-	user-select: none;
-	-webkit-user-select: none;
-}
-
-#page_title {
-	position: absolute;
-	top: 30px;
-	left: 30px;
-}
-
 /* WWT canvas */
 
 #wwtcanvas {
@@ -63,6 +48,32 @@ h1 {
 	box-sizing: content-box;
 }
 
+#page_title {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#wwtcanvas h1 {
+	font-size: calc(12px + 1vw); 
+	font-weight: 700;
+	margin: 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+#zoom_pan_instrux {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #DDDDDD80;
+}
+
+
+
+/* Target Descriptions */
 
 #description_box {
 	position: relative;
@@ -103,6 +114,7 @@ h1 {
 
 .fa-arrow-down {
 	display: none;
+	color: #FBCB1F;
 }
 
 
