@@ -73,6 +73,53 @@ a, a:hover, a:visited {
 
 
 
+
+/* Thumbnails. Flexbox of tiles for each image */
+
+
+
+/*
+I DON'T THINK THIS IS BEING USED - HOH
+.flex-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 300px;
+  justify-content: space-around;
+}
+*/
+
+#destinationThumbs {
+	margin: 16px -20px 0px;
+}
+
+.thumbnail {
+	display: block;
+	margin: 0 20px;
+	padding: 2px;
+	border-radius: 4px;
+	width: fit-content;
+}
+
+.border_black {
+	border: 2px solid #000;
+}
+
+.border_white {
+	border: 1px solid #FFF;
+}
+
+.border_yellow {
+	border: 2px solid #FBCB1F;
+}
+
+.col_thumb {
+	margin: 5px 0px;
+}
+
+
+
+
 /* Target Descriptions */
 
 #description_box {
@@ -115,55 +162,6 @@ a, a:hover, a:visited {
 .fa-arrow-down {
 	display: none;
 	color: #FBCB1F;
-}
-
-
-
-
-/* Everything below the title and the WWT canvas goes inside a wrapper div to
- * set global margins that agree with the WWT canvas. */
-
-#wrapper {
-  width: 90%;
-  margin: auto;
-}
-
-
-/* Flexbox of tiles for each image */
-
-.flex-container {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 300px;
-  justify-content: space-around;
-}
-
-.image-container {
-	
-}
-
-.thumbnail {
-	display: block;
-	padding: 2px;
-	border-radius: 4px;
-	width: fit-content;
-}
-
-.border_black {
-	border: 2px solid #000;
-}
-
-.border_white {
-	border: 1px solid #FFF;
-}
-
-.border_yellow {
-	border: 2px solid #FBCB1F;
-}
-
-.col_thumb {
-	margin: 5px 0px;
 }
 
 

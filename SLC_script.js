@@ -356,10 +356,11 @@
     }
   })
 	
-	// may use later, in order to identify when canvas has been interacted with
-	$('#wwtcanvas').on('click', function() {
-		console.log("canvas clicked");
-	})
+  // may use later, in order to identify when canvas has been interacted with
+  $('#wwtcanvas').on('click', function() {
+    console.log("canvas clicked");
+    $("#zoom_pan_instrux").delay(5000).fadeOut(1000);
+  })
 	
 	
 })();
