@@ -16,11 +16,12 @@
 		<!-- Peter says to always use pywwt because it is most up to date-->
 		<script src="https://worldwidetelescope.github.io/pywwt/wwtsdk.js"></script>
 		<!--<script src="http://www.worldwidetelescope.org/webclient/sdk/wwtsdk.js"></script>-->
-
+		
+		<!-- Javascript links for jQuery and Bootstrap and FontAwesome -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	
 		<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
@@ -28,34 +29,41 @@
 	<body>
 		<div id="wwtcanvas">
 			<h1 id="page_title">Life Cycle of Stars</h1>
+			<div id="zoom_pan_instrux">
+				To zoom, scroll in and out (or press Z/X on your keyboard)<br>
+				To pan around, click and drag (or press J/L/I/K on your keyboard)
+			</div>
 		</div>
 		<div class="container-fluid main_container">
-			<div class="d-flex justify-content-between" style="margin-top:16px" id="destinationThumbs"></div>
-			<div id="description_box">
+			<div class="d-flex flex-wrap justify-content-between" style="margin-top:16px" id="destinationThumbs"></div>
+			<div id="description_box" ss-container>
 				<div id="begin_container">
 					<p>Click on one of the thumbnails above to fly to the selected object.</p>
 					<p>Double-click on a thumbnail to arrive there immediately.</p>
 				</div>
-				<div id="orion_container" class="container-fluid">
-					<div class="row">
-						<div class="col-xs-6 col-md-6 col-lg-4">
-							<h4>The Orion Nebula</h4>
-							<p>The Orion Nebula is a large cloud of gas and dust about 1300 light years from our Solar System. You can see it with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.</p>
-      						<p>The Orion Nebula contains the same amount of gas as about 2000 Suns, and it is about 24 light years across.</p>
-							<p>A group of very hot young stars (called the Trapezium) illuminates the cloud and gives extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. For example, the red emission tells us there is hydrogen in the gas. The green emission tells us there is oxygen in the gas.</p>
-							<p>Notice that some parts of the cloud appear dark. The dark parts of the cloud are colder and denser than the lit-up parts of the cloud.</p>
-						</div>
-						<div class="col-xs-6 col-md-6 col-lg-4">
-							<h4>Elements</h4>
-							<p>By analyzing the amounts of light emitted at each wavelength (called a spectrum), astronomers have determined the composition of the gas in the Orion Nebula. Its most plentiful gases are H (71% by mass) and He (28% by mass), with C, N, O, Ne, S, Cl, and Ar also present (summing to 1% by mass). </p>
-							<p>The proportions of H, He, C, N, O, and Ne in the Orion Nebula are very similar to the proportions for those gases in our Sun’s outer layers.</p>
-						</div>
-						<div class="col-xs-12 col-md-12 col-lg-4">
-							<h4>See More Examples</h4>
-							<p>lorem ipsum dolor sit amet</p>
+				<div id="description_container">
+					<div id="orion_description" class="obj_desc container-fluid">
+						<div class="row">
+							<div class="col-xs-6 col-md-6 col-lg-4">
+								<h4>The Orion Nebula</h4>
+								<p>The Orion Nebula is a large cloud of gas and dust about 1300 light years from our Solar System. You can see it with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.</p>
+								<p>The Orion Nebula contains the same amount of gas as about 2000 Suns, and it is about 24 light years across.</p>
+								<p>A group of very hot young stars (called the Trapezium) illuminates the cloud and gives extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. For example, the red emission tells us there is hydrogen in the gas. The green emission tells us there is oxygen in the gas.</p>
+								<p>Notice that some parts of the cloud appear dark. The dark parts of the cloud are colder and denser than the lit-up parts of the cloud.</p>
+							</div>
+							<div class="col-xs-6 col-md-6 col-lg-4">
+								<h4>Elements</h4>
+								<p>By analyzing the amounts of light emitted at each wavelength (called a spectrum), astronomers have determined the composition of the gas in the Orion Nebula. Its most plentiful gases are H (71% by mass) and He (28% by mass), with C, N, O, Ne, S, Cl, and Ar also present (summing to 1% by mass). </p>
+								<p>The proportions of H, He, C, N, O, and Ne in the Orion Nebula are very similar to the proportions for those gases in our Sun’s outer layers.</p>
+							</div>
+							<div class="col-xs-12 col-md-12 col-lg-4">
+								<h4>See More Examples</h4>
+								<p>lorem ipsum dolor sit amet</p>
+							</div>
 						</div>
 					</div>
 				</div>
+				<i class="fas fa-arrow-down"></i>
 			</div>
 			<br>
 		</div>
