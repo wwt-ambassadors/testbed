@@ -18,7 +18,7 @@
     <Target>orion</Target>
     <ForegroundImageSet>
       <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="IR" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000010231{Q}?g=131" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="0.015915112700651" QuadTreeMap="0123" Projection="Tangent" Name="Orion Nebula Spitzer" FileType=".png" CenterY="-5.59338109097" CenterX="83.6383655257" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="-0.151262042234303" OffsetY="0.179267217168241" BaseTileLevel="0" BaseDegreesPerTile="0.682489467823981" MeanRadius="0" FOV="1.6">
-       <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo), M. Robberto (STScI), HST</Credits>
+        <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo), M. Robberto (STScI), HST</Credits>
         <CreditsUrl>http://gallery.spitzer.caltech.edu/Imagegallery/image.php?image_name=ssc2006-21a</CreditsUrl>
         <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1154245897</ThumbnailUrl>
       </ImageSet>
@@ -39,9 +39,9 @@
     </div>
     <div class="Properties">Properties/Characteristics
       <ul>
-      <li>Distance from Earth: 1300 light years (1.2 &times; 10<sup>16</sup> km</li>
-      <li>Size: 24 light years across (2.3 &times; 10<sup>14</sup> km)</li>
-      <li>Mass: 2000 solar masses (4 &times; 10<sup>33</sup> kg)</li>
+      <li>Distance from Earth: 1300 light years (1.2 x 10<sup>16</sup> km</li>
+      <li>Size: 24 light years across (2.3 x 10<sup>14</sup> km)</li>
+      <li>Mass: 2000 solar masses (4 x 10<sup>33</sup> kg)</li>
       <li>Temperature: variable in the cloud, ranges from 10K to 10,000K</li>
       </ul>
     </div>
@@ -50,16 +50,17 @@
       <li>71&#37; Hydrogen</li> 
       <li>28&#37; Helium</li>
       <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, sulfur, chlorine, argon</li>
+      </ul>
     </div>
     </Description>
   </Place>
-  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Giant Hubble Mosaic of the Crab Nebula" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Crab Nebula : Dead Star Creates Celestial Havoc" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
     <Target>Undefined</Target>
     <ForegroundImageSet>
-      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000001321{Q}?g=138" TileLevels="4" WidthFactor="2" Sparse="True" Rotation="0.0135016264010856" QuadTreeMap="0123" Projection="Tangent" Name="Giant Hubble Mosaic of the Crab Nebula" FileType=".png" CenterY="22.0157690826831" CenterX="83.6351229267829" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.113275505484975" MeanRadius="0" FOV="0.113275505484975">
-        <Credits>Credit: NASA, ESA, J. Hester and A. Loll (Arizona State University)</Credits>
+      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:2}.ortho.tiles.virtualearth.net/tiles/wsa0000001102{Q}?g=138" TileLevels="4" WidthFactor="2" Sparse="True" Rotation="-0.0751860195300311" QuadTreeMap="0123" Projection="Tangent" Name="Crab Nebula : Dead Star Creates Celestial Havoc" FileType=".png" CenterY="22.0172769653712" CenterX="83.6331623858263" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.22681269761397" MeanRadius="0" FOV="0.22681269761397">
+        <Credits>Credit: NASA, ESA, CXC, JPL-Caltech, J. Hester and A. Loll (Arizona State Univ.), R. Gehrz (Univ. Minn.), and STScI</Credits>
         <CreditsUrl>http://hubblesite.org/newscenter/newsdesk/archive/releases/2005/37/</CreditsUrl>
-        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=314237335</ThumbnailUrl>
+        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=912623430</ThumbnailUrl>
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Crab Nebula">
@@ -105,9 +106,9 @@
     The Sun has so much mass that gravity compresses the gas in the core strongly enough for the hydrogen atoms in the core to fuse to helium. The fusion reaction releases the enormous amount of energy that allows the Sun to shine. The energy released by the fusion reaction pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out.    </div>
     <div class="Properties">Properties/Characteristics
       <ul>
-      <li>Distance from Earth: 1 Astronomical Unit (1.5 &times; 10<sup>8</sup> km</li>
-      <li>Radius: 1 solar radius (7 &times; 10<sup>5</sup> km)</li>
-      <li>Mass: 1 solar mass (2 &times; 10<sup>30</sup> kg)</li>
+      <li>Distance from Earth: 1 Astronomical Unit (1.5 x 10<sup>8</sup> km</li>
+      <li>Radius: 1 solar radius (7 x 10<sup>5</sup> km)</li>
+      <li>Mass: 1 solar mass (2 x 10<sup>30</sup> kg)</li>
       <li>Temperature (surface): 5800K</li>
       </ul>
     </div>
@@ -116,6 +117,7 @@
       <li>71&#37; Hydrogen</li> 
       <li>27&#37; Helium</li>
       <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, and iron</li>
+      </ul>
     </div>    
     </Description>
   </Place>
@@ -178,9 +180,9 @@
     </div>
     <div class="Properties">Properties/Characteristics
       <ul>
-      <li>Distance from Earth: 65 light years (6.1 &times; 10<sup>14</sup> km</li>
-      <li>Radius: 44 solar radii (3.1 &times; 10<sup>7</sup> km)</li>
-      <li>Mass: 1.2 solar masses (2.3 &times; 10<sup>30</sup> kg)</li>
+      <li>Distance from Earth: 65 light years (6.1 x 10<sup>14</sup> km</li>
+      <li>Radius: 44 solar radii (3.1 x 10<sup>7</sup> km)</li>
+      <li>Mass: 1.2 solar masses (2.3 x 10<sup>30</sup> kg)</li>
       <li>Temperature (surface): 3,900 K</li>
       </ul>
     </div>
@@ -189,7 +191,6 @@
       <li>still need to find reference</li>
       </ul>
     </div>
-
     </Description>
   </Place>
 
