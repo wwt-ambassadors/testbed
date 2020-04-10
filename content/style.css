@@ -1,12 +1,12 @@
 /* Outermost wrapping elements */
 
 html {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	background-color: #111;
-	font-size: 1.375em;
-	font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #111;
+  font-size: 1.375em;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 	color: #FFF;
 	height: 100%;
 	background-color: #111;
-	font-size: calc(12px + 0.5vw);
 }
 
 .main_container {
@@ -36,6 +35,22 @@ a, a:hover, a:visited {
   color: #FFF;
 }
 
+/* Title <h1> */
+
+h1 {
+	font-size: 150%;
+	font-weight: 700;
+	margin: 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+#page_title {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
 /* WWT canvas */
 
 #wwtcanvas {
@@ -48,88 +63,19 @@ a, a:hover, a:visited {
 	box-sizing: content-box;
 }
 
-#page_title {
-	position: absolute;
-	top: 30px;
-	left: 30px;
-}
-
-#wwtcanvas h1 {
-	font-size: calc(12px + 1vw); 
-	font-weight: 700;
-	margin: 0;
-	user-select: none;
-	-webkit-user-select: none;
-}
-
-#zoom_pan_instrux {
-	position: absolute;
-	bottom: 20px;
-	width: 100%;
-	text-align: center;
-	font-size: 0.8rem;
-	color: #EEEEEE80;
-}
-
-
-
-
-/* Thumbnails. Flexbox of tiles for each image */
-
-
-
-/*
-I DON'T THINK THIS IS BEING USED - HOH
-.flex-container {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 300px;
-  justify-content: space-around;
-}
-*/
-
-#destinationThumbs {
-	margin: 16px -20px 0px;
-}
-
-.thumbnail {
-	display: block;
-	margin: 0 20px;
-	padding: 2px;
-	border-radius: 4px;
-	width: fit-content;
-}
-
-.border_black {
-	border: 2px solid #000;
-}
-
-.border_white {
-	border: 1px solid #FFF;
-}
-
-.border_yellow {
-	border: 2px solid #FBCB1F;
-}
-
-.col_thumb {
-	margin: 5px 0px;
-}
-
-
-
-
-/* Target Descriptions */
 
 #description_box {
-	position: relative;
 	margin-top: 20px;
 	padding: 10px;
 	border: solid 1px #FBCB1F;
 	border-radius: 5px;
+	overflow-y: scroll;
 	background-color: #222;
 	box-shadow: 0px 0px 15px #000 inset;
+}
+
+#description_box .container-fluid {
+	display: none;
 }
 
 #begin_container {
@@ -137,32 +83,48 @@ I DON'T THINK THIS IS BEING USED - HOH
 	vertical-align: middle;
 }
 
-#description_container {
-	display: none;
-	height: 100%;
-	overflow-y: auto;
-}
-
-#description_box .container-fluid {
-	display: none;
-}
-
 #description_box row p {
 	font-size: 0.6em;
 }
 
-#description_box i {
-	position: absolute;
-	bottom: 10px;
-	right: 30px;
-	font-family: 'FontAwesome';
-	font-style: normal;
+
+
+
+/* Everything below the title and the WWT canvas goes inside a wrapper div to
+ * set global margins that agree with the WWT canvas. */
+
+#wrapper {
+  width: 90%;
+  margin: auto;
 }
 
-.fa-arrow-down {
-	display: none;
-	color: #FBCB1F;
+
+/* Flexbox of tiles for each image */
+
+.flex-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 300px;
+  justify-content: space-around;
 }
+
+.image-container {
+	
+}
+
+.thumbnail {
+	display: block;
+	padding: 2px;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	width: fit-content;
+}
+
+.col_thumb {
+	margin: 5px 0px;
+}
+
 
 
 
