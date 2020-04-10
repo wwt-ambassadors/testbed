@@ -18,39 +18,18 @@
     <Target>orion</Target>
     <ForegroundImageSet>
       <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="IR" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000010231{Q}?g=131" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="0.015915112700651" QuadTreeMap="0123" Projection="Tangent" Name="Orion Nebula Spitzer" FileType=".png" CenterY="-5.59338109097" CenterX="83.6383655257" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="-0.151262042234303" OffsetY="0.179267217168241" BaseTileLevel="0" BaseDegreesPerTile="0.682489467823981" MeanRadius="0" FOV="1.6">
-       <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo), M. Robberto (STScI), HST</Credits>
+        <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo), M. Robberto (STScI), HST</Credits>
         <CreditsUrl>http://gallery.spitzer.caltech.edu/Imagegallery/image.php?image_name=ssc2006-21a</CreditsUrl>
         <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1154245897</ThumbnailUrl>
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="The Great Orion Nebula">
-    <div class="What">What is it?
-      <ul>
-      <li>The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. See where the nebula appears in the constellation Orion.</li>
-      <li>A group of hot, young stars embedded in the cloud lights up much of the nebula.  Other parts of the cloud are cold and dense and appear dark.</li>
-      </ul> 
-    </div>
-    <div class="Process">What is happening?
-      <ul>
-      <li>The embedded stars illuminate the cloud and give extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. Astronomers use the emitted light to identify what elements are present in the gas. For example, red light emitted from the cloud tells us there is hydrogen present. Green light indicates oxygen.</li>
-      <li>In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps.</li>
-      <li>For the most part, the mix of elements inside the cloud does not change.</li>
-      </ul> 
-    </div>
-    <div class="Properties">Properties/Characteristics
-      <ul>
-      <li>Distance from Earth: 1300 light years (1.2 &times; 10<sup>16</sup> km</li>
-      <li>Size: 24 light years across (2.3 &times; 10<sup>14</sup> km)</li>
-      <li>Mass: 2000 solar masses (4 &times; 10<sup>33</sup> kg)</li>
-      <li>Temperature: variable in the cloud, ranges from 10K to 10,000K</li>
-      </ul>
-    </div>
-    <div class="Elements">Elements present/Composition
-      <ul>
-      <li>71&#37; Hydrogen</li> 
-      <li>28&#37; Helium</li>
-      <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, sulfur, chlorine, argon</li>
-    </div>
+      <p>The Orion Nebula is a large cloud of gas and dust about 1300 light years from our Solar System. You can see it with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.</p>
+      <p>The Orion Nebula contains the same amount of gas as about 2000 Suns, and it is about 24 light years across.</p>
+      <p>A group of very hot young stars (called the Trapezium) illuminates the cloud and gives extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. For example, the red emission tells us there is hydrogen in the gas. The green emission tells us there is oxygen in the gas.</p>
+      <p>By analyzing the amounts of light emitted at each wavelength (called a spectrum), astronomers have determined the composition of the gas in the Orion Nebula. Its most plentiful gases are H (71% by mass) and He (28% by mass), with C, N, O, Ne, S, Cl, and Ar also present (summing to 1% by mass). </p>
+      <p>The proportions of H, He, C, N, O, and Ne in the Orion Nebula are very similar to the proportions for those gases in our Sun’s outer layers.</p>
+      <p>Notice that some parts of the cloud appear dark. The dark parts of the cloud are colder and denser than the lit-up parts of the cloud.</p>
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Giant Hubble Mosaic of the Crab Nebula" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
@@ -98,25 +77,6 @@
     <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=sun</ThumbnailUrl>
     </ImageSet>
     <Description Title="Our Sun">
-    <div class="What">What is it?
-      Our Sun is a star, a large dense ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage. 
-    </div>
-    <div class="Process">What is happening?
-    The Sun has so much mass that gravity compresses the gas in the core strongly enough for the hydrogen atoms in the core to fuse to helium. The fusion reaction releases the enormous amount of energy that allows the Sun to shine. The energy released by the fusion reaction pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out.    </div>
-    <div class="Properties">Properties/Characteristics
-      <ul>
-      <li>Distance from Earth: 1 Astronomical Unit (1.5 &times; 10<sup>8</sup> km</li>
-      <li>Radius: 1 solar radius (7 &times; 10<sup>5</sup> km)</li>
-      <li>Mass: 1 solar mass (2 &times; 10<sup>30</sup> kg)</li>
-      <li>Temperature (surface): 5800K</li>
-      </ul>
-    </div>
-    <div class="Elements">Elements present/Composition
-      <ul>
-      <li>71&#37; Hydrogen</li> 
-      <li>27&#37; Helium</li>
-      <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, and iron</li>
-    </div>    
     </Description>
   </Place>
   <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
@@ -165,31 +125,6 @@
     <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Aldebaran">
-    <div class="What">What is it?
-      <ul>
-      <li>Aldebaran is a red star in the constellation, Taurus.  It represents the “eye” of the bull.</li>
-      </ul> 
-    </div>
-    <div class="Process">What is happening?
-      <ul>
-      <li>Aldebaran has run out of hydrogen in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of hydrogen just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star.</li>
-      <li>Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to carbon (which takes more pressure than fusing hydrogen to helium).</li>
-      </ul> 
-    </div>
-    <div class="Properties">Properties/Characteristics
-      <ul>
-      <li>Distance from Earth: 65 light years (6.1 &times; 10<sup>14</sup> km</li>
-      <li>Radius: 44 solar radii (3.1 &times; 10<sup>7</sup> km)</li>
-      <li>Mass: 1.2 solar masses (2.3 &times; 10<sup>30</sup> kg)</li>
-      <li>Temperature (surface): 3,900 K</li>
-      </ul>
-    </div>
-    <div class="Elements">Elements present/Composition
-      <ul>
-      <li>still need to find reference</li>
-      </ul>
-    </div>
-
     </Description>
   </Place>
 
