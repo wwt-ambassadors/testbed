@@ -194,4 +194,21 @@
     </Description>
   </Place>
 
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Constellation" DataSetType="Sky" RA="5.5764999999999993" Dec="-0.33" Constellation="ORI" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <ImageSet FOV="23">
+    <Target>Undefined</Target>
+    </ImageSet>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Taurus Constellation" DataSetType="Sky" RA="4.517" Dec="14.717" Constellation="TAU" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <ImageSet FOV="23">
+    <Target>Undefined</Target>
+    </ImageSet>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Lyra Constellation" DataSetType="Sky" RA="18.8" Dec="38.4" Constellation="LYR" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <ImageSet FOV="13.5">
+    <Target>Undefined</Target>
+    </ImageSet>
+  </Place>
+
+
 </Folder>
