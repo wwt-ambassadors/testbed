@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Folder MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="BUAC Stellar Life Cycles" Group="Explorer" Searchable="False" Type="Earth">
   <VersionDependent>false</VersionDependent>
-  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Hubble Probes the Great Orion Nebula" DataSetType="Sky" RA="5.5883333333333276" Dec="-5.40555555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="3.97833333333333" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.97833333333333">
+  <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Hubble Probes the Great Orion Nebula" DataSetType="Sky" RA="5.5883333333333276" Dec="-5.40555555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="3.97833333333333" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.97833333333333">
     <Target>Undefined</Target>
     <ForegroundImageSet>
       <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:2}.ortho.tiles.virtualearth.net/tiles/wsa0000000302{Q}?g=138" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="75.4310456965389" QuadTreeMap="0123" Projection="Tangent" Name="Hubble Probes the Great Orion Nebula" FileType=".png" CenterY="-5.4055466" CenterX="83.8268692" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0813707558539556" MeanRadius="0" FOV="1.6">
@@ -13,6 +13,15 @@
     <Description Title="Look for baby stars">
       <p>Hubble sees baby stars</p>
     </Description>
+  </Place2>
+  <Place Name="HOPS 68" RA="5.59008331" Dec="-5.1418572" ZoomLevel="1.10071569519368" DataSetType="Sky" Opacity="100" Constellation="">
+    <ForegroundImageSet>
+      <ImageSet DataSetType="Sky" BandPass="Visible" Url="http://www.spitzer.caltech.edu/uploaded_files/images/0007/9046/ssc2011-06c1_Med.jpg" TileLevels="0" WidthFactor="2" Rotation="0.0327671586219935" Projection="SkyImage" FileType=".tif" CenterY="-5.1418572" CenterX="83.8512496" BottomsUp="False" OffsetX="462.282649573171" OffsetY="161.553388241088" BaseTileLevel="0" BaseDegreesPerTile="0.000681332472922861" FOV="0.000681332472922861">
+        <Credits></Credits>
+        <CreditsUrl></CreditsUrl>
+        <ThumbnailUrl>HOPS68_thumbnail.jpg</ThumbnailUrl>
+      </ImageSet>
+    </ForegroundImageSet>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula Spitzer" DataSetType="Sky" RA="5.5808333333333344" Dec="-5.44416666666667" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="19.59" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="19.59">
     <Target>orion</Target>
