@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Folder MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="BUAC Stellar Life Cycles" Group="Explorer" Searchable="False" Type="Earth">
   <VersionDependent>false</VersionDependent>
-  <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Hubble Probes the Great Orion Nebula" DataSetType="Sky" RA="5.5883333333333276" Dec="-5.40555555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="3.97833333333333" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.97833333333333">
-    <Target>Undefined</Target>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Hubble Probes the Great Orion Nebula" DataSetType="Sky" RA="5.5883333333333276" Dec="-5.40555555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="3.97833333333333" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.97833333333333">
+    <Target>orionproplid</Target>
     <ForegroundImageSet>
       <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:2}.ortho.tiles.virtualearth.net/tiles/wsa0000000302{Q}?g=138" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="75.4310456965389" QuadTreeMap="0123" Projection="Tangent" Name="Hubble Probes the Great Orion Nebula" FileType=".png" CenterY="-5.4055466" CenterX="83.8268692" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0813707558539556" MeanRadius="0" FOV="1.6">
         <Credits>Credit: C.R. O'Dell/ Rice University NASA</Credits>
@@ -24,7 +24,7 @@
     </ForegroundImageSet>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula Spitzer" DataSetType="Sky" RA="5.5808333333333344" Dec="-5.44416666666667" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="19.59" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="19.59">
-    <Target>orion</Target>
+    <Target>orionnebula</Target>
     <ForegroundImageSet>
       <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="IR" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000010231{Q}?g=131" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="0.015915112700651" QuadTreeMap="0123" Projection="Tangent" Name="Orion Nebula Spitzer" FileType=".png" CenterY="-5.59338109097" CenterX="83.6383655257" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="-0.151262042234303" OffsetY="0.179267217168241" BaseTileLevel="0" BaseDegreesPerTile="0.682489467823981" MeanRadius="0" FOV="1.6">
         <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo), M. Robberto (STScI), HST</Credits>
@@ -65,6 +65,42 @@
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Crab Nebula : Dead Star Creates Celestial Havoc" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
     <Target>Undefined</Target>
+      <div class="What">
+        <h4>What is it?</h4>
+        <ul>
+        <li>The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. See where the nebula appears in the constellation Orion.</li>
+        <li>A group of hot, young stars embedded in the cloud lights up much of the nebula.  Other parts of the cloud are cold and dense and appear dark.</li>
+        </ul> 
+      </div>
+      <div class="Process">
+        <h4>What is happening?</h4>
+        <ul>
+        <li>The embedded stars illuminate the cloud and give extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. Astronomers use the emitted light to identify what elements are present in the gas. For example, red light emitted from the cloud tells us there is hydrogen present. Green light indicates oxygen.</li>
+        <li>In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps.</li>
+        <li>For the most part, the mix of elements inside the cloud does not change.</li>
+        </ul> 
+      </div>
+      <div class="Properties">
+        <h4>Properties/Characteristics</h4>
+        <ul>
+        <li>Distance from Earth: 1300 light years (1.2 x 10<sup>16</sup> km</li>
+        <li>Size: 24 light years across (2.3 x 10<sup>14</sup> km)</li>
+        <li>Mass: 2000 solar masses (4 x 10<sup>33</sup> kg)</li>
+        <li>Temperature: variable in the cloud, ranges from 10K to 10,000K</li>
+        </ul>
+      </div>
+      <div class="Elements">
+        <h4>Elements present/Composition</h4>
+        <ul>
+        <li>71&#37; Hydrogen</li> 
+        <li>28&#37; Helium</li>
+        <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, sulfur, chlorine, argon</li>
+        </ul>
+      </div>
+    </Description>
+  </Place>
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Crab Nebula : Dead Star Creates Celestial Havoc" DataSetType="Sky" RA="5.5755555555555461" Dec="22.0166666666667" Constellation="TAU" Classification="SupernovaRemnant" Magnitude="0" Distance="0" ZoomLevel="1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="1">
+    <Target>crabnebula</Target>
     <ForegroundImageSet>
       <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:2}.ortho.tiles.virtualearth.net/tiles/wsa0000001102{Q}?g=138" TileLevels="4" WidthFactor="2" Sparse="True" Rotation="-0.0751860195300311" QuadTreeMap="0123" Projection="Tangent" Name="Crab Nebula : Dead Star Creates Celestial Havoc" FileType=".png" CenterY="22.0172769653712" CenterX="83.6331623858263" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.22681269761397" MeanRadius="0" FOV="0.22681269761397">
         <Credits>Credit: NASA, ESA, CXC, JPL-Caltech, J. Hester and A. Loll (Arizona State Univ.), R. Gehrz (Univ. Minn.), and STScI</Credits>
@@ -78,14 +114,14 @@
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Betelgeuse" DataSetType="Sky" RA="5.9194444446666665" Dec="7.406944444" Constellation="ORI" Classification="Star" Magnitude="0.5" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="5">
-      <Target>Custom</Target>
+      <Target>betelgeusestar</Target>
       <ThumbnailUrl>betelgeuse_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Betelgeuse (pronounced Beetlejuice)">
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Ring Nebula (M57)" DataSetType="Sky" RA="18.893055555555591" Dec="33.0283333333333" Constellation="LYR" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="0.565" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.565">
-    <Target>Undefined</Target>
+    <Target>ringnebula</Target>
     <ForegroundImageSet>
       <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:1}.ortho.tiles.virtualearth.net/tiles/wsa0000001201{Q}?g=138" TileLevels="3" WidthFactor="2" Sparse="True" Rotation="33.4150621086519" QuadTreeMap="0123" Projection="Tangent" Name="The Ring Nebula (M57)" FileType=".png" CenterY="33.0294929455291" CenterX="283.395104978147" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0565749886281826" MeanRadius="0" FOV="0.0565749886281826">
         <Credits>Credit: The Hubble Heritage Team (AURA/STScI/NASA)</Credits>
@@ -104,7 +140,7 @@
   </Place>
     <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Sun" DataSetType="Sky" RA="0.21833333" Dec="1.41694444" Constellation="PSC" Classification="SolarSystem" Magnitude="-26.73" Distance="0.99690962291948559" ZoomLevel="4" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="4">
     <ImageSet>
-    <Target>Undefined</Target>
+    <Target>sunstar</Target>
     <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=sun</ThumbnailUrl>
     </ImageSet>
     <Description Title="Our Sun">
@@ -164,7 +200,7 @@
   </Place2>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Sigma Orionis" DataSetType="Sky" RA="5.6455555553333348" Dec="-2.6" Constellation="ORI" Classification="Star" Magnitude="3.81" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="1">
-      <Target>Custom</Target>
+      <Target>sigmaorionis</Target>
       <ThumbnailUrl>sigma_orionis_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Sigma Orionis">
@@ -172,7 +208,7 @@
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Aldebaran" DataSetType="Sky" RA="4.5986111113333337" Dec="16.50916667" Constellation="TAU" Classification="Star" Magnitude="0.85" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="2">
-    <Target>Custom</Target>
+    <Target>aldebaranstar</Target>
     <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Aldebaran">
@@ -205,19 +241,17 @@
 
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Constellation" DataSetType="Sky" RA="5.5764999999999993" Dec="-0.33" Constellation="ORI" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="23">
-    <Target>Undefined</Target>
+    <Target>orionconstellation</Target>
     </ImageSet>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Taurus Constellation" DataSetType="Sky" RA="4.517" Dec="14.717" Constellation="TAU" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="23">
-    <Target>Undefined</Target>
+    <Target>taurusconstellation</Target>
     </ImageSet>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Lyra Constellation" DataSetType="Sky" RA="18.8" Dec="38.4" Constellation="LYR" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="13.5">
-    <Target>Undefined</Target>
+    <Target>lyraconsteallation</Target>
     </ImageSet>
   </Place>
-
-
 </Folder>
