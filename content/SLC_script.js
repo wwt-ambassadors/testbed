@@ -36,11 +36,16 @@
 
     //(variables defined inside a function are not known to other functions)
     loadWtml(function (folder, xml) {
+      // store each of the Place objects from the WTML file in places
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail border_white"><img src=""/></a></div>');
+      var descTemplate = $('<div class="obj_desc container-fluid"><div class="row"><div class="what col-xs-12 col-md-12 col-lg-12">what</div><div class="process col-xs-12 col-md-12 col-lg-12">process</div><div class="properties col-xs-12 col-md-12 col-lg-12">properties</div><div class="elements col-xs-12 col-md-12 col-lg-12">elements</div></div></div>');
 
+      
       places.each(function (i, pl) {
         var place = $(pl);
+        
+        // this is the pre-existing description text populator from Ron's code. Perhaps not relevant to ours
         var descText = '', desc;
         desc = place.find('Description').text().split('\n');
 
@@ -50,8 +55,11 @@
           }
         });
         descText += '<hr><h4>Credits</h4>' + '<p><a href="' + place.find('CreditsUrl').text() + '" target=_blank >' + place.find('Credits').text() + '</p>';
+        // end of Ron's description text code
 
+        // create a temporary object of a thumbnail and of a description element from the templates above 
         var tmp = thumbTemplate.clone();
+        var tmp2 = descTemplate.clone();
 
         tmp.find('img').attr({
           src: place.find('ThumbnailUrl').text(),
@@ -63,15 +71,39 @@
           title: place.find('Description').attr('Title')
         });
 
+        // grab the class = What/Process/Properties/Elements html content for each Plce from the WTML file
+        var targetwhat = place.find('.What').html();
+        console.log("This what is: ", targetwhat);
+        tmp2.find('.what').html(targetwhat);
+          
+        var targetprocess = place.find('.Process').html();
+        console.log("This process is: ", targetprocess);
+        tmp2.find('.process').html(targetprocess);
+          
+        var targetproperties = place.find('.Properties').html();
+        console.log("This properties is: ", targetproperties);
+        tmp2.find('.properties').html(targetproperties);
+          
+        var targetelements = place.find('.Elements').html();
+        console.log("This elements is: ", targetelements);
+        tmp2.find('.elements').html(targetelements);
+    
+          
+        // apply the unique target description class to the description template clone
+        var desc_class = place.find('Target').text().toLowerCase() + "_description";
+        console.log("desc_class: ", desc_class);
+        tmp2.addClass(desc_class);
 
+
+        // add event listener to every thumbnail element, which listens for single- vs. double-click
         function on_click(element, is_dblclick) {
 
           if (wwt_si === null) {
             return;
           };
-          /* hide all descriptions, then show description specific to this target on sgl/dbl click */
 
-          toggle_class = "#" + place.find('Target').text().toLowerCase() + "_description";
+          /* hide all descriptions, then show description specific to this target on sgl/dbl click */
+          var toggle_class = "." + place.find('Target').text().toLowerCase() + "_description";
           $("#description_box").find(".obj_desc").hide();
           $('#begin_container').hide();
           $('#description_container').show();
@@ -148,9 +180,16 @@
           });
 
         $('#destinationThumbs').append(tmp);
+
+		/* I don't think this code does anything, check with Peter
         var fsThumb = tmp.clone(true).find('a');
         fsThumb.find('label').remove();
         $('.player-controls .btn').first().before(tmp);
+		*/
+		  
+        $("#description_container").append(tmp2);
+		  
+	
       });
     });
   };
