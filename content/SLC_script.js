@@ -138,13 +138,29 @@
               }
             });
           } else {
-            wwt_si.setForegroundImageByName(place.attr('Name'));
-            wwt_si.gotoRaDecZoom(
-              parseFloat(place.attr('RA')) * 15,
-              place.attr('Dec'),
-              parseFloat(place.find('ImageSet').attr('FOV')),
-              is_dblclick
-            );
+
+            if (place.attr('Classification') == 'Constellation'){
+              wwt_si.settings.set_showConstellationFigures(true);
+              wwt_si.settings.set_showConstellationLabels(true);
+              wwt_si.gotoRaDecZoom(
+                parseFloat(place.attr('RA')) * 15,
+                place.attr('Dec'),
+                parseFloat(place.find('ImageSet').attr('FOV')),
+                false
+              );
+            } else {
+              wwt_si.settings.set_showConstellationFigures(false);
+              wwt_si.settings.set_showConstellationLabels(false);
+
+              wwt_si.setForegroundImageByName(place.attr('Name'));
+              wwt_si.gotoRaDecZoom(
+                parseFloat(place.attr('RA')) * 15,
+                place.attr('Dec'),
+                parseFloat(place.find('ImageSet').attr('FOV')),
+                is_dblclick
+              );            
+            }
+
           }
         }
 
