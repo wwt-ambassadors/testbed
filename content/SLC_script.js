@@ -162,7 +162,6 @@
             on_click(element, true)
           });
 
-
 		// we'll probably be able to remove this
         tmp.find('i').attr({
           'data-toggle': 'tooltip',
