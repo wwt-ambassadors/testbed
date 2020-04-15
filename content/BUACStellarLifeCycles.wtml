@@ -36,32 +36,36 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="The Great Orion Nebula">
-    <div class="What">What is it?
+    <div class="What">
+      <h4>What is it?</h4>
       <ul>
-      <li>The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. See where the nebula appears in the constellation Orion.</li>
-      <li>A group of hot, young stars embedded in the cloud lights up much of the nebula.  Other parts of the cloud are cold and dense and appear dark.</li>
+        <li>The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. See where the nebula appears in the constellation Orion.</li>
+        <li>A group of hot, young stars embedded in the cloud lights up much of the nebula.  Other parts of the cloud are cold and dense and appear dark.</li>
       </ul> 
     </div>
-    <div class="Process">What is happening?
-      <ul>
-      <li>The embedded stars illuminate the cloud and give extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. Astronomers use the emitted light to identify what elements are present in the gas. For example, red light emitted from the cloud tells us there is hydrogen present. Green light indicates oxygen.</li>
-      <li>In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps.</li>
-      <li>For the most part, the mix of elements inside the cloud does not change.</li>
+    <div class="Process">
+      <h4>What is happening?</h4>
+        <ul>
+        <li>The embedded stars illuminate the cloud and give extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. Astronomers use the emitted light to identify what elements are present in the gas. For example, red light emitted from the cloud tells us there is hydrogen present. Green light indicates oxygen.</li>
+        <li>In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps.</li>
+        <li>For the most part, the mix of elements inside the cloud does not change.</li>
       </ul> 
     </div>
-    <div class="Properties">Properties/Characteristics
+    <div class="Properties">
+      <h4>Properties/Characteristics</h4>
       <ul>
-      <li>Distance from Earth: 1300 light years (1.2 x 10<sup>16</sup> km</li>
-      <li>Size: 24 light years across (2.3 x 10<sup>14</sup> km)</li>
-      <li>Mass: 2000 solar masses (4 x 10<sup>33</sup> kg)</li>
-      <li>Temperature: variable in the cloud, ranges from 10K to 10,000K</li>
+        <li>Distance from Earth: 1300 light years (1.2 x 10<sup>16</sup> km</li>
+        <li>Size: 24 light years across (2.3 x 10<sup>14</sup> km)</li>
+        <li>Mass: 2000 solar masses (4 x 10<sup>33</sup> kg)</li>
+        <li>Temperature: variable in the cloud, ranges from 10K to 10,000K</li>
       </ul>
     </div>
-    <div class="Elements">Elements present/Composition
+    <div class="Elements">
+      <h4>Elements present/Composition</h4>
       <ul>
-      <li>71&#37; Hydrogen</li> 
-      <li>28&#37; Helium</li>
-      <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, sulfur, chlorine, argon</li>
+        <li>71&#37; Hydrogen</li> 
+        <li>28&#37; Helium</li>
+        <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, sulfur, chlorine, argon</li>
       </ul>
     </div>
     </Description>
@@ -110,24 +114,28 @@
     <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=sun</ThumbnailUrl>
     </ImageSet>
     <Description Title="Our Sun">
-    <div class="What">What is it?
-      Our Sun is a star, a large dense ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage. 
+    <div class="What">
+      <h4>What is it?</h4>
+      Our Sun is a star, a large dense ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage.
     </div>
-    <div class="Process">What is happening?
-    The Sun has so much mass that gravity compresses the gas in the core strongly enough for the hydrogen atoms in the core to fuse to helium. The fusion reaction releases the enormous amount of energy that allows the Sun to shine. The energy released by the fusion reaction pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out.    </div>
-    <div class="Properties">Properties/Characteristics
+    <div class="Process">
+      <h4>What is happening?</h4>
+      The Sun has so much mass that gravity compresses the gas in the core strongly enough for the hydrogen atoms in the core to fuse to helium. The fusion reaction releases the enormous amount of energy that allows the Sun to shine. The energy released by the fusion reaction pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out.    </div>
+    <div class="Properties">
+      <h4>Properties/Characteristics</h4>
       <ul>
-      <li>Distance from Earth: 1 Astronomical Unit (1.5 x 10<sup>8</sup> km</li>
-      <li>Radius: 1 solar radius (7 x 10<sup>5</sup> km)</li>
-      <li>Mass: 1 solar mass (2 x 10<sup>30</sup> kg)</li>
-      <li>Temperature (surface): 5800K</li>
+        <li>Distance from Earth: 1 Astronomical Unit (1.5 x 10<sup>8</sup> km</li>
+        <li>Radius: 1 solar radius (7 x 10<sup>5</sup> km)</li>
+        <li>Mass: 1 solar mass (2 x 10<sup>30</sup> kg)</li>
+        <li>Temperature (surface): 5800K</li>
       </ul>
     </div>
-    <div class="Elements">Elements present/Composition
+    <div class="Elements">
+      <h4>Elements present/Composition</h4>
       <ul>
-      <li>71&#37; Hydrogen</li> 
-      <li>27&#37; Helium</li>
-      <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, and iron</li>
+        <li>71&#37; Hydrogen</li> 
+        <li>27&#37; Helium</li>
+        <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, and iron</li>
       </ul>
     </div>    
     </Description>
@@ -142,7 +150,7 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Cat's Eye Nebula">
-      <p>Cats Eye is also a planetary nebula</p>
+      <p>Cat's Eye is also a planetary nebula</p>
     </Description>
   </Place2>
 
@@ -178,28 +186,32 @@
     <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Aldebaran">
-    <div class="What">What is it?
+    <div class="What">
+      <h4>What is it?</h4>
       <ul>
-      <li>Aldebaran is a red star in the constellation, Taurus.  It represents the “eye” of the bull.</li>
+        <li>Aldebaran is a red star in the constellation, Taurus.  It represents the “eye” of the bull.</li>
       </ul> 
     </div>
-    <div class="Process">What is happening?
+    <div class="Process">
+      <h4>What is happening?</h4>
       <ul>
-      <li>Aldebaran has run out of hydrogen in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of hydrogen just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star.</li>
-      <li>Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to carbon (which takes more pressure than fusing hydrogen to helium).</li>
+        <li>Aldebaran has run out of hydrogen in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of hydrogen just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star.</li>
+        <li>Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to carbon (which takes more pressure than fusing hydrogen to helium).</li>
       </ul> 
     </div>
-    <div class="Properties">Properties/Characteristics
+    <div class="Properties">
+      <h4>Properties/Characteristics</h4>
       <ul>
-      <li>Distance from Earth: 65 light years (6.1 x 10<sup>14</sup> km</li>
-      <li>Radius: 44 solar radii (3.1 x 10<sup>7</sup> km)</li>
-      <li>Mass: 1.2 solar masses (2.3 x 10<sup>30</sup> kg)</li>
-      <li>Temperature (surface): 3,900 K</li>
+        <li>Distance from Earth: 65 light years (6.1 x 10<sup>14</sup> km</li>
+        <li>Radius: 44 solar radii (3.1 x 10<sup>7</sup> km)</li>
+        <li>Mass: 1.2 solar masses (2.3 x 10<sup>30</sup> kg)</li>
+        <li>Temperature (surface): 3,900 K</li>
       </ul>
     </div>
-    <div class="Elements">Elements present/Composition
+    <div class="Elements">
+      <h4>Elements present/Composition</h4>
       <ul>
-      <li>still need to find reference</li>
+        <li>still need to find reference</li>
       </ul>
     </div>
     </Description>
