@@ -15,17 +15,19 @@
       <p>Hubble sees baby stars</p>
     </Description>
   </Place2>
+  -->
 
-  <Place Name="HOPS 68" RA="5.59008331" Dec="-5.1418572" ZoomLevel="1.10071569519368" DataSetType="Sky" Opacity="100" Constellation="">
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="HOPS 68" DataSetType="Sky" RA="5.591333333" Dec="-5.15" Constellation="VIR" Classification="Unidentified" Magnitude="0" Distance="0" ZoomLevel="3.49" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.49">
+    <Target>Custom</Target>
     <ForegroundImageSet>
-      <ImageSet DataSetType="Sky" BandPass="Visible" Url="http://www.spitzer.caltech.edu/uploaded_files/images/0007/9046/ssc2011-06c1_Med.jpg" TileLevels="0" WidthFactor="2" Rotation="0.0327671586219935" Projection="SkyImage" FileType=".tif" CenterY="-5.1418572" CenterX="83.8512496" BottomsUp="False" OffsetX="462.282649573171" OffsetY="161.553388241088" BaseTileLevel="0" BaseDegreesPerTile="0.000681332472922861" FOV="0.000681332472922861">
-        <Credits></Credits>
-        <CreditsUrl></CreditsUrl>
+      <ImageSet Name="HOPS 68" DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://www.spitzer.caltech.edu/uploaded_files/images/0007/9046/ssc2011-06c1_Med.jpg" TileLevels="0" WidthFactor="1" Sparse="False" Rotation="0.0327671586219935" QuadTreeMap="" Projection="SkyImage" FileType=".jpg" CenterY="-5.2756498433051791" CenterX="83.907803091754644" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="612.165595583851" OffsetY="64.600102050693337" BaseTileLevel="0" BaseDegreesPerTile="0.0003690619088841799" ReferenceFrame="" MeanRadius="0" FOV="0.4">
+        <Credits>NASA/JPL-Caltech/T. Megeath (University of Toledo, Ohio)</Credits>
+        <CreditsUrl>http://www.spitzer.caltech.edu/images/3635-ssc2011-06c1-Protostar-HOPS-68-in-Orion</CreditsUrl>
         <ThumbnailUrl>HOPS68_thumbnail.jpg</ThumbnailUrl>
       </ImageSet>
     </ForegroundImageSet>
   </Place>
-      -->
+
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Nebula Spitzer" DataSetType="Sky" RA="5.5808333333333344" Dec="-5.44416666666667" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="19.59" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="19.59">
     <Target>orionnebula</Target>
     <ForegroundImageSet>
