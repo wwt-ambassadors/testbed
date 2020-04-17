@@ -27,15 +27,20 @@
 	</head>
 	
 	<body>
-		<div id="wwtcanvas">
-			<h1 id="page_title">Life Cycle of Stars</h1>
-			<div id="zoom_pan_instrux">
-				To zoom, scroll in and out (or press Z/X on your keyboard)<br>
-				To pan around, click and drag (or press J/L/I/K on your keyboard)
-			</div>
-		</div>
-		<div class="container-fluid main_container">
-			<div class="d-flex flex-wrap justify-content-between" style="margin-top:16px" id="destinationThumbs"></div>
+        <div class="top_container">
+            <div class="thumb_gutter">
+                <div id="destinationThumbs" class="d-flex flex-wrap"></div>
+            </div>
+            <div id="wwtcanvas">
+                <h1 id="page_title">Life Cycle of Stars</h1>
+                <div id="zoom_pan_instrux">
+                    To zoom, scroll in and out (or press Z/X on your keyboard)<br>
+                    To pan around, click and drag (or press J/L/I/K on your keyboard)
+                </div>
+            </div>
+        </div>
+		<div class="container-fluid bottom_container">
+<!--			<div class="d-flex flex-wrap justify-content-between" style="margin-top:16px" id="destinationThumbs"></div>-->
 			<div id="description_box" ss-container>
 				<div id="begin_container">
 					<p>Click on one of the thumbnails above to fly to the selected object.</p>
@@ -98,7 +103,7 @@
 		
 
 		<div id="colophon">
-			<p>Copyright 2020 the <a href="//wwtambassadors.org">WWT Ambassadors</a> program. Powered by <a href="http://worldwidetelescope.org/">AAS WorldWide Telescope</a> from the <a href="https://aas.org/">American Astronomical Society</a>&nbsp;<a href="http://worldwidetelescope.org/"><img src="logo_wwt.png"></a> <a href="https://aas.org/"><img src="logo_aas.png"></a>
+			<p>Copyright 2020 the <a href="//wwtambassadors.org" class="colophon_link">WWT Ambassadors</a> program. Powered by <a href="http://worldwidetelescope.org/" class="colophon_link">AAS WorldWide Telescope</a> from the <a href="https://aas.org/" class="colophon_link">American Astronomical Society</a>&nbsp;<a href="http://worldwidetelescope.org/"><img src="logo_wwt.png"></a> <a href="https://aas.org/"><img src="logo_aas.png"></a>
 			</p>
 		</div>
 
