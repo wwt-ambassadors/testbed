@@ -40,21 +40,14 @@
     <Description Title="The Great Orion Nebula">
     <div class="What">
       <h4>What is it?</h4>
-      <ul>
-        <li>The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. See where the nebula appears in the constellation Orion.</li>
-        <li>A group of hot, young stars embedded in the cloud lights up much of the nebula.  Other parts of the cloud are cold and dense and appear dark.</li>
-      </ul> 
+      The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. See where the nebula appears in the constellation Orion. A group of hot, young stars embedded in the cloud lights up much of the nebula. Other parts of the cloud are cold and dense and appear dark.
     </div>
     <div class="Process">
       <h4>What is happening?</h4>
-        <ul>
-        <li>The embedded stars illuminate the cloud and give extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. Astronomers use the emitted light to identify what elements are present in the gas. For example, red light emitted from the cloud tells us there is hydrogen present. Green light indicates oxygen.</li>
-        <li>In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps.</li>
-        <li>For the most part, the mix of elements inside the cloud does not change.</li>
-      </ul> 
+      The embedded stars illuminate the cloud and give extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. Astronomers use the emitted light to identify what elements are present in the gas. For example, red light emitted from the cloud tells us there is <a href="#">hydrogen</a> present. Green light indicates <a href="#">oxygen</a>. In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps. For the most part, the mix of elements inside the cloud does not change.
     </div>
     <div class="Properties">
-      <h4>Properties/Characteristics</h4>
+      <h4>Properties / Characteristics</h4>
       <ul>
         <li>Distance from Earth: 1300 light years (1.2 x 10<sup>16</sup> km</li>
         <li>Size: 24 light years across (2.3 x 10<sup>14</sup> km)</li>
@@ -63,11 +56,11 @@
       </ul>
     </div>
     <div class="Elements">
-      <h4>Elements present/Composition</h4>
+      <h4>Elements present / Composition</h4>
       <ul>
-        <li>71&#37; Hydrogen</li> 
-        <li>28&#37; Helium</li>
-        <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, sulfur, chlorine, argon</li>
+        <li>71&#37; <a href="#">hydrogen</a></li> 
+        <li>28&#37; <a href="#">helium</a></li>
+        <li>Trace amounts of heavier elements, like <a href="#">carbon</a>, <a href="#">nitrogen</a>, <a href="#">oxygen</a>, <a href="#">neon</a>, <a href="#">sulfur</a>, <a href="#">chlorine</a>, <a href="#">argon</a></li>
       </ul>
     </div>
     </Description>
@@ -102,12 +95,10 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Ring Nebula">
-      <p>The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star.  The Ring Nebula is about 1 light year in diameter and is about 2,300 light years from our Solar System.</p>
-      <p>The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. However, it is roughly 30 times smaller than our Sun in diameter and is only 0.6 times its mass.</p>
-      <p>The star in the middle of the nebula is mostly made of carbon, surrounded by an outer shell of helium. Nuclear fusion is no longer happening in the star. It shines brightly because it is very very hot.</p>
-      <p>The hot central star energizes the gas in the nebula and causes the atoms in the gas to emit light at specific wavelengths.  Green emission shows that there is oxygen in the gas.  Red indicates hydrogen and nitrogen. The gas in the nebula is mostly hydrogen and helium with trace amounts of heavier elements.</p>
-      <p>Measurements show that the Ring Nebula is expanding very slowly over time, with a velocity of about 25 km/s.</p>
-
+      <div class="What">
+        <h4>What is it?</h4>
+        The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star.  The Ring Nebula is about 1 light year in diameter and is about 2,300 light years from our Solar System. The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. However, it is roughly 30 times smaller than our Sun in diameter and is only 0.6 times its mass. The star in the middle of the nebula is mostly made of carbon, surrounded by an outer shell of helium. Nuclear fusion is no longer happening in the star. It shines brightly because it is very very hot. The hot central star energizes the gas in the nebula and causes the atoms in the gas to emit light at specific wavelengths.  Green emission shows that there is oxygen in the gas.  Red indicates hydrogen and nitrogen. The gas in the nebula is mostly hydrogen and helium with trace amounts of heavier elements. Measurements show that the Ring Nebula is expanding very slowly over time, with a velocity of about 25 km/s.
+      </div>
     </Description>
   </Place>
     <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Sun" DataSetType="Sky" RA="0.21833333" Dec="1.41694444" Constellation="PSC" Classification="SolarSystem" Magnitude="-26.73" Distance="0.99690962291948559" ZoomLevel="4" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="4">
@@ -116,30 +107,30 @@
     <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=sun</ThumbnailUrl>
     </ImageSet>
     <Description Title="Our Sun">
-    <div class="What">
-      <h4>What is it?</h4>
-      Our Sun is a star, a large dense ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage.
-    </div>
-    <div class="Process">
-      <h4>What is happening?</h4>
-      The Sun has so much mass that gravity compresses the gas in the core strongly enough for the hydrogen atoms in the core to fuse to helium. The fusion reaction releases the enormous amount of energy that allows the Sun to shine. The energy released by the fusion reaction pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out.    </div>
-    <div class="Properties">
-      <h4>Properties/Characteristics</h4>
-      <ul>
-        <li>Distance from Earth: 1 Astronomical Unit (1.5 x 10<sup>8</sup> km</li>
-        <li>Radius: 1 solar radius (7 x 10<sup>5</sup> km)</li>
-        <li>Mass: 1 solar mass (2 x 10<sup>30</sup> kg)</li>
-        <li>Temperature (surface): 5800K</li>
-      </ul>
-    </div>
-    <div class="Elements">
-      <h4>Elements present/Composition</h4>
-      <ul>
-        <li>71&#37; Hydrogen</li> 
-        <li>27&#37; Helium</li>
-        <li>Trace amounts of heavier elements, like carbon, nitrogen, oxygen, neon, and iron</li>
-      </ul>
-    </div>    
+      <div class="What">
+        <h4>What is it?</h4>
+        Our Sun is a star, a large dense ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage.
+      </div>
+      <div class="Process">
+        <h4>What is happening?</h4>
+        The Sun has so much mass that gravity compresses the gas in the core strongly enough for the <a href="#">hydrogen</a> atoms in the core to fuse to <a href="#">helium</a>. The fusion reaction releases the enormous amount of energy that allows the Sun to shine. The energy released by the fusion reaction pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out.    </div>
+      <div class="Properties">
+        <h4>Properties / Characteristics</h4>
+        <ul>
+          <li>Distance from Earth: 1 Astronomical Unit (1.5 x 10<sup>8</sup> km)</li>
+          <li>Radius: 1 solar radius (7 x 10<sup>5</sup> km)</li>
+          <li>Mass: 1 solar mass (2 x 10<sup>30</sup> kg)</li>
+          <li>Temperature (surface): 5800K</li>
+        </ul>
+      </div>
+      <div class="Elements">
+        <h4>Elements present / Composition</h4>
+        <ul>
+          <li>71&#37; <a href="#">hydrogen</a></li> 
+          <li>27&#37; <a href="#">helium</a></li>
+          <li>Trace amounts of heavier elements, like <a href="#">carbon</a>, <a href="#">nitrogen</a>, <a href="#">oxygen</a>, <a href="#">neon</a>, and <a href="#">iron</a></li>
+        </ul>
+      </div>    
     </Description>
   </Place>
   <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
@@ -190,19 +181,14 @@
     <Description Title="Aldebaran">
     <div class="What">
       <h4>What is it?</h4>
-      <ul>
-        <li>Aldebaran is a red star in the constellation, Taurus.  It represents the “eye” of the bull.</li>
-      </ul> 
+      Aldebaran is a red star in the constellation, Taurus.  It represents the “eye” of the bull.
     </div>
     <div class="Process">
       <h4>What is happening?</h4>
-      <ul>
-        <li>Aldebaran has run out of hydrogen in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of hydrogen just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star.</li>
-        <li>Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to carbon (which takes more pressure than fusing hydrogen to helium).</li>
-      </ul> 
+      Aldebaran has run out of <a href="#">hydrogen</a> in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of <a href="#">hydrogen</a> just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star. Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to <a href="#">carbon</a> (which takes more pressure than fusing hydrogen to helium).
     </div>
     <div class="Properties">
-      <h4>Properties/Characteristics</h4>
+      <h4>Properties / Characteristics</h4>
       <ul>
         <li>Distance from Earth: 65 light years (6.1 x 10<sup>14</sup> km</li>
         <li>Radius: 44 solar radii (3.1 x 10<sup>7</sup> km)</li>
@@ -211,7 +197,7 @@
       </ul>
     </div>
     <div class="Elements">
-      <h4>Elements present/Composition</h4>
+      <h4>Elements present / Composition</h4>
       <ul>
         <li>still need to find reference</li>
       </ul>
