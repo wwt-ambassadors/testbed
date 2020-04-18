@@ -53,19 +53,6 @@ a, a:hover {
 
 /* Thumbnails. Flexbox of tiles for each image */
 
-
-
-/*
-I DON'T THINK THIS IS BEING USED - HOH
-.flex-container {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 300px;
-  justify-content: space-around;
-}
-*/
-
 .thumb_gutter {
     width: 260px;
     min-width: 260px;
@@ -165,8 +152,20 @@ I DON'T THINK THIS IS BEING USED - HOH
 	display: none;
 }
 
-#description_box row p {
+#description_box .row * + div {
+	margin-top: 1em;
+}
+
+#description_box .row h4 {
+	color: #8aff8a;
+}
+
+#description_box .row p {
 	font-size: 0.6em;
+}
+
+#description_box .row a {
+	color: #41BEEC;
 }
 
 #description_box i {
