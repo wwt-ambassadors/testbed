@@ -113,6 +113,20 @@ a, a:hover {
 	-webkit-user-select: none;
 }
 
+#wwtcanvas i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+/*	font-family: 'FontAwesome';*/
+    font-family: "Font Awesome 5 Free";
+    color: #41BEEC80;
+    display: block;
+}
+
+#wwtcanvas i:hover{
+    color: #41BEEC;
+}
+
 #zoom_pan_instrux {
 	position: absolute;
 	bottom: 20px;
@@ -171,14 +185,19 @@ a, a:hover {
 #description_box i {
 	position: absolute;
 	bottom: 10px;
-	right: 30px;
-	font-family: 'FontAwesome';
+	right: 20px;
+/*	font-family: 'FontAwesome';*/
+    font-family: "Font Awesome 5 Free";
 	font-style: normal;
+}
+
+#scroll_arrow {
+    display: none;
+	color: #44ff44; /* considered #FBCB1F alternate color */
 }
 
 .fa-arrow-down {
 	display: none;
-	color: #44ff44; /* considered #FBCB1F alternate color */
 }
 
 
