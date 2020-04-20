@@ -21,7 +21,12 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
+<!--        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+        
+        <!--  load font-awesome version 5, can prob remove the link to FA-4 above  -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
 	
 		<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
@@ -33,14 +38,14 @@
             </div>
             <div id="wwtcanvas">
                 <h1 id="page_title">Life Cycle of Stars</h1>
+                <i class="fas fa-redo-alt"></i>
                 <div id="zoom_pan_instrux">
-                    To zoom, scroll in and out (or press Z/X on your keyboard)<br>
-                    To pan around, click and drag (or press J/L/I/K on your keyboard)
+                    To zoom, scroll in and out (or press <strong>Z-X</strong> on your keyboard)<br>
+                    To pan around, click and drag (or press <strong>J-L-I-K</strong> on your keyboard)
                 </div>
             </div>
         </div>
 		<div class="container-fluid bottom_container">
-<!--			<div class="d-flex flex-wrap justify-content-between" style="margin-top:16px" id="destinationThumbs"></div>-->
 			<div id="description_box" ss-container>
 				<div id="begin_container">
 					<p>Click on one of the thumbnails above to fly to the selected object.</p>
@@ -48,36 +53,13 @@
 				</div>
 				<div id="description_container">
 				</div>
-				<i class="fas fa-arrow-down"></i>
+				<i id="scroll_arrow" class="fas fa-arrow-down"></i>
 			</div>
 			<br>
 		</div>
 
-<!-- This copies Ron's analogous code that appears in the Planet Explorer - doesn't seem to be necessary, but keep for now just in case.
-	<div class="hide" id="destinationInfo">
-		<div id="mdlOrionNebula" imgUrl="http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1556539595" imgHover="Orion Nebula" credits="Fill in later">
-			
-			<h2>Orion Nebula</h2>
-			<p>NASA's Spitzer and Hubble Space Telescopes have teamed up to expose the chaos that baby stars are creating</p>
-		</div>
-		<div id="mdlRingNebula" imgUrl="http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1808329735" imgHover="Ring Nebula" credits="Fill in later">
-			<h2>Ring Nebula</h2>
-			<p>This is the Ring Nebula</p>
-		</div>
-	
-		<div id="mdlCrabNebula" imgUrl="http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=314237335" imgHover="Crab Nebula" credits="Fill in later">
-			<h2>Crab Nebula</h2>
-			<p>Horrendous Space Kablooie</p>
-		</div>
-	</div>
-
-	<br/>
--->
-		
-		
-
 		<div id="colophon">
-			<p>Copyright 2020 the <a href="//wwtambassadors.org" class="colophon_link">WWT Ambassadors</a> program. Powered by <a href="http://worldwidetelescope.org/" class="colophon_link">AAS WorldWide Telescope</a> from the <a href="https://aas.org/" class="colophon_link">American Astronomical Society</a>&nbsp;<a href="http://worldwidetelescope.org/"><img src="logo_wwt.png"></a> <a href="https://aas.org/"><img src="logo_aas.png"></a>
+			<p>Copyright 2020 the <a href="//wwtambassadors.org" class="colophon_link">WWT Ambassadors</a> program. Powered by <a href="http://worldwidetelescope.org/" class="colophon_link">AAS WorldWide Telescope</a> from the <a href="https://aas.org/" class="colophon_link">American Astronomical Society</a>&nbsp;<a href="http://worldwidetelescope.org/"><img src="logo_wwt.png" alt="WorldWide Telescope"></a> <a href="https://aas.org/"><img src="logo_aas.png" img="American Astronomical Society"></a>
 			</p>
 		</div>
 

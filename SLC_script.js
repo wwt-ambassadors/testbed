@@ -416,14 +416,14 @@
   
   // when user scrolls to bottom of the description container, remove the down arrow icon. Add it back when scrolling back up.
   $('#description_container').on('scroll', function(event) {
-	var element = event.target;
+	  var element = event.target;
     
-	if(element.scrollHeight - element.scrollTop === element.clientHeight) {
-	  console.log("reached bottom!");
-	  $('.fa-arrow-down').fadeOut(200);
-	}
-	else {
-	  $('.fa-arrow-down').show();
+    if(element.scrollHeight - element.scrollTop === element.clientHeight) {
+      console.log("reached bottom!");
+      $('.fa-arrow-down').fadeOut(200);
+    }
+    else {
+      $('.fa-arrow-down').show();
     }
   })
 	
