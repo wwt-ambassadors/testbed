@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Folder MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="BUAC Stellar Life Cycles" Group="Explorer" Searchable="False" Type="Earth">
   <VersionDependent>false</VersionDependent>
-  <!--
-  <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Hubble Probes the Great Orion Nebula" DataSetType="Sky" RA="5.5883333333333276" Dec="-5.40555555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="3.97833333333333" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.97833333333333">
-    <Target>orionproplid</Target>
-    <ForegroundImageSet>
-      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:2}.ortho.tiles.virtualearth.net/tiles/wsa0000000302{Q}?g=138" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="75.4310456965389" QuadTreeMap="0123" Projection="Tangent" Name="Hubble Probes the Great Orion Nebula" FileType=".png" CenterY="-5.4055466" CenterX="83.8268692" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0813707558539556" MeanRadius="0" FOV="1.6">
-        <Credits>Credit: C.R. O'Dell/ Rice University NASA</Credits>
-        <CreditsUrl>http://hubblesite.org/newscenter/newsdesk/archive/releases/1994/10/</CreditsUrl>
-        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=1556539595</ThumbnailUrl>
-      </ImageSet>
-    </ForegroundImageSet>
-    <Description Title="Look for baby stars">
-      <p>Hubble sees baby stars</p>
-    </Description>
-  </Place2>
-  -->
+
+  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Cosmic Microwave Background" DataSetType="Sky" RA="5.5764999999999993" Dec="-0.33" Constellation="ORI" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+    <ImageSet FOV="60">
+    <Target>CosmicMicrowaveBackground</Target>
+    <ThumbnailUrl>CMB_thumbnail.png</ThumbnailUrl>
+    </ImageSet>
+  </Place>
 
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="HOPS 68" DataSetType="Sky" RA="5.591333333" Dec="-5.15" Constellation="VIR" Classification="Unidentified" Magnitude="0" Distance="0" ZoomLevel="3.49" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="3.49">
     <Target>Custom</Target>
@@ -78,7 +70,7 @@
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Betelgeuse" DataSetType="Sky" RA="5.9194444446666665" Dec="7.406944444" Constellation="ORI" Classification="Star" Magnitude="0.5" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
-    <ImageSet FOV="5">
+    <ImageSet FOV="8">
       <Target>betelgeusestar</Target>
       <ThumbnailUrl>betelgeuse_thumbnail.png</ThumbnailUrl>
     </ImageSet>
@@ -133,38 +125,7 @@
       </div>    
     </Description>
   </Place>
-  <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="The Cat's Eye Nebula" DataSetType="Sky" RA="17.9758333333333" Dec="66.6330555555555" Constellation="DRA" Classification="PlanetaryNebula" Magnitude="0" Distance="0" ZoomLevel="0.5" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="0.5">
-    <Target>Undefined</Target>
-    <ForegroundImageSet>
-      <ImageSet DemUrl="" MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://r{S:3}.ortho.tiles.virtualearth.net/tiles/wsa0000001323{Q}?g=138" TileLevels="2" WidthFactor="2" Sparse="True" Rotation="138.242506357374" QuadTreeMap="0123" Projection="Tangent" Name="The Cat's Eye Nebula" FileType=".png" CenterY="66.6330405" CenterX="269.6378124" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="0.0131133365015532" MeanRadius="0" FOV="0.0131133365015532">
-        <Credits>Credit: J.P. Harrington and K.J. Borkowski (University of Maryland), and NASA</Credits>
-        <CreditsUrl>http://hubblesite.org/newscenter/newsdesk/archive/releases/1995/01/</CreditsUrl>
-        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=249096520</ThumbnailUrl>
-      </ImageSet>
-    </ForegroundImageSet>
-    <Description Title="Cat's Eye Nebula">
-      <p>Cat's Eye is also a planetary nebula</p>
-    </Description>
-  </Place2>
 
-  <Place2 MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Chaos at the Heart of Orion" DataSetType="Sky" RA="5.5877777777777808" Dec="-5.423055555555556" Constellation="ORI" Classification="Nebula" Magnitude="0" Distance="0" ZoomLevel="36.466666666666669" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="36.466666666666669">
-    <Target>undefined</Target>
-    <ForegroundImageSet>
-      <ImageSet MSRCommunityId="0" MSRComponentId="0" Permission="0" Generic="False" DataSetType="Sky" BandPass="Visible" Url="http://www.worldwidetelescope.org/wwtweb/tiles.aspx?q={1},{2},{3},jn036" TileLevels="5" WidthFactor="2" Sparse="True" Rotation="-102.69999999999992" QuadTreeMap="" Projection="Tangent" Name="Chaos at the Heart of Orion" FileType=".png" CenterY="-5.388545276844563" CenterX="83.815189672738725" BottomsUp="False" StockSet="False" ElevationModel="False" OffsetX="0" OffsetY="0" BaseTileLevel="0" BaseDegreesPerTile="5.5653511859421947" MeanRadius="0" FOV="5.5653511859421947">
-        <Credits>Copyright Jack Newton All Rights Reserved</Credits>
-        <CreditsUrl>http://www.jacknewton.com/</CreditsUrl>
-        <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=jn036</ThumbnailUrl>
-      </ImageSet>
-    </ForegroundImageSet>
-    <Description Title="The Great Orion Nebula">
-      <p>The Orion Nebula is a large cloud of gas and dust about 1300 light years from our Solar System. You can see it with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.</p>
-      <p>The Orion Nebula contains the same amount of gas as about 2000 Suns, and it is about 24 light years across.</p>
-      <p>A group of very hot young stars (called the Trapezium) illuminates the cloud and gives extra energy to the gas, which causes the atoms in the gas to emit light at very specific wavelengths. For example, the red emission tells us there is hydrogen in the gas. The green emission tells us there is oxygen in the gas.</p>
-      <p>By analyzing the amounts of light emitted at each wavelength (called a spectrum), astronomers have determined the composition of the gas in the Orion Nebula. Its most plentiful gases are H (71% by mass) and He (28% by mass), with C, N, O, Ne, S, Cl, and Ar also present (summing to 1% by mass). </p>
-      <p>The proportions of H, He, C, N, O, and Ne in the Orion Nebula are very similar to the proportions for those gases in our Sun’s outer layers.</p>
-      <p>Notice that some parts of the cloud appear dark. The dark parts of the cloud are colder and denser than the lit-up parts of the cloud.</p>
-    </Description>
-  </Place2>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Sigma Orionis" DataSetType="Sky" RA="5.6455555553333348" Dec="-2.6" Constellation="ORI" Classification="Star" Magnitude="3.81" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="1">
       <Target>sigmaorionis</Target>
@@ -174,7 +135,7 @@
     </Description>
   </Place>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Aldebaran" DataSetType="Sky" RA="4.5986111113333337" Dec="16.50916667" Constellation="TAU" Classification="Star" Magnitude="0.85" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
-    <ImageSet FOV="2">
+    <ImageSet FOV="4">
     <Target>aldebaranstar</Target>
     <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
     </ImageSet>
