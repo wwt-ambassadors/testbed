@@ -4,7 +4,7 @@
 
   // The WWT WWTControl singleton.
   var wwt_ctl = null;
-	
+    
   // track whether user has panned or zoomed yet.
   var click_counter = 0;
   var zoom_counter = 0;
@@ -63,7 +63,7 @@
 
         tmp.find('img').attr({
           src: place.find('ThumbnailUrl').text(),
-		  class: 'border_black',
+          class: 'border_black',
           alt: place.attr('Name'),
           'data-toggle': 'tooltip',
           'data-placement': 'top',
@@ -107,41 +107,44 @@
           $("#description_box").find(".obj_desc").hide();
           $('#begin_container').hide();
           $('#description_container').show();
-			
+            
           $(toggle_class).show();
 
           //	Change the border color of the selected thumbnail
           var element = element;
-			
+            
           $(".thumbnail img").removeClass("border_yellow").addClass("border_black");
           $(element).removeClass("border_black").addClass("border_yellow");
-			
-		  //trying to make arrow appear only for overflow
-		  var desc_box = $('#description_container')[0];
-		  
+            
+          //trying to make arrow appear only for overflow
+          var desc_box = $('#description_container')[0];
+          
           if(desc_box.scrollHeight > desc_box.clientHeight) {
             console.log("need arrow");
             $('.fa-arrow-down').show();
           }
-	      else {
+          else {
             $('.fa-arrow-down').hide();
-		  }
+          }
 
           if (place.attr('Classification') == 'SolarSystem') {
             // This is a solar system object. In order to view it correctly,
             // we need to find its associated wwtlib "Place" object and seek
             // to it thusly. The get_camParams() function calculates its
             // current RA and Dec.
+            wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+
             $.each(folder.get_children(), function (i, wwtplace) {
               if (wwtplace.get_name() == place.attr('Name')) {
                 wwt_ctl.gotoTarget3(wwtplace.get_camParams(), false, is_dblclick);
               }
             });
-          } else {
 
-            if (place.attr('Classification') == 'Constellation'){
-              wwt_si.settings.set_showConstellationFigures(true);
-              wwt_si.settings.set_showConstellationLabels(true);
+          } else {
+            
+            if (place.attr('Name') == 'Cosmic Microwave Background') {
+              wwt_si.setBackgroundImageByName('Planck CMB');
+
               wwt_si.gotoRaDecZoom(
                 parseFloat(place.attr('RA')) * 15,
                 place.attr('Dec'),
@@ -149,10 +152,26 @@
                 false
               );
             } else {
+
+            if (place.attr('Classification') == 'Constellation'){
+              wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+              wwt_si.settings.set_showConstellationFigures(true);
+              wwt_si.settings.set_showConstellationLabels(true);
+
+              wwt_si.gotoRaDecZoom(
+                parseFloat(place.attr('RA')) * 15,
+                place.attr('Dec'),
+                parseFloat(place.find('ImageSet').attr('FOV')),
+                false
+              );
+            } else {
+
+              wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
               wwt_si.settings.set_showConstellationFigures(false);
               wwt_si.settings.set_showConstellationLabels(false);
 
               wwt_si.setForegroundImageByName(place.attr('Name'));
+
               wwt_si.gotoRaDecZoom(
                 parseFloat(place.attr('RA')) * 15,
                 place.attr('Dec'),
@@ -160,25 +179,25 @@
                 is_dblclick
               );            
             }
-
           }
         }
+      }
 
         tmp.find('a')
           .data('foreground-image', place.attr('Name'))
           //'click' - false; 'dblclick' - true.  on('click', function () { on_click(false) });
 
           .on('click', function(event){
-			var element = event.target;
+            var element = event.target;
             on_click(element, false)
           })
 
           .on('dblclick', function(event){
-			var element = event.target;
+            var element = event.target;
             on_click(element, true)
           });
 
-		// we'll probably be able to remove this
+        // we'll probably be able to remove this
         tmp.find('i').attr({
           'data-toggle': 'tooltip',
           'data-placement': 'top',
@@ -196,15 +215,15 @@
 
         $('#destinationThumbs').append(tmp);
 
-		/* I don't think this code does anything, check with Peter
+        /* I don't think this code does anything, check with Peter
         var fsThumb = tmp.clone(true).find('a');
         fsThumb.find('label').remove();
         $('.player-controls .btn').first().before(tmp);
-		*/
-		  
+        */
+          
         $("#description_container").append(tmp2);
-		  
-	
+          
+    
       });
     });
   };
@@ -242,8 +261,8 @@
     }, 1500);
     //trigger size_content function again after thumbnails have started loading
     setTimeout(function() {
-		size_content();
-	}, 500);
+        size_content();
+    }, 500);
   };
 
 
@@ -257,12 +276,12 @@
 
     // Constants here must be synced with settings in style.css
     const new_wwt_width = (top_container.width() - thumb_gutter.width());
-	  // subtract 52 to account for the margin and border in .css file
+      // subtract 52 to account for the margin and border in .css file
     const thumbs_height = thumb_gutter.outerHeight(true);
     // const new_wwt_height = ((0.5 * container.height()) - 52);
     const new_wwt_height = top_container.height() - 2;  //set wwt_canvas height to fill top_container, subtract 2 to account for border width
     const colophon_height = $("#colophon").height();
-	  // subtract 20 to account for the margin in .css file, and give a little wiggle room
+      // subtract 20 to account for the margin in .css file, and give a little wiggle room
     
     const bottom_height = container.height() - top_container.outerHeight() - 50;
     const description_height = bottom_height - colophon_height;
@@ -291,8 +310,8 @@
   $(document).ready(size_content);
   $(window).resize(size_content);
   // also triggering size_content function in the load_wtml function, because thumbnails aren't loading immediately
-	
-	
+    
+    
 
 
 
@@ -416,7 +435,7 @@
   
   // when user scrolls to bottom of the description container, remove the down arrow icon. Add it back when scrolling back up.
   $('#description_container').on('scroll', function(event) {
-	  var element = event.target;
+      var element = event.target;
     
     if(element.scrollHeight - element.scrollTop === element.clientHeight) {
       console.log("reached bottom!");
@@ -426,12 +445,12 @@
       $('.fa-arrow-down').show();
     }
   })
-	
+    
   // may use later, in order to identify when canvas has been interacted with
   $('#wwtcanvas').on('click', function() {
     console.log("canvas clicked");
     $("#zoom_pan_instrux").delay(5000).fadeOut(1000);
   })
-	
-	
+    
+    
 })();
