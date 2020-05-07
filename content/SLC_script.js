@@ -36,32 +36,33 @@
 
     //(variables defined inside a function are not known to other functions)
     loadWtml(function (folder, xml) {
+
       // store each of the Place objects from the WTML file in places
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail border_white"><img src=""/></a></div>');
       var descTemplate = $('<div class="obj_desc container-fluid"><div class="row"><div class="what col-xs-12 col-md-12 col-lg-12">what</div><div class="process col-xs-12 col-md-12 col-lg-12">process</div><div class="properties col-xs-12 col-md-12 col-lg-12">properties</div><div class="elements col-xs-12 col-md-12 col-lg-12">elements</div></div></div>');
-
+      var constellations = $(xml).find('Constellation');
       
       places.each(function (i, pl) {
         var place = $(pl);
         
         // this is the pre-existing description text populator from Ron's code. Perhaps not relevant to ours
-        var descText = '', desc;
-        desc = place.find('Description').text().split('\n');
+        //   var descText = '', desc;
+        //   desc = place.find('Description').text().split('\n');
 
-        $.each(desc, function (i, item) {
-          if (item != undefined) {
-            descText += '<p>' + item + '</p>';
-          }
-        });
-        descText += '<hr><h4>Credits</h4>' + '<p><a href="' + place.find('CreditsUrl').text() + '" target=_blank >' + place.find('Credits').text() + '</p>';
-        // end of Ron's description text code
+        //   $.each(desc, function (i, item) {
+        //     if (item != undefined) {
+        //       descText += '<p>' + item + '</p>';
+        //     }
+        //   });
+        //   descText += '<hr><h4>Credits</h4>' + '<p><a href="' + place.find('CreditsUrl').text() + '" target=_blank >' + place.find('Credits').text() + '</p>';
+        //   end of Ron's description text code
 
         // create a temporary object of a thumbnail and of a description element from the templates above 
-        var tmp = thumbTemplate.clone();
-        var tmp2 = descTemplate.clone();
+        var tmpthumb = thumbTemplate.clone();
+        var tmpdesc = descTemplate.clone();
 
-        tmp.find('img').attr({
+        tmpthumb.find('img').attr({
           src: place.find('ThumbnailUrl').text(),
           class: 'border_black',
           alt: place.attr('Name'),
@@ -74,25 +75,25 @@
         // grab the class = What/Process/Properties/Elements html content for each Plce from the WTML file
         var targetwhat = place.find('.What').html();
         console.log("This what is: ", targetwhat);
-        tmp2.find('.what').html(targetwhat);
+        tmpdesc.find('.what').html(targetwhat);
           
         var targetprocess = place.find('.Process').html();
         console.log("This process is: ", targetprocess);
-        tmp2.find('.process').html(targetprocess);
+        tmpdesc.find('.process').html(targetprocess);
           
         var targetproperties = place.find('.Properties').html();
         console.log("This properties is: ", targetproperties);
-        tmp2.find('.properties').html(targetproperties);
+        tmpdesc.find('.properties').html(targetproperties);
           
         var targetelements = place.find('.Elements').html();
         console.log("This elements is: ", targetelements);
-        tmp2.find('.elements').html(targetelements);
+        tmpdesc.find('.elements').html(targetelements);
     
           
         // apply the unique target description class to the description template clone
         var desc_class = place.find('Target').text().toLowerCase() + "_description";
         console.log("desc_class: ", desc_class);
-        tmp2.addClass(desc_class);
+        tmpdesc.addClass(desc_class);
 
 
         // add event listener to every thumbnail element, which listens for single- vs. double-click
@@ -122,8 +123,7 @@
           if(desc_box.scrollHeight > desc_box.clientHeight) {
             console.log("need arrow");
             $('.fa-arrow-down').show();
-          }
-          else {
+          } else {
             $('.fa-arrow-down').hide();
           }
 
@@ -153,37 +153,40 @@
               );
             } else {
 
-            if (place.attr('Classification') == 'Constellation'){
-              wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
-              wwt_si.settings.set_showConstellationFigures(true);
-              wwt_si.settings.set_showConstellationLabels(true);
+              if (place.attr('Classification') == 'Constellation') {
 
-              wwt_si.gotoRaDecZoom(
-                parseFloat(place.attr('RA')) * 15,
-                place.attr('Dec'),
-                parseFloat(place.find('ImageSet').attr('FOV')),
-                false
-              );
-            } else {
+                wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+                wwt_si.settings.set_showConstellationFigures(true);
+                wwt_si.settings.set_showConstellationLabels(true);
 
-              wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
-              wwt_si.settings.set_showConstellationFigures(false);
-              wwt_si.settings.set_showConstellationLabels(false);
+                wwt_si.gotoRaDecZoom(
+                  parseFloat(place.attr('RA')) * 15,
+                  place.attr('Dec'),
+                  parseFloat(place.find('ImageSet').attr('FOV')),
+                  false
+                );
 
-              wwt_si.setForegroundImageByName(place.attr('Name'));
+              } else {
 
-              wwt_si.gotoRaDecZoom(
-                parseFloat(place.attr('RA')) * 15,
-                place.attr('Dec'),
-                parseFloat(place.find('ImageSet').attr('FOV')),
-                is_dblclick
-              );            
+                wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+                wwt_si.settings.set_showConstellationFigures(false);
+                wwt_si.settings.set_showConstellationLabels(false);
+
+                wwt_si.setForegroundImageByName(place.attr('Name'));
+
+                wwt_si.gotoRaDecZoom(
+                  parseFloat(place.attr('RA')) * 15,
+                  place.attr('Dec'),
+                  parseFloat(place.find('ImageSet').attr('FOV')),
+                  is_dblclick
+                );
+
+              }
             }
           }
         }
-      }
 
-        tmp.find('a')
+        tmpthumb.find('a')
           .data('foreground-image', place.attr('Name'))
           //'click' - false; 'dblclick' - true.  on('click', function () { on_click(false) });
 
@@ -198,22 +201,23 @@
           });
 
         // we'll probably be able to remove this
-        tmp.find('i').attr({
-          'data-toggle': 'tooltip',
-          'data-placement': 'top',
-          title: 'Image Information'
-        })
-          .on('click', function(e) {
-            bootbox.dialog({
-              message: descText,
-              title: place.find('Description').attr('Title')
-            });
+        //  tmpthumb.find('i').attr({
+        //    'data-toggle': 'tooltip',
+        //    'data-placement': 'top',
+        //    title: 'Image Information'
+        //  })
+        //  .on('click', function(e) {
+        //    bootbox.dialog({
+        //      message: descText,
+        //      title: place.find('Description').attr('Title')
+        //    });
 
-            e.preventDefault();
-            e.stopPropagation();
-          });
+        //    e.preventDefault();
+        //    e.stopPropagation();
+        //  });
 
-        $('#destinationThumbs').append(tmp);
+        // Plug the set of thumbnails into the #destinationThumbs element
+        $('#destinationThumbs').append(tmpthumb);
 
         /* I don't think this code does anything, check with Peter
         var fsThumb = tmp.clone(true).find('a');
@@ -221,10 +225,55 @@
         $('.player-controls .btn').first().before(tmp);
         */
           
-        $("#description_container").append(tmp2);
-          
+        $("#description_container").append(tmpdesc);
     
       });
+
+      // Add constellation links to text in description
+      constellations.each(function (i, pl) {
+
+        var constellation = $(pl);
+
+        function on_click(element, is_dblclick) {
+
+          if (wwt_si === null) {
+            return;
+          };
+
+          console.log("Constellation link clicked! line 243 js");
+          console.log("Constellation = ", constellation.attr('Name'));
+
+          wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+          wwt_si.settings.set_showConstellationFigures(true);
+          wwt_si.settings.set_showConstellationLabels(true);
+
+          wwt_si.gotoRaDecZoom(
+            parseFloat(constellation.attr('RA')) * 15,
+            constellation.attr('Dec'),
+            parseFloat(constellation.find('ImageSet').attr('FOV')),
+            false
+          );
+        
+        }
+
+        if (constellation.attr('Name') == "Orion Constellation") {
+          $(".orion_const").on('click', function(event){
+            console.log("clicked orion constellation link line 261 js")
+            var element = event.target;
+            on_click(element, false)
+          })
+        } else if (constellation.attr('Name') == "Taurus Constellation") {
+          $(".taurus_const").on('click', function(event){
+            console.log("clicked taurus constellation link line 267 js")
+            var element = event.target;
+            on_click(element, false)
+          })
+        }
+
+
+
+      });
+
     });
   };
 

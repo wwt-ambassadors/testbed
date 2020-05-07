@@ -32,7 +32,7 @@
     <Description Title="The Great Orion Nebula">
     <div class="What">
       <h4>What is it?</h4>
-      The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. See where the nebula appears in the constellation Orion. A group of hot, young stars embedded in the cloud lights up much of the nebula. Other parts of the cloud are cold and dense and appear dark.
+      The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the naked eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt. <a class="orion_const" href="#">See where the nebula appears in the constellation Orion</a>. A group of hot, young stars embedded in the cloud lights up much of the nebula. Other parts of the cloud are cold and dense and appear dark.
     </div>
     <div class="Process">
       <h4>What is happening?</h4>
@@ -142,7 +142,7 @@
     <Description Title="Aldebaran">
     <div class="What">
       <h4>What is it?</h4>
-      Aldebaran is a red star in the constellation, Taurus.  It represents the “eye” of the bull.
+      Aldebaran is a red star in the constellation, <a href="#" class="taurus_const">Taurus</a>.  It represents the “eye” of the bull.
     </div>
     <div class="Process">
       <h4>What is happening?</h4>
@@ -165,16 +165,16 @@
     </div>
     </Description>
   </Place>
-  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Constellation" DataSetType="Sky" RA="5.5764999999999993" Dec="-0.33" Constellation="ORI" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+  <Constellation MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Orion Constellation" DataSetType="Sky" RA="5.5764999999999993" Dec="-0.33" Constellation="ORI" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="23">
     <Target>orionconstellation</Target>
     </ImageSet>
-  </Place>
-  <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Taurus Constellation" DataSetType="Sky" RA="4.517" Dec="14.717" Constellation="TAU" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
+  </Constellation>
+  <Constellation MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Taurus Constellation" DataSetType="Sky" RA="4.517" Dec="14.717" Constellation="TAU" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="23">
     <Target>taurusconstellation</Target>
     </ImageSet>
-  </Place>
+  </Constellation>
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Lyra Constellation" DataSetType="Sky" RA="18.8" Dec="38.4" Constellation="LYR" Classification="Constellation" Magnitude="0" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="13.5">
     <Target>lyraconsteallation</Target>
