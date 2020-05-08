@@ -113,17 +113,17 @@ a, a:hover {
 	-webkit-user-select: none;
 }
 
-#wwtcanvas i {
+#reset_target {
     position: absolute;
     top: 10px;
     right: 10px;
 /*	font-family: 'FontAwesome';*/
     font-family: "Font Awesome 5 Free";
-    color: #41BEEC80;
-    display: block;
+    color: #41BEECA0;
+    display: none;
 }
 
-#wwtcanvas i:hover{
+#reset_target:hover{
     color: #41BEEC;
 }
 

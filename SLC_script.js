@@ -9,6 +9,14 @@
   var click_counter = 0;
   var zoom_counter = 0;
 
+  // global variables to hold the wwt_si navigation for the last thumbnail clicked, for use by the reset button
+  var reset_enabled = false;
+  var curr_clasification = null;
+  var curr_name = null;
+  var curr_RA = null;
+  var curr_dec = null;
+  var curr_FOV = null;
+
   function initialize() {
     // This function call is
     // wwt-web-client/HTML5SDK/wwtlib/WWTControl.cs:WWTControl::InitControlParam.
@@ -74,19 +82,15 @@
 
         // grab the class = What/Process/Properties/Elements html content for each Plce from the WTML file
         var targetwhat = place.find('.What').html();
-        console.log("This what is: ", targetwhat);
         tmpdesc.find('.what').html(targetwhat);
           
         var targetprocess = place.find('.Process').html();
-        console.log("This process is: ", targetprocess);
         tmpdesc.find('.process').html(targetprocess);
           
         var targetproperties = place.find('.Properties').html();
-        console.log("This properties is: ", targetproperties);
         tmpdesc.find('.properties').html(targetproperties);
           
         var targetelements = place.find('.Elements').html();
-        console.log("This elements is: ", targetelements);
         tmpdesc.find('.elements').html(targetelements);
     
           
@@ -103,6 +107,16 @@
             return;
           };
 
+          //	Change the border color of the selected thumbnail
+          var element = element;
+            
+          $(".thumbnail img").removeClass("border_yellow").addClass("border_black");
+          $(element).removeClass("border_black").addClass("border_yellow");
+
+          // enable the reset button (and hide if visible)
+          reset_enabled = true;
+          $("#reset_target").fadeOut(100);
+
           /* hide all descriptions, then show description specific to this target on sgl/dbl click */
           var toggle_class = "." + place.find('Target').text().toLowerCase() + "_description";
           $("#description_box").find(".obj_desc").hide();
@@ -110,14 +124,8 @@
           $('#description_container').show();
             
           $(toggle_class).show();
-
-          //	Change the border color of the selected thumbnail
-          var element = element;
             
-          $(".thumbnail img").removeClass("border_yellow").addClass("border_black");
-          $(element).removeClass("border_black").addClass("border_yellow");
-            
-          //trying to make arrow appear only for overflow
+          // Make arrow appear only for overflow
           var desc_box = $('#description_container')[0];
           
           if(desc_box.scrollHeight > desc_box.clientHeight) {
@@ -127,12 +135,21 @@
             $('.fa-arrow-down').hide();
           }
 
+          // check whether this target is a Solar System object (only the Sun, in this case)
           if (place.attr('Classification') == 'SolarSystem') {
+
             // This is a solar system object. In order to view it correctly,
             // we need to find its associated wwtlib "Place" object and seek
             // to it thusly. The get_camParams() function calculates its
             // current RA and Dec.
             wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+
+            //set the global variables: current target classification / name / RA / dec / FOV
+            curr_clasification = place.attr('Classification');
+            curr_name = place.attr('Name');
+            curr_RA = null;
+            curr_dec = null;
+            curr_FOV = null;
 
             $.each(folder.get_children(), function (i, wwtplace) {
               if (wwtplace.get_name() == place.attr('Name')) {
@@ -140,49 +157,59 @@
               }
             });
 
+          // check whether this target is the CMB
+          } else if (place.attr('Name') == 'Cosmic Microwave Background') {
+
+            //disable the reset button
+            reset_enabled = false;
+
+            wwt_si.setBackgroundImageByName('Planck CMB');
+
+            wwt_si.gotoRaDecZoom(
+              parseFloat(place.attr('RA')) * 15,
+              place.attr('Dec'),
+              parseFloat(place.find('ImageSet').attr('FOV')),
+              false
+            );
+
+          // check whether this target is a Constellation
+          } else if (place.attr('Classification') == 'Constellation') {
+
+            wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+            wwt_si.settings.set_showConstellationFigures(true);
+            wwt_si.settings.set_showConstellationLabels(true);
+
+            wwt_si.gotoRaDecZoom(
+              parseFloat(place.attr('RA')) * 15,
+              place.attr('Dec'),
+              parseFloat(place.find('ImageSet').attr('FOV')),
+              false
+            );
+
+          // everything else, which includes all non-solar system celestial objects
           } else {
-            
-            if (place.attr('Name') == 'Cosmic Microwave Background') {
-              wwt_si.setBackgroundImageByName('Planck CMB');
 
-              wwt_si.gotoRaDecZoom(
-                parseFloat(place.attr('RA')) * 15,
-                place.attr('Dec'),
-                parseFloat(place.find('ImageSet').attr('FOV')),
-                false
-              );
-            } else {
+            wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
 
-              if (place.attr('Classification') == 'Constellation') {
+            //set the global variables: current target classification / name / RA / dec / FOV
+            curr_clasification = place.attr('Classification');
+            curr_name = place.attr('Name');
+            curr_RA = place.attr('RA');
+            curr_dec = place.attr('Dec');
+            curr_FOV = place.find('ImageSet').attr('FOV');
 
-                wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
-                wwt_si.settings.set_showConstellationFigures(true);
-                wwt_si.settings.set_showConstellationLabels(true);
+            wwt_si.settings.set_showConstellationFigures(false);
+            wwt_si.settings.set_showConstellationLabels(false);
 
-                wwt_si.gotoRaDecZoom(
-                  parseFloat(place.attr('RA')) * 15,
-                  place.attr('Dec'),
-                  parseFloat(place.find('ImageSet').attr('FOV')),
-                  false
-                );
+            wwt_si.setForegroundImageByName(place.attr('Name'));
 
-              } else {
+            wwt_si.gotoRaDecZoom(
+              parseFloat(place.attr('RA')) * 15,
+              place.attr('Dec'),
+              parseFloat(place.find('ImageSet').attr('FOV')),
+              is_dblclick
+            );
 
-                wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
-                wwt_si.settings.set_showConstellationFigures(false);
-                wwt_si.settings.set_showConstellationLabels(false);
-
-                wwt_si.setForegroundImageByName(place.attr('Name'));
-
-                wwt_si.gotoRaDecZoom(
-                  parseFloat(place.attr('RA')) * 15,
-                  place.attr('Dec'),
-                  parseFloat(place.find('ImageSet').attr('FOV')),
-                  is_dblclick
-                );
-
-              }
-            }
           }
         }
 
@@ -226,7 +253,52 @@
         */
           
         $("#description_container").append(tmpdesc);
-    
+
+        // tag the reload button with a click action to reload the most recent thumbnail
+        $("#reset_target").on('click', function(event){
+
+          //set the background image to DSS for any target reset
+          wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+
+          console.log("should be resetting...");
+
+          if (curr_clasification == 'SolarSystem') {
+
+            // This is a solar system object. In order to view it correctly,
+            // we need to find its associated wwtlib "Place" object and seek
+            // to it thusly. The get_camParams() function calculates its
+            // current RA and Dec.
+
+            $.each(folder.get_children(), function (i, wwtplace) {
+              if (wwtplace.get_name() == curr_name) {
+                wwt_ctl.gotoTarget3(wwtplace.get_camParams(), false, true);
+              }
+            });
+
+          } else {
+
+            // Every other object (ie not SolarSystem) represents one of the 
+            // other thumbnails of celestial objects. CMB and Constellations
+            // not included.
+
+            wwt_si.settings.set_showConstellationFigures(false);
+            wwt_si.settings.set_showConstellationLabels(false);
+
+            wwt_si.setForegroundImageByName(curr_name);
+
+            wwt_si.gotoRaDecZoom(
+              parseFloat(curr_RA) * 15,
+              curr_dec,
+              parseFloat(curr_FOV),
+              true
+            );
+
+          }
+
+          $("#reset_target").fadeOut(1000);
+
+        })
+
       });
 
       // Add constellation links to text in description
@@ -240,8 +312,8 @@
             return;
           };
 
-          console.log("Constellation link clicked! line 243 js");
-          console.log("Constellation = ", constellation.attr('Name'));
+          // display the reset button
+          $("#reset_target").show();
 
           wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
           wwt_si.settings.set_showConstellationFigures(true);
@@ -264,13 +336,11 @@
           })
         } else if (constellation.attr('Name') == "Taurus Constellation") {
           $(".taurus_const").on('click', function(event){
-            console.log("clicked taurus constellation link line 267 js")
+            console.log("clicked taurus constellation link line 270 js")
             var element = event.target;
             on_click(element, false)
           })
         }
-
-
 
       });
 
@@ -478,6 +548,7 @@
           wwt_ctl.zoom(1.43);
         else
           wwt_ctl.zoom(0.7);
+
       }
     })(true));
   }
@@ -497,8 +568,12 @@
     
   // may use later, in order to identify when canvas has been interacted with
   $('#wwtcanvas').on('click', function() {
-    console.log("canvas clicked");
     $("#zoom_pan_instrux").delay(5000).fadeOut(1000);
+
+    if(reset_enabled) {
+      $("#reset_target").show();
+    }
+
   })
     
     
