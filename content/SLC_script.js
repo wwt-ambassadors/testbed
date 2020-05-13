@@ -87,11 +87,11 @@
         var targetprocess = place.find('.Process').html();
         tmpdesc.find('.process').html(targetprocess);
           
-        var targetproperties = place.find('.Properties').html();
-        tmpdesc.find('.properties').html(targetproperties);
-          
         var targetelements = place.find('.Elements').html();
         tmpdesc.find('.elements').html(targetelements);
+          
+        var targetproperties = place.find('.Properties').html();
+        tmpdesc.find('.properties').html(targetproperties);
           
         var targetdive = place.find('.Dive').html();
         tmpdesc.find('.dive').html(targetdive);
