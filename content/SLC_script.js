@@ -48,7 +48,7 @@
       // store each of the Place objects from the WTML file in places
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail border_white"><img src=""/></a></div>');
-      var descTemplate = $('<div class="obj_desc container-fluid"><div class="row"><div class="what col-xs-12 col-md-12 col-lg-12">what</div><div class="process col-xs-12 col-md-12 col-lg-12">process</div><div class="properties col-xs-12 col-md-12 col-lg-12">properties</div><div class="elements col-xs-12 col-md-12 col-lg-12">elements</div></div></div>');
+      var descTemplate = $('<div class="obj_desc container-fluid"><div class="row"><div class="what col-xs-12 col-md-12 col-lg-12">what</div><div class="process col-xs-12 col-md-12 col-lg-12">process</div><div class="properties col-xs-12 col-md-12 col-lg-12">properties</div><div class="elements col-xs-12 col-md-12 col-lg-12">elements</div><div class="dive col-xs-12 col-md-12 col-lg-12">dive deeper</div></div></div>');
       var constellations = $(xml).find('Constellation');
       
       places.each(function (i, pl) {
@@ -92,6 +92,9 @@
           
         var targetelements = place.find('.Elements').html();
         tmpdesc.find('.elements').html(targetelements);
+          
+        var targetdive = place.find('.Dive').html();
+        tmpdesc.find('.dive').html(targetdive);
     
           
         // apply the unique target description class to the description template clone
@@ -330,13 +333,19 @@
 
         if (constellation.attr('Name') == "Orion Constellation") {
           $(".orion_const").on('click', function(event){
-            console.log("clicked orion constellation link line 261 js")
+            console.log("clicked orion constellation link line 336 js")
             var element = event.target;
             on_click(element, false)
           })
         } else if (constellation.attr('Name') == "Taurus Constellation") {
           $(".taurus_const").on('click', function(event){
-            console.log("clicked taurus constellation link line 270 js")
+            console.log("clicked taurus constellation link line 342 js")
+            var element = event.target;
+            on_click(element, false)
+          })
+        } else if (constellation.attr('Name') == "Lyra Constellation") {
+          $(".lyra_const").on('click', function(event){
+            console.log("clicked lyra constellation link line 348 js")
             var element = event.target;
             on_click(element, false)
           })

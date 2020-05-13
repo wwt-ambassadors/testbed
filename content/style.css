@@ -127,13 +127,20 @@ a, a:hover {
     color: #41BEEC;
 }
 
-#zoom_pan_instrux {
+#zoom_pan_container{
 	position: absolute;
 	bottom: 20px;
 	width: 100%;
+}
+
+#zoom_pan_instrux {
+	width: 600px;
+    margin: 0 auto;
 	text-align: center;
 	font-size: 0.8rem;
-	color: #EEEEEE80;
+	color: #EEEEEECC;
+    background-color: #00000066;
+    border-radius: 25px;
 }
 
 
@@ -152,8 +159,8 @@ a, a:hover {
 }
 
 #begin_container {
+    margin-top: 50px;
 	text-align: center;
-	vertical-align: middle;
 }
 
 #description_container {
