@@ -177,12 +177,20 @@ a, a:hover {
 	margin-top: 1em;
 }
 
+#description_box .row h3 {
+    color: white;
+    padding: 10px 0px 15px;
+    border-bottom: dotted #44FF44 2px;
+    text-align: center;
+}
+
 #description_box .row h4 {
 	color: #8aff8a;
 }
 
 #description_box .row p {
-	font-size: 0.6em;
+	font-size: 1.6em;
+    background-color: red;
 }
 
 #description_box .row a {
@@ -193,7 +201,6 @@ a, a:hover {
 	position: absolute;
 	bottom: 10px;
 	right: 25px;
-/*	font-family: 'FontAwesome';*/
     font-family: "Font Awesome 5 Free";
 	font-style: normal;
 }

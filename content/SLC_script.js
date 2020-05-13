@@ -48,7 +48,7 @@
       // store each of the Place objects from the WTML file in places
       var places = $(xml).find('Place');
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail border_white"><img src=""/></a></div>');
-      var descTemplate = $('<div class="obj_desc container-fluid"><div class="row"><div class="what col-xs-12 col-md-12 col-lg-12">what</div><div class="process col-xs-12 col-md-12 col-lg-12">process</div><div class="properties col-xs-12 col-md-12 col-lg-12">properties</div><div class="elements col-xs-12 col-md-12 col-lg-12">elements</div><div class="dive col-xs-12 col-md-12 col-lg-12">dive deeper</div></div></div>');
+      var descTemplate = $('<div class="obj_desc container-fluid"><div class="row"><div class="name col-xs-12 col-md-12 col-lg-12">name</div><div class="what col-xs-12 col-md-12 col-lg-12">what</div><div class="process col-xs-12 col-md-12 col-lg-12">process</div><div class="properties col-xs-12 col-md-12 col-lg-12">properties</div><div class="elements col-xs-12 col-md-12 col-lg-12">elements</div><div class="dive col-xs-12 col-md-12 col-lg-12">dive deeper</div></div></div>');
       var constellations = $(xml).find('Constellation');
       
       places.each(function (i, pl) {
@@ -80,7 +80,10 @@
           title: place.find('Description').attr('Title')
         });
 
-        // grab the class = What/Process/Properties/Elements html content for each Plce from the WTML file
+        // grab the class = Name/What/Process/Elements/Properties/Dive html content for each Place from the WTML file
+        var targetname = place.find('.Name').html();
+        tmpdesc.find('.name').html(targetname);
+
         var targetwhat = place.find('.What').html();
         tmpdesc.find('.what').html(targetwhat);
           

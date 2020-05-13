@@ -9,6 +9,9 @@
     <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=sun</ThumbnailUrl>
     </ImageSet>
     <Description Title="Our Sun">
+      <div class="Name">
+        <h3>Our Sun</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         Our Sun is an average star, a large ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage.
@@ -44,6 +47,9 @@
       <ThumbnailUrl>betelgeuse_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Betelgeuse (pronounced Beetlejuice)">
+      <div class="Name">
+        <h3>Betelgeuse</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         Betelgeuse (pronounced “Beetlejuice”) is a red star and is the 2nd brightest in the constellation Orion. If Betelgeuse replaced the Sun in our Solar System, it would swallow up all the inner planets Mercury, Venus, Earth, and Mars, and likely Jupiter too!
@@ -83,6 +89,9 @@
     <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Aldebaran">
+      <div class="Name">
+        <h3>Aldebaran</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         Aldebaran is a red star in the constellation Taurus. It represents the “eye” of the bull.
@@ -118,6 +127,9 @@
       <ThumbnailUrl>sigma_orionis_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Sigma Orionis">
+      <div class="Name">
+        <h3>Sigma Orionis</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         Sigma Orionis is a very massive, blue star in the constellation Orion. A star is a large ball of gas compressed by gravity. (The designation “sigma,” the 18th letter in the Greek alphabet, tells us it is the 18th brightest star in the constellation). Sigma Orionis is about 300,000 years old.
@@ -160,6 +172,9 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Inside the Orion Nebula: HOPS-68">
+      <div class="Name">
+        <h3>HOPS-68</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the unaided eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.
@@ -208,6 +223,9 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="The Great Orion Nebula">
+      <div class="Name">
+        <h3>Orion Nebula</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the unaided eye from a dark sky. It appears as the sword, below the middle star of Orion’s belt.
@@ -254,6 +272,9 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Crab Nebula">
+      <div class="Name">
+        <h3>Crab Nebula</h3>
+      </div>
       <div class="What">
         <h4>What is it</h4>
         The Crab Nebula is a colorful, chaotic cloud of gas surrounding a star that shines very brightly at energetic X-ray wavelengths. The central star is made of neutrons packed so tightly together that a teaspoon of the material weighs 10 million tons.
@@ -305,6 +326,9 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Ring Nebula">
+      <div class="Name">
+        <h3>Ring Nebula</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star. The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. This star is mostly <a href="#">carbon</a>, surrounded by shells of <a href="#">helium</a> and <a href="#">hydrogen</a>.
@@ -352,6 +376,9 @@
       <ThumbnailUrl>CMB_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Cosmic Microwave Background">
+      <div class="Name">
+        <h3>Cosmic Microwave Background</h3>
+      </div>
       <div class="What">
         <h4>What is it?</h4>
         The Cosmic Microwave Background is radiation left over from the Big Bang. The radiation has been cooling over the lifetime of the Universe (13.7 billion years) and can be observed in every direction to have a temperature of -270&#176;C.
