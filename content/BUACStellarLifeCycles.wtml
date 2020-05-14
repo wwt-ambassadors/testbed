@@ -9,18 +9,26 @@
     <ThumbnailUrl>http://www.worldwidetelescope.org/wwtweb/thumbnail.aspx?name=sun</ThumbnailUrl>
     </ImageSet>
     <Description Title="Our Sun">
+      <div class="Thumbnail">
+        Sun
+      </div>
       <div class="Name">
         <h3>Our Sun</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        Our Sun is an average star, a large ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage.
+        <p>
+          Our Sun is an average star, a large ball of gas compressed by gravity. Our Sun is about 5 billion years old, and models predict that it will spend another 5 billion years in its current stage.
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
-        Before the Sun reached its current stage, gravity compressed the gas in the core strongly enough to reach a temperature where deuterium burned to Helium-3.
-        <br /><br />
-        There is only a small proportion of deuterium in a star’s gas. Once the deuterium in the Sun’s core ran out and deuterium burning stopped, there was no way to counteract gravity. The gas compressed further, and the core eventually reached a temperature where the <a href="#">hydrogen</a> atoms in the core fuse to <a href="#">helium</a>. The fusion reaction releases the enormous amount of energy that allows the Sun to shine at visible wavelengths. The fusion energy pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out, which we expect will be an additional 5 billion years.
+        <p>
+          Before the Sun reached its current stage, gravity compressed the gas in the core strongly enough to reach a temperature where deuterium burned to Helium-3.
+        </p>
+        <p>
+          There is only a small proportion of deuterium in a star’s gas. Once the deuterium in the Sun’s core ran out and deuterium burning stopped, there was no way to counteract gravity. The gas compressed further, and the core eventually reached a temperature where the <a href="#">hydrogen</a> atoms in the core fuse to <a href="#">helium</a>. The fusion reaction releases the enormous amount of energy that allows the Sun to shine at visible wavelengths. The fusion energy pushes outward and balances the inward force created by gravity. The Sun will stay in balance until the hydrogen in the core runs out, which we expect will be an additional 5 billion years.
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -47,18 +55,26 @@
       <ThumbnailUrl>betelgeuse_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Betelgeuse (pronounced Beetlejuice)">
+      <div class="Thumbnail">
+        Betelgeuse
+      </div>
       <div class="Name">
         <h3>Betelgeuse</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        Betelgeuse (pronounced “Beetlejuice”) is a red star and is the 2nd brightest in the constellation Orion. If Betelgeuse replaced the Sun in our Solar System, it would swallow up all the inner planets Mercury, Venus, Earth, and Mars, and likely Jupiter too!
-        <br /><br />
-        <a class="orion_const" href="#">See where the star <strong>Betelgeuse</strong> appears in the constellation Orion</a>
+        <p>
+          Betelgeuse (pronounced “Beetlejuice”) is a red star and is the 2nd brightest in the constellation Orion. If Betelgeuse replaced the Sun in our Solar System, it would swallow up all the inner planets Mercury, Venus, Earth, and Mars, and likely Jupiter too!
+        </p>
+        <p>
+          <a class="orion_const" href="#">See where the star <strong>Betelgeuse</strong> appears in the constellation Orion</a>
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
-        Betelgeuse ran out of <a href="#">hydrogen</a> in its core. Without this nuclear fuel, there is not enough energy released to generate outward pressure to balance against the inward pull of gravity. This caused more gas to fall inward toward the core. The new, thin layer of hydrogen just outside the star’s core started to fuse hydrogen to <a href="#">helium</a>. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, and the star turned from white to red.
+        <p>
+          Betelgeuse ran out of <a href="#">hydrogen</a> in its core. Without this nuclear fuel, there is not enough energy released to generate outward pressure to balance against the inward pull of gravity. This caused more gas to fall inward toward the core. The new, thin layer of hydrogen just outside the star’s core started to fuse hydrogen to <a href="#">helium</a>. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, and the star turned from white to red.
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -85,22 +101,30 @@
 
   <Place MSRCommunityId="0" MSRComponentId="0" Permission="0" Name="Aldebaran" DataSetType="Sky" RA="4.5986111113333337" Dec="16.50916667" Constellation="TAU" Classification="Star" Magnitude="0.85" Distance="0" ZoomLevel="-1" Rotation="0" Angle="0" DomeAlt="0" DomeAz="0" Opacity="100" AngularSize="-1">
     <ImageSet FOV="4">
-    <Target>aldebaranstar</Target>
-    <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
+      <Target>aldebaranstar</Target>
+      <ThumbnailUrl>aldebaran_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Aldebaran">
+      <div class="Thumbnail">
+        Aldebaran
+      </div>
       <div class="Name">
         <h3>Aldebaran</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        Aldebaran is a red star in the constellation Taurus. It represents the “eye” of the bull.
-        <br /><br />
-        <a class="taurus_const" href="#">See where the star <strong>Aldebaran</strong> appears in the constellation Taurus</a>
+        <p>
+          Aldebaran is a red star in the constellation Taurus. It represents the “eye” of the bull.
+        </p>
+        <p>
+          <a class="taurus_const" href="#">See where the star <strong>Aldebaran</strong> appears in the constellation Taurus</a>
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
-        Aldebaran has run out of <a href="#">hydrogen</a> in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of <a href="#">hydrogen</a> just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star. Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to <a href="#">carbon</a> (which takes more pressure than fusing hydrogen to helium).
+        <p>
+          Aldebaran has run out of <a href="#">hydrogen</a> in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of <a href="#">hydrogen</a> just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star. Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to <a href="#">carbon</a> (which takes more pressure than fusing hydrogen to helium).
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -127,20 +151,29 @@
       <ThumbnailUrl>sigma_orionis_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Sigma Orionis">
+      <div class="Thumbnail">
+        Sigma Orionis
+      </div>
       <div class="Name">
         <h3>Sigma Orionis</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        Sigma Orionis is a very massive, blue star in the constellation Orion. A star is a large ball of gas compressed by gravity. (The designation “sigma,” the 18th letter in the Greek alphabet, tells us it is the 18th brightest star in the constellation). Sigma Orionis is about 300,000 years old.
-        <br /><br />
-        <a class="orion_const" href="#">See where the star <strong>Sigma Orionis</strong> appears in the constellation Orion</a>
+        <p>
+          Sigma Orionis is a very massive, blue star in the constellation Orion. A star is a large ball of gas compressed by gravity. (The designation “sigma,” the 18th letter in the Greek alphabet, tells us it is the 18th brightest star in the constellation). Sigma Orionis is about 300,000 years old.
+        </p>
+        <p>
+          <a class="orion_const" href="#">See where the star <strong>Sigma Orionis</strong> appears in the constellation Orion</a>
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
-        Before Sigma Orionis reached its current stage, it fused deuterium to form Helium-3. There is only a small proportion of deuterium in a star’s gas. Once the deuterium in Sigma Orionis’s core ran out and deuterium burning stopped, there was no way to counteract gravity. The gas compressed further, and the core eventually reached a temperature where the <a href="#">hydrogen</a> atoms in the core fuse to <a href="#">helium</a>. The fusion reaction releases the enormous amount of energy that allows the star to shine. The fusion energy pushes outward and balances the inward force created by gravity. The star will stay in balance until the hydrogen in the core runs out.
-        <br /><br />
-        Sigma Orionis has so much mass that the fusion rate is much higher than in our Sun. It is hotter and brighter and appears blue in the sky. Sigma Orionis is burning through its fuel so quickly that it will live for only about 10 million years (compared with 10 billion years for the Sun)!
+        <p>
+          Before Sigma Orionis reached its current stage, it fused deuterium to form Helium-3. There is only a small proportion of deuterium in a star’s gas. Once the deuterium in Sigma Orionis’s core ran out and deuterium burning stopped, there was no way to counteract gravity. The gas compressed further, and the core eventually reached a temperature where the <a href="#">hydrogen</a> atoms in the core fuse to <a href="#">helium</a>. The fusion reaction releases the enormous amount of energy that allows the star to shine. The fusion energy pushes outward and balances the inward force created by gravity. The star will stay in balance until the hydrogen in the core runs out.
+        </p>
+        <p>
+          Sigma Orionis has so much mass that the fusion rate is much higher than in our Sun. It is hotter and brighter and appears blue in the sky. Sigma Orionis is burning through its fuel so quickly that it will live for only about 10 million years (compared with 10 billion years for the Sun)!
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -156,7 +189,9 @@
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
-        <a href="https://viewspace.org/video_library/videos/202-stars_glance_720-322871404?tags=461" target="_new">Colors of stars</a>
+        <ul>
+          <li><a href="https://viewspace.org/video_library/videos/202-stars_glance_720-322871404?tags=461" target="_new">Colors of stars</a></li>
+        </ul>
       </div>
     </Description>
   </Place>
@@ -172,24 +207,35 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Inside the Orion Nebula: HOPS-68">
+      <div class="Thumbnail">
+        HOPS-68
+      </div>
       <div class="Name">
         <h3>HOPS-68</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the unaided eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.
-        <br /><br />
-        The foreground image above is a close up within the Orion Nebula. This image was taken with the Spitzer Infrared Space Telescope. Several bright spots appear in the infrared image. The arrow is pointing to one of the bright spots, an object named HOPS-68.
-        <br /><br />
-        <a class="orion_const" href="#">See where <strong>HOPS-68</strong> appears in the constellation Orion</a>
+        <p>
+          The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the unaided eye from a dark sky. It appears as a sword, below the middle star of Orion’s belt.
+        </p>
+        <p>
+          The foreground image above is a close up within the Orion Nebula. This image was taken with the Spitzer Infrared Space Telescope. Several bright spots appear in the infrared image. The arrow is pointing to one of the bright spots, an object named HOPS-68.
+        </p>
+        <p>
+          <a class="orion_const" href="#">See where <strong>HOPS-68</strong> appears in the constellation Orion</a>
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
-        Gravity pulled a cold, dense clump of gas and dust within the nebula into this object. Gravity compressed the gas, until the object's core heated up to a temperature of 10<sup>6</sup> &#176;C. At this temperature, there was enough energy to start a process called deuterium burning. Deuterium burning fuses an uncommon type of <a href="#">hydrogen</a> (called deuterium, which has 1 neutron instead of the typical 0) into an uncommon type of <a href="#">helium</a> (called Helium-3, which has only 1 neutron instead of the typical 2). 
-        <br /><br />
-        The energy released by the deuterium burning counteracts the inward force of the gravity, and the object remains stable for some time. More gas and dust can continue to collect onto the object, allowing it to grow in mass.
-        <br /><br />
-        The surrounding dust absorbs the energy emitted by the object and re-radiates it at infrared wavelengths. Therefore, this object cannot be seen at visible wavelengths and can only be observed by telescopes that detect infrared light like the Spitzer Space Telescope.
+        <p>
+          Gravity pulled a cold, dense clump of gas and dust within the nebula into this object. Gravity compressed the gas, until the object's core heated up to a temperature of 10<sup>6</sup> &#176;C. At this temperature, there was enough energy to start a process called deuterium burning. Deuterium burning fuses an uncommon type of <a href="#">hydrogen</a> (called deuterium, which has 1 neutron instead of the typical 0) into an uncommon type of <a href="#">helium</a> (called Helium-3, which has only 1 neutron instead of the typical 2). 
+        </p>
+        <p>
+          The energy released by the deuterium burning counteracts the inward force of the gravity, and the object remains stable for some time. More gas and dust can continue to collect onto the object, allowing it to grow in mass.
+        </p>
+        <p>
+          The surrounding dust absorbs the energy emitted by the object and re-radiates it at infrared wavelengths. Therefore, this object cannot be seen at visible wavelengths and can only be observed by telescopes that detect infrared light like the Spitzer Space Telescope.
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -223,22 +269,32 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="The Great Orion Nebula">
+      <div class="Thumbnail">
+        Orion Nebula
+      </div>
       <div class="Name">
         <h3>Orion Nebula</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the unaided eye from a dark sky. It appears as the sword, below the middle star of Orion’s belt.
-        <br /><br />
-        A group of hot, young stars within the cloud lights up much of the nebula. Other parts of the cloud are cold and dense and appear dark.
-        <br /><br />
-        <a class="orion_const" href="#">See where the <strong>Orion Nebula</strong> appears in the constellation Orion</a>
+        <p>
+          The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the unaided eye from a dark sky. It appears as the sword, below the middle star of Orion’s belt.
+        </p>
+        <p>
+          A group of hot, young stars within the cloud lights up much of the nebula. Other parts of the cloud are cold and dense and appear dark.
+        </p>
+        <p>
+          <a class="orion_const" href="#">See where the <strong>Orion Nebula</strong> appears in the constellation Orion</a>
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
-        The embedded young stars transfer energy to the gas, which causes the atoms in the gas to give off light at very specific wavelengths. Astronomers use this light to identify what elements are present in the gas. For example, red light emitted from the cloud indicates that there is <a href="#">hydrogen</a> present. Green light indicates <a href="#">oxygen</a>.
-        <br /><br />
-        In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps that could someday become new stars.
+        <p>
+          The embedded young stars transfer energy to the gas, which causes the atoms in the gas to give off light at very specific wavelengths. Astronomers use this light to identify what elements are present in the gas. For example, red light emitted from the cloud indicates that there is <a href="#">hydrogen</a> present. Green light indicates <a href="#">oxygen</a>.
+        </p>
+        <p>
+          In the coldest, darkest parts of the cloud, gravity is pulling gas and dust in that region into dense clumps that could someday become new stars.
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -272,22 +328,32 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Crab Nebula">
+      <div class="Thumbnail">
+        Crab Nebula
+      </div>
       <div class="Name">
         <h3>Crab Nebula</h3>
       </div>
       <div class="What">
         <h4>What is it</h4>
-        The Crab Nebula is a colorful, chaotic cloud of gas surrounding a star that shines very brightly at energetic X-ray wavelengths. The central star is made of neutrons packed so tightly together that a teaspoon of the material weighs 10 million tons.
-        <br /><br />
-        <a class="taurus_const" href="#">See where the <strong>Crab Nebula</strong> appears in the constellation Taurus</a>
+        <p>
+          The Crab Nebula is a colorful, chaotic cloud of gas surrounding a star that shines very brightly at energetic X-ray wavelengths. The central star is made of neutrons packed so tightly together that a teaspoon of the material weighs 10 million tons.
+        </p>
+        <p>
+          <a class="taurus_const" href="#">See where the <strong>Crab Nebula</strong> appears in the constellation Taurus</a>
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening</h4>
-        Before the Crab Nebula reached its current stage, it was a high-mass star that fused <a href="#">helium</a> to <a href="#">carbon</a>, then carbon to <a href="#">neon</a>, then oxygen to <a href="#">silicon</a>, then silicon to <a href="#">iron</a> in its core.
-        <br /><br />
-        Fusion reactions with iron do not release energy, so once the silicon in the core ran out, no more fusion processes could occur, and there was no longer any way to counteract the immense gravity of the star. Gravity compressed the core of the star, and eventually, an object more massive than our Sun was compressed into the size of a city!
-        <br /><br />
-        Meanwhile, the outer layers of the star were also falling rapidly inward due to gravity. When they hit the dense core, an explosion blew apart the outer layers of the star. The immense amount of energy from this explosion fueled a process called “rapid neutron capture,” which created elements shown in red on this <a href="https://chandra.si.edu/photo/2017/casa_life/casa_life_periodic.jpg" target="_new">periodic table</a>.
+        <p>
+          Before the Crab Nebula reached its current stage, it was a high-mass star that fused <a href="#">helium</a> to <a href="#">carbon</a>, then carbon to <a href="#">neon</a>, then oxygen to <a href="#">silicon</a>, then silicon to <a href="#">iron</a> in its core.
+        </p>
+        <p>
+          Fusion reactions with iron do not release energy, so once the silicon in the core ran out, no more fusion processes could occur, and there was no longer any way to counteract the immense gravity of the star. Gravity compressed the core of the star, and eventually, an object more massive than our Sun was compressed into the size of a city!
+        </p>
+        <p>
+          Meanwhile, the outer layers of the star were also falling rapidly inward due to gravity. When they hit the dense core, an explosion blew apart the outer layers of the star. The immense amount of energy from this explosion fueled a process called “rapid neutron capture,” which created elements shown in red on this <a href="https://chandra.si.edu/photo/2017/casa_life/casa_life_periodic.jpg" target="_new">periodic table</a>.
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -326,20 +392,29 @@
       </ImageSet>
     </ForegroundImageSet>
     <Description Title="Ring Nebula">
+      <div class="Thumbnail">
+        Ring Nebula
+      </div>
       <div class="Name">
         <h3>Ring Nebula</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star. The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. This star is mostly <a href="#">carbon</a>, surrounded by shells of <a href="#">helium</a> and <a href="#">hydrogen</a>.
-        <br /><br />
-        <a class="lyra_const" href="#">See where the <strong>Ring Nebula</strong> appears in the constellation Lyra</a>
+        <p>
+          The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star. The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. This star is mostly <a href="#">carbon</a>, surrounded by shells of <a href="#">helium</a> and <a href="#">hydrogen</a>.
+        </p>
+        <p>
+          <a class="lyra_const" href="#">See where the <strong>Ring Nebula</strong> appears in the constellation Lyra</a>
+        </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
-        Before the Ring Nebula reached its current stage, it was a medium-mass star that was fusing helium to carbon in its core. After the helium in the core ran out, no more nuclear fusion could occur for a star of this mass because there is not enough gravity to generate the amount of pressure needed to fuse carbon into heavier elements. Gravity continues to compress the core of the star, and eventually, more than half the mass of the original star will be compressed into an Earth-sized object that is 200,000 times denser than our planet.
-        <br /><br />
-        Winds are blowing away the layers of gas outside the core, creating a ring-shaped nebula seen here. The Ring Nebula is expanding very slowly over time. The core of the star that is being exposed has such a high temperature that it shines white-hot, even though there is no energy source. As the star shines, it is getting cooler. It will eventually turn red and fade to black, but this will take more time than the current age of the whole Universe!
+        <p>
+          Before the Ring Nebula reached its current stage, it was a medium-mass star that was fusing helium to carbon in its core. After the helium in the core ran out, no more nuclear fusion could occur for a star of this mass because there is not enough gravity to generate the amount of pressure needed to fuse carbon into heavier elements. Gravity continues to compress the core of the star, and eventually, more than half the mass of the original star will be compressed into an Earth-sized object that is 200,000 times denser than our planet.
+        </p>
+        <p>
+          Winds are blowing away the layers of gas outside the core, creating a ring-shaped nebula seen here. The Ring Nebula is expanding very slowly over time. The core of the star that is being exposed has such a high temperature that it shines white-hot, even though there is no energy source. As the star shines, it is getting cooler. It will eventually turn red and fade to black, but this will take more time than the current age of the whole Universe!
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
@@ -376,26 +451,37 @@
       <ThumbnailUrl>CMB_thumbnail.png</ThumbnailUrl>
     </ImageSet>
     <Description Title="Cosmic Microwave Background">
+      <div class="Thumbnail">
+        CMB
+      </div>
       <div class="Name">
         <h3>Cosmic Microwave Background</h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
-        The Cosmic Microwave Background is radiation left over from the Big Bang. The radiation has been cooling over the lifetime of the Universe (13.7 billion years) and can be observed in every direction to have a temperature of -270&#176;C.
+        <p>
+          The Cosmic Microwave Background is radiation left over from the Big Bang. The radiation has been cooling over the lifetime of the Universe (13.7 billion years) and can be observed in every direction to have a temperature of -270&#176;C.
+        </p>
       </div>
       <div class="Process">
         <h4>What happened in the Big Bang?</h4>
-        The Big Bang theory suggests that the Universe expanded rapidly from a state of very high temperature and density, and has been expanding ever since.
+        <p>
+          The Big Bang theory suggests that the Universe expanded rapidly from a state of very high temperature and density, and has been expanding ever since.
+        </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
-        Within the first few minutes after the Big Bang, the first elements formed in a process called Big Bang Nucleosynthesis. By mass, the elements that formed were:
+        <p>
+          Within the first few minutes after the Big Bang, the first elements formed in a process called Big Bang Nucleosynthesis. By mass, the elements that formed were:
+        </p>
         <ul>
           <li>75% <a href="#">Hydrogen</a></li>
           <li>25% <a href="#">Helium</a></li>
           <li>0.0000000001<sup></sup>% <a href="#">Lithium</a></li>
         </ul>
-        There were no other elements in the Universe until stars formed.
+        <p>
+          There were no other elements in the Universe until stars formed.
+        </p>
       </div>
       <div class="Properties">
         <h4>Properties / Characteristics</h4>
