@@ -69,6 +69,17 @@ a, a:hover {
 	width: fit-content;
 }
 
+.thumbname {
+    padding: 0px 5px;
+    height: 18px;
+    background-color: black;
+    font-size: 11px;
+}
+.thumbnail:hover {
+    text-decoration: none;
+    color: #44FF44;
+}
+
 .border_black {
 	border: 2px solid #000;
 }
@@ -77,8 +88,12 @@ a, a:hover {
 	border: 1px solid #FFF;
 }
 
-.border_yellow {
+.border_green {
 	border: 2px solid #44ff44; /* considered #FBCB1F alternate color */
+}
+
+.text_green {
+	color: #44ff44;
 }
 
 .col_thumb {
@@ -177,12 +192,19 @@ a, a:hover {
 	margin-top: 1em;
 }
 
+#description_box .row h3 {
+    color: white;
+    padding: 10px 0px 15px;
+    border-bottom: dotted #44FF44 2px;
+    text-align: center;
+}
+
 #description_box .row h4 {
 	color: #8aff8a;
 }
 
 #description_box .row p {
-	font-size: 0.6em;
+    margin-bottom: 15px;
 }
 
 #description_box .row a {
@@ -193,7 +215,6 @@ a, a:hover {
 	position: absolute;
 	bottom: 10px;
 	right: 25px;
-/*	font-family: 'FontAwesome';*/
     font-family: "Font Awesome 5 Free";
 	font-style: normal;
 }
