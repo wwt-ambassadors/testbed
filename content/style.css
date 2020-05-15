@@ -96,7 +96,10 @@ a, a:hover {
 	color: #44ff44;
 }
 
-.col_thumb {
+#cmb_thumb {
+    margin-bottom: 0px;
+    width: 232px;
+    text-align: center;
 }
 
 

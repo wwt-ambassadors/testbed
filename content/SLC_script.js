@@ -50,6 +50,7 @@
       var thumbTemplate = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail border_white"><img src=""/><div class="thumbname">example</div</a></div>');
       var descTemplate = $('<div class="obj_desc container-fluid"><div class="row"><div class="name col-xs-12 col-md-12 col-lg-12">name</div><div class="what col-xs-12 col-md-12 col-lg-12">what</div><div class="process col-xs-12 col-md-12 col-lg-12">process</div><div class="properties col-xs-12 col-md-12 col-lg-12">properties</div><div class="elements col-xs-12 col-md-12 col-lg-12">elements</div><div class="dive col-xs-12 col-md-12 col-lg-12">dive deeper</div></div></div>');
       var constellations = $(xml).find('Constellation');
+      var cmb = $(xml).find('CMB');
       
       places.each(function (i, pl) {
         var place = $(pl);
@@ -106,7 +107,6 @@
           
         // apply the unique target description class to the description template clone
         var desc_class = place.find('Target').text().toLowerCase() + "_description";
-        console.log("desc_class: ", desc_class);
         tmpdesc.addClass(desc_class);
 
 
@@ -169,34 +169,37 @@
               }
             });
 
-          // check whether this target is the CMB
-          } else if (place.attr('Name') == 'Cosmic Microwave Background') {
+          // SHOULD BE ABLE TO REMOVE THIS BECAUSE CMB MOVED
+          // // check whether this target is the CMB
+          // } else if (place.attr('Name') == 'Cosmic Microwave Background') {
 
-            //disable the reset button
-            reset_enabled = false;
+          //   //disable the reset button
+          //   reset_enabled = false;
 
-            wwt_si.setBackgroundImageByName('Planck CMB');
+          //   wwt_si.setBackgroundImageByName('Planck CMB');
 
-            wwt_si.gotoRaDecZoom(
-              parseFloat(place.attr('RA')) * 15,
-              place.attr('Dec'),
-              parseFloat(place.find('ImageSet').attr('FOV')),
-              false
-            );
+          //   wwt_si.gotoRaDecZoom(
+          //     parseFloat(place.attr('RA')) * 15,
+          //     place.attr('Dec'),
+          //     parseFloat(place.find('ImageSet').attr('FOV')),
+          //     false
+          //   );
 
+
+          // SHOULD BE ABLE TO REMOVE THIS BECAUSE CONSTELLATIONS MOVED
           // check whether this target is a Constellation
-          } else if (place.attr('Classification') == 'Constellation') {
+          // } else if (place.attr('Classification') == 'Constellation') {
 
-            wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
-            wwt_si.settings.set_showConstellationFigures(true);
-            wwt_si.settings.set_showConstellationLabels(true);
+          //   wwt_si.setBackgroundImageByName('Digitized Sky Survey (Color)');
+          //   wwt_si.settings.set_showConstellationFigures(true);
+          //   wwt_si.settings.set_showConstellationLabels(true);
 
-            wwt_si.gotoRaDecZoom(
-              parseFloat(place.attr('RA')) * 15,
-              place.attr('Dec'),
-              parseFloat(place.find('ImageSet').attr('FOV')),
-              false
-            );
+          //   wwt_si.gotoRaDecZoom(
+          //     parseFloat(place.attr('RA')) * 15,
+          //     place.attr('Dec'),
+          //     parseFloat(place.find('ImageSet').attr('FOV')),
+          //     false
+          //   );
 
           // everything else, which includes all non-solar system celestial objects
           } else {
@@ -362,6 +365,115 @@
 
       });
 
+
+      // Add CMB to the thumbnails gutter
+      cmb.each(function (i, pl) {
+        var cmb = $(pl);
+
+        // create a temporary object of a thumbnail and of a description element from the templates above 
+        var tmpthumb = $('<div class="col_thumb"><a href="javascript:void(0)" class="thumbnail border_white" id="cmb_thumb"><div class="thumbname">example</div</a></div>');
+        console.log("just cloned thumb template: ", cmb.find('.Thumbnail').html());
+        var tmpdesc = descTemplate.clone();
+
+        // locate the thumbnail name and replace html contents with content from WTML file
+        var thumbname = cmb.find('.Thumbnail').html();
+        tmpthumb.find('.thumbname').html(thumbname);
+
+        // grab the class = Name/What/Process/Elements/Properties/Dive html content for each Place from the WTML file
+        var targetname = cmb.find('.Name').html();
+        tmpdesc.find('.name').html(targetname);
+
+        var targetwhat = cmb.find('.What').html();
+        tmpdesc.find('.what').html(targetwhat);
+          
+        var targetprocess = cmb.find('.Process').html();
+        tmpdesc.find('.process').html(targetprocess);
+          
+        var targetelements = cmb.find('.Elements').html();
+        tmpdesc.find('.elements').html(targetelements);
+          
+        var targetproperties = cmb.find('.Properties').html();
+        tmpdesc.find('.properties').html(targetproperties);
+          
+        var targetdive = cmb.find('.Dive').html();
+        tmpdesc.find('.dive').html(targetdive);
+    
+          
+        // apply the unique target description class to the description template clone
+        var desc_class = cmb.find('Target').text().toLowerCase() + "_description";
+        console.log("CMB desc_class: ", desc_class);
+        tmpdesc.addClass(desc_class);
+
+        function on_click(element, is_dblclick) {
+
+          if (wwt_si === null) {
+            return;
+          };
+
+          //	Change the text color of the Cosmic Microwave Background
+          var element = element;
+            
+          $(".thumbnail img").removeClass("border_green").addClass("border_black");
+          $(".thumbname").removeClass("text_green");
+          $(element).parent().find(".thumbname").addClass("text_green");
+
+          // (disable and hide reset button if visible)
+          reset_enabled = false;
+          $("#reset_target").fadeOut(100);
+
+          /* hide all descriptions, then show description specific to this target on sgl/dbl click */
+          var toggle_class = "." + desc_class;
+          $("#description_box").find(".obj_desc").hide();
+          $('#begin_container').hide();
+          $('#description_container').show();
+            
+          $(toggle_class).show();
+            
+          // Make arrow appear only for overflow
+          var desc_box = $('#description_container')[0];
+          
+          if(desc_box.scrollHeight > desc_box.clientHeight) {
+            console.log("need arrow");
+            $('.fa-arrow-down').show();
+          } else {
+            $('.fa-arrow-down').hide();
+          }
+
+          wwt_si.setBackgroundImageByName('Planck CMB');
+          wwt_si.settings.set_showConstellationFigures(false);
+          wwt_si.settings.set_showConstellationLabels(false);
+
+          wwt_si.setForegroundImageByName('');
+
+          wwt_si.gotoRaDecZoom(
+            parseFloat(cmb.attr('RA')) * 15,
+            cmb.attr('Dec'),
+            parseFloat(cmb.find('ImageSet').attr('FOV')),
+            false
+          );
+        
+        };
+
+        tmpthumb.find('a')
+          .data('foreground-image', cmb.attr('Name'))
+          //'click' - false; 'dblclick' - true.  on('click', function () { on_click(false) });
+
+          .on('click', function(event){
+            var element = event.target;
+            on_click(element, false)
+          })
+
+          .on('dblclick', function(event){
+            var element = event.target;
+            on_click(element, true)
+          });
+
+        // Plug the set of thumbnails into the #destinationThumbs element
+        $('#destinationThumbs').append(tmpthumb);
+        $("#description_container").append(tmpdesc);
+
+      });
+
     });
   };
 
@@ -400,6 +512,10 @@
     setTimeout(function() {
         size_content();
     }, 500);
+    //trigger size_content function a second time after thumbnails have started loading
+    setTimeout(function() {
+        size_content();
+    }, 3000);
   };
 
 
