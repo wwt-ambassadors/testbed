@@ -17,7 +17,7 @@ body {
 	color: #FFF;
 	height: 100%;
 	background-color: #111;
-	font-size: calc(12px + 0.5vw);
+	font-size: calc(11px + 0.6vw);
 }
 
 /* Generic element settings */
@@ -100,6 +100,11 @@ a, a:hover {
     margin-bottom: 0px;
     width: 232px;
     text-align: center;
+}
+
+#cmb_thumb .thumbname {
+    font-size: 13px;
+    height: auto;
 }
 
 
@@ -200,10 +205,12 @@ a, a:hover {
     padding: 10px 0px 15px;
     border-bottom: dotted #44FF44 2px;
     text-align: center;
+    font-size: calc(10px + 1.5vw);
 }
 
 #description_box .row h4 {
 	color: #8aff8a;
+    font-size: calc(10px + 1.25vw);
 }
 
 #description_box .row p {
