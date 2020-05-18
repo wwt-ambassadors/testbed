@@ -209,6 +209,7 @@ a, a:hover {
 }
 
 #description_box .row h4 {
+    margin-bottom: 4px;
 	color: #8aff8a;
     font-size: calc(10px + 1.25vw);
 }
@@ -227,6 +228,11 @@ a, a:hover {
 	right: 25px;
     font-family: "Font Awesome 5 Free";
 	font-style: normal;
+}
+.stagename {
+    font-size: 80%;
+    color: #44FF44;
+    padding-left: 10px;
 }
 
 #scroll_arrow {

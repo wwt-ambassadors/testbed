@@ -13,7 +13,7 @@
         Sun
       </div>
       <div class="Name">
-        <h3>Our Sun</h3>
+        <h3>Our Sun <span class="stagename">medium-sized main-sequence star</span></h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
@@ -59,7 +59,7 @@
         Betelgeuse
       </div>
       <div class="Name">
-        <h3>Betelgeuse</h3>
+        <h3>Betelgeuse <span class="stagename">supermassive red giant</span></h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
@@ -109,7 +109,7 @@
         Aldebaran
       </div>
       <div class="Name">
-        <h3>Aldebaran</h3>
+        <h3>Aldebaran <span class="stagename">red giant</span></h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
@@ -155,7 +155,7 @@
         Sigma Orionis
       </div>
       <div class="Name">
-        <h3>Sigma Orionis</h3>
+        <h3>Sigma Orionis <span class="stagename">supermassive main-sequence star</span></h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
@@ -211,7 +211,7 @@
         HOPS-68
       </div>
       <div class="Name">
-        <h3>HOPS-68</h3>
+        <h3>HOPS-68 <span class="stagename">protostar</span></h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
@@ -273,7 +273,7 @@
         Orion Nebula
       </div>
       <div class="Name">
-        <h3>Orion Nebula</h3>
+        <h3>Orion Nebula <span class="stagename">star-forming nebula</span></h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
@@ -332,7 +332,7 @@
         Crab Nebula
       </div>
       <div class="Name">
-        <h3>Crab Nebula</h3>
+        <h3>Crab Nebula <span class="stagename">supernova remnant + neutron star</span></h3>
       </div>
       <div class="What">
         <h4>What is it</h4>
@@ -396,7 +396,7 @@
         Ring Nebula
       </div>
       <div class="Name">
-        <h3>Ring Nebula</h3>
+        <h3>Ring Nebula <span class="stagename">planetary nebula + white dwarf</span></h3>
       </div>
       <div class="What">
         <h4>What is it?</h4>
