@@ -48,20 +48,22 @@
       <div class="After">
         <h4>What's next?</h4>
         <p>
-          When the Sun runs out of <a href="#">hydrogen</a> in its core, it will become a <strong>red giant</strong>. At this point, the star will grow significantly in size, and enough pressure will build in the core to begin fusing <a href="#">helium</a> into <a href="#">carbon</a>.
+          After the Sun runs out of <a href="#">hydrogen</a> in its core, it will become a <strong>red giant</strong>. At this point, the star will grow significantly in size, and enough pressure will build in the core to begin fusing <a href="#">helium</a> into <a href="#">carbon</a>.
         </p>
       </div>
       <div class="Properties">
         <h4>Properties / Characteristics</h4>
         <ul>
-          <li>Distance from Earth: 1 Astronomical Unit (1.5 &#215; 10<sup>8</sup> km)</li>
-          <li>Radius: 1 solar radius (7 &#215; 10<sup>5</sup> km)</li>
-          <li>Mass: 1 solar mass (2 &#215; 10<sup>30</sup> kg)</li>
-          <li>Temperature (surface): 5,500&#176;C</li>
+          <li><strong>Distance from Earth:</strong> 1 Astronomical Unit (1.5 &#215; 10<sup>8</sup> km)</li>
+          <li><strong>Radius:</strong> 1 solar radius (7 &#215; 10<sup>5</sup> km)</li>
+          <li><strong>Mass:</strong> 1 solar mass (2 &#215; 10<sup>30</sup> kg)</li>
+          <li><strong>Temperature (surface):</strong> 5,500&#176;C</li>
         </ul>
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
+        <p>
+        </p>
       </div>
     </Description>
   </Place>
@@ -82,16 +84,16 @@
       <div class="What">
         <h4>What is it?</h4>
         <p>
-          Betelgeuse (pronounced “Beetlejuice”) is a red star and is the 2nd brightest in the constellation Orion. If Betelgeuse replaced the Sun in our Solar System, it would swallow up all the inner planets Mercury, Venus, Earth, and Mars, and likely Jupiter too!
+          Betelgeuse (pronounced “Beetlejuice”) is a <strong>supermassive red giant</strong> and is the 2<sup>nd</sup> brightest in the constellation Orion. If Betelgeuse replaced the Sun in our Solar System, it would swallow up all the inner planets Mercury, Venus, Earth, and Mars, and likely Jupiter too!
         </p>
         <p>
-          <a class="orion_const constellation_link" href="#">See where the star <strong>Betelgeuse</strong> appears in the constellation Orion</a>
+          <a class="orion_const constellation_link" href="#">See where the star Betelgeuse appears in the constellation Orion</a>
         </p>
       </div>
       <div class="Before">
         <h4>Where did it come from?</h4>
         <p>
-          Before Betelgeuse reached its current stage, it was a <strong>supermassive main-sequence star</strong>, 10 to 20 times more massive than our Sun. As a main-sequence star, it burned <a href="#">hydrogen</a> fuel in its core, which fused into <a href="#">helium</a>. 
+          Before Betelgeuse reached its current stage, it was a <strong>supermassive main-sequence star</strong>, 10 to 20 times more massive than our Sun. As a main-sequence star, it burned <a href="#">hydrogen</a> fuel in its core, which fused into <a href="#">helium</a>.
         </p>
       </div>
       <div class="Process">
@@ -102,9 +104,6 @@
         <p>
           This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, and the star turned from white to red.
         </p>
-      </div>
-      <div class="Elements">
-        <h4>Elements forming</h4>
         <p>
           Meanwhile, the core continued to contract under its own gravity and eventually built up enough pressure for <a href="#">helium</a> to fuse into <a href="#">carbon</a>. The energy produced by this new fusion process pushes against the inward pull of gravity, keeping the star in balance for a short period of time.
         </p>
@@ -112,10 +111,16 @@
           When supermassive stars like Betelgeuse run out of <a href="#">helium</a> in the core, they contract, as they fuse heavier and heavier elements in the core, including <a href="#">neon</a>, <a href="#">oxygen</a>, <a href="#">silicon</a>, and <a href="#">iron</a>. As fusion continues, the stars end up layered like an onion, <a href="https://chandra.cfa.harvard.edu/graphics/xray_astro/pre_snr.jpg" target="_new">as shown in this image</a>.
         </p>
       </div>
+      <div class="Elements">
+        <h4>Elements forming</h4>
+        <p>
+          At first, <a href="#">helium</a> atoms in the core are fusing to create <a href="#">carbon</a>. When the core runs out of <a href="#">helium</a>, heavier elements will fuse in the core like <a href="#">neon</a>, <a href="#">oxygen</a>, <a href="#">silicon</a>, and <a href="#">iron</a>. The newly formed elements will remain in the core for the duration of this stellar stage.
+        </p>
+      </div>
       <div class="After">
         <h4>What's next?</h4>
         <p>
-          Once the core runs out of silicon, no more fusion processes will occur, because fusion reactions with iron do not release energy. Gravity will compress the star into an incredibly small, dense object until the outer layers hit the core. At this point, the outer layers will explode away from the star, leaving a <strong>supernova remnant + neutron star</strong>.
+          After the core runs out of <a href="#">silicon</a>, no more fusion processes will occur, because fusion reactions with <a href="#">iron</a> do not release energy. Gravity will compress the star into an incredibly small, dense object until the outer layers hit the core. At this point, the outer layers will explode away from the star, leaving a <strong>supernova remnant + neutron star</strong>.
         </p>
       </div>
       <div class="Properties">
@@ -129,8 +134,8 @@
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
-        <ul>
-        </ul>
+        <p>
+        </p>
       </div>
     </Description>
   </Place>
@@ -151,42 +156,55 @@
       <div class="What">
         <h4>What is it?</h4>
         <p>
-          Aldebaran is a red star in the constellation Taurus. It represents the “eye” of the bull.
+          Aldebaran is a <strong>red giant</strong> in the constellation Taurus, which is latin for bull. If you look at a pictoral representation of the constellation, Aldebaran would be the “eye” of the bull.
         </p>
         <p>
-          <a class="taurus_const" href="#">See where the star <strong>Aldebaran</strong> appears in the constellation Taurus</a>
+          <a class="taurus_const constellation_link" href="#">See where the star Aldebaran appears in the constellation Taurus</a>
         </p>
       </div>
       <div class="Before">
         <h4>Where did it come from?</h4>
         <p>
+          Before Aldebaran reached its current stage, it was a <strong>medium-sized main-sequence star</strong>, similar in size to our Sun. As a main-sequence star, it burned <a href="#">hydrogen</a> fuel in its core, which fused into <a href="#">helium</a>. 
         </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
         <p>
-          Aldebaran has run out of <a href="#">hydrogen</a> in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of <a href="#">hydrogen</a> just outside the star’s core to fuse hydrogen to helium. This sudden burst of new energy pushed the outer layers of the star out rapidly, causing it to grow to many times its original size. The surface temperature cooled, reddening the color of the star. Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing helium to <a href="#">carbon</a> (which takes more pressure than fusing hydrogen to helium).
+          At this point, Aldebaran has already run out of <a href="#">hydrogen</a> in its core. Without this nuclear fuel, Aldebaran stopped generating outward pressure to balance against the inward pull of gravity, causing more gas to fall inward toward the core. This triggered a new, thin layer of <a href="#">hydrogen</a> just outside the star’s core to fuse <a href="#">hydrogen</a> to <a href="#">helium</a>.
+        </p>
+        <p>
+          This sudden burst of new energy pushed the outer layers of the star outward rapidly, causing Aldebaran to grow to many times its original size. The surface temperature cooled, reddening the color of the star.
+        </p>
+        <p>
+          Meanwhile, as the core continued to contract under its own gravity, eventually, enough pressure built in the core to begin fusing <a href="#">helium</a> to <a href="#">carbon</a> (which takes more pressure than fusing <a href="#">hydrogen</a> to <a href="#">helium</a>).
         </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
+        <p>
+          <a href="#">Helium</a> atoms in the core are fusing to create <a href="#">carbon</a>. The newly formed <a href="#">carbon</a> will remain in the core for the duration of this stellar stage.
+        </p>
       </div>
       <div class="After">
         <h4>What's next?</h4>
         <p>
+          After the <a href="#">helium</a> in the core runs out, nuclear fusion will no longer occur. Gravity will continue to compress the core of the star into a dense, bright object. Winds will blow the outer layers of gas outward from the core, leaving a <strong>planetary nebula + white dwarf</strong>.
         </p>
       </div>
       <div class="Properties">
         <h4>Properties / Characteristics</h4>
         <ul>
-          <li>Distance from Earth: 65 light years (6.1 x 10<sup>14</sup> km</li>
-          <li>Radius: 44 solar radii (3.1 x 10<sup>7</sup> km)</li>
-          <li>Mass: 1.2 solar masses (2.3 x 10<sup>30</sup> kg)</li>
-          <li>Temperature (surface): 3,900 K</li>
+          <li><strong>Distance from Earth:</strong> 65 light years (6.1 x 10<sup>14</sup> km</li>
+          <li><strong>Radius:</strong> 44 solar radii (3.1 x 10<sup>7</sup> km)</li>
+          <li><strong>Mass:</strong> 1.2 solar masses (2.3 x 10<sup>30</sup> kg)</li>
+          <li><strong>Temperature (surface):</strong> 3,900 K</li>
         </ul>
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
+        <p>
+        </p>
       </div>
     </Description>
   </Place>
@@ -207,48 +225,59 @@
       <div class="What">
         <h4>What is it?</h4>
         <p>
-          Sigma Orionis is a very massive, blue star in the constellation Orion. A star is a large ball of gas compressed by gravity. (The designation “sigma,” the 18th letter in the Greek alphabet, tells us it is the 18th brightest star in the constellation). Sigma Orionis is about 300,000 years old.
+          Sigma Orionis is a very massive, blue star in the constellation Orion. A star is a large ball of gas compressed by gravity. Sigma Orionis is about 300,000 years old.  
         </p>
         <p>
-          <a class="orion_const" href="#">See where the star <strong>Sigma Orionis</strong> appears in the constellation Orion</a>
+          (The designation “sigma,” the 18th letter in the Greek alphabet, tells us that Sigma Orionis is the 18th brightest star in the constellation.)
+        </p>
+        <p>
+          <a class="orion_const constellation_link" href="#">See where the star Sigma Orionis appears in the constellation Orion</a>
         </p>
       </div>
       <div class="Before">
         <h4>Where did it come from?</h4>
         <p>
+          Before Sigman Orionis reached its current stage, it was a <strong>protostar</strong> that formed from gas and dust. Gravity compressed the gas in the core of the protostar strongly enough to reach a temperature where <a href="#">deuterium</a> burned to <a href="#">Helium-3</a>.
+        </p>
+        <p>
+          There is only a small proportion of <a href="#">deuterium</a> in a star’s gas. Once the <a href="#">deuterium</a> in the Sun’s core ran out and deuterium-burning stopped, there was no way to counteract gravity. The gas compressed further, and the core eventually reached a temperature where the <a href="#">hydrogen</a> atoms in the core fuse to <a href="#">helium</a>.
         </p>
       </div>
       <div class="Process">
         <h4>What is happening?</h4>
         <p>
-          Before Sigma Orionis reached its current stage, it fused deuterium to form Helium-3. There is only a small proportion of deuterium in a star’s gas. Once the deuterium in Sigma Orionis’s core ran out and deuterium burning stopped, there was no way to counteract gravity. The gas compressed further, and the core eventually reached a temperature where the <a href="#">hydrogen</a> atoms in the core fuse to <a href="#">helium</a>. The fusion reaction releases the enormous amount of energy that allows the star to shine. The fusion energy pushes outward and balances the inward force created by gravity. The star will stay in balance until the hydrogen in the core runs out.
+          As <a href="#">hydrogen</a> atoms in the core fuse to <a href="#">helium</a>, the fusion reaction releases  the enormous amount of energy that allows the star to shine at visible wavelengths. The fusion energy pushes outward and balances the inward force created by gravity.
         </p>
         <p>
-          Sigma Orionis has so much mass that the fusion rate is much higher than in our Sun. It is hotter and brighter and appears blue in the sky. Sigma Orionis is burning through its fuel so quickly that it will live for only about 10 million years (compared with 10 billion years for the Sun)!
+          The star will stay in balance until the <a href="#">hydrogen</a> in the core runs out. But Sigma Orionis has so much mass that the fusion rate is much higher than in our Sun. It is hotter and brighter, causing it to appear blue in the sky. In fact, Sigma Orionis is burning through its fuel so quickly that it will live for only about 10 million years total (compared with 10 billion years for the Sun)!
         </p>
       </div>
       <div class="Elements">
         <h4>Elements forming</h4>
+        <p>
+          <a href="#">Hydrogen</a> atoms in the core are fusing to create <a href="#">helium</a>. The newly formed <a href="#">helium</a> will remain in the core for the duration of this stellar stage.
+        </p>
       </div>
       <div class="After">
         <h4>What's next?</h4>
-        <p>
-        </p>
+        <ul>
+          After Sigma Orionis runs out of <a href="#">hydrogen</a> in its core, it will become a <strong>supermassive red giant</strong>. At this point, the star will grow significantly in size, and enough pressure will build in the core to begin fusing <a href="#">helium</a> into <a href="#">carbon</a>, and eventually heavier elements as well, like  <a href="#">neon</a>, <a href="#">oxygen</a>, <a href="#">silicon</a>, and <a href="#">iron</a>.
+        </ul>
       </div>
       <div class="Properties">
         <h4>Properties / Characteristics</h4>
         <ul>
-          <li>Distance from Earth: 1300 light years (1.2 &#215; 10<sup>16</sup> km)</li>
-          <li>Radius: 5.6 solar radius (3.9 &#215; 10<sup>6</sup> km)</li>
-          <li>Mass: 18 solar masses (4 &#215; 10<sup>31</sup> kg)</li>
-          <li>Temperature (surface): 30,000&#176;C</li>
+          <li><strong>Distance from Earth:</strong> 1300 light years (1.2 &#215; 10<sup>16</sup> km)</li>
+          <li><strong>Radius:</strong> 5.6 solar radius (3.9 &#215; 10<sup>6</sup> km)</li>
+          <li><strong>Mass:</strong> 18 solar masses (4 &#215; 10<sup>31</sup> kg)</li>
+          <li><strong>Temperature (surface):</strong> 30,000&#176;C</li>
         </ul>
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
-        <ul>
-          <li><a href="https://viewspace.org/video_library/videos/202-stars_glance_720-322871404?tags=461" target="_new">Colors of stars</a></li>
-        </ul>
+        <p>
+          <a href="https://viewspace.org/video_library/videos/202-stars_glance_720-322871404?tags=461" target="_new">Colors of stars</a>
+        </p>
       </div>
     </Description>
   </Place>
@@ -318,9 +347,9 @@
       </div>
       <div class="Dive">
         <h4>Dive Deeper</h4>
-        <ul>
-          <li><a href="https://hubblesite.org/video/1005" target="_new">3D fly-through</a> of Spitzer Orion image</li>
-        </ul>
+        <p>
+          <a href="https://hubblesite.org/video/1005" target="_new">3D fly-through</a> of Spitzer Orion image
+        </p>
       </div>
     </Description>
   </Place>
@@ -390,6 +419,8 @@
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
+        <p>
+        </p>
       </div>
     </Description>
   </Place>
@@ -467,6 +498,8 @@
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
+        <p>
+        </p>
       </div>
     </Description>
   </Place>
@@ -540,6 +573,8 @@
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
+        <p>
+        </p>
       </div>
     </Description>
   </Place>
@@ -598,10 +633,12 @@
       </div>
       <div class="Dive">
         <h4>Dive deeper</h4>
-        <ul>
-          <li>What is the <a href="https://viewspace.org/video_library/videos/911-VS_WitU_CosmicMicrowaveBackground-377075160?tags=460" target="_new">Cosmic Microwave Background</a>?</li>
-          <li>What is the <a href="https://viewspace.org/video_library/videos/853-VS_DYK_BigBang-1920x1080-358880617?tags=460" target="_new">Big Bang</a>?</li>
-        </ul>
+        <p>
+          What is the <a href="https://viewspace.org/video_library/videos/911-VS_WitU_CosmicMicrowaveBackground-377075160?tags=460" target="_new">Cosmic Microwave Background</a>?
+        </p>
+        <p>
+          What is the <a href="https://viewspace.org/video_library/videos/853-VS_DYK_BigBang-1920x1080-358880617?tags=460" target="_new">Big Bang</a>?
+        </p>
       </div>
     </Description>
   </CMB>
