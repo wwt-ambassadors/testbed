@@ -235,6 +235,21 @@ a, a:hover {
     padding-left: 10px;
 }
 
+.constellation_link {
+    padding: 5px 10px;
+    border: 1px solid #41BEEC;
+    border-radius: 5px;
+}
+
+.constellation_link:hover {
+    text-decoration: none;
+}
+
+#description_box .row .constellation_link:active {
+    background-color: #41BEEC;
+    color: #000;
+}
+
 #scroll_arrow {
     display: none;
 	color: #44ff44; /* considered #FBCB1F alternate color */
