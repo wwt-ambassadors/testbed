@@ -135,11 +135,11 @@
           reset_enabled = true;
           $("#reset_target").fadeOut(100);
 
-          /* hide all descriptions, then show description specific to this target on sgl/dbl click */
+          /* hide all descriptions, reset scrolls, then show description specific to this target on sgl/dbl click */
           var toggle_class = "." + place.find('Target').text().toLowerCase() + "_description";
           $("#description_box").find(".obj_desc").hide();
           $('#begin_container').hide();
-          $('#description_container').show();
+          $('#description_container').scrollTop(0).show();
             
           $(toggle_class).show();
             
@@ -431,7 +431,7 @@
           var toggle_class = "." + desc_class;
           $("#description_box").find(".obj_desc").hide();
           $('#begin_container').hide();
-          $('#description_container').show();
+          $('#description_container').scrollTop(0).show();
             
           $(toggle_class).show();
             
