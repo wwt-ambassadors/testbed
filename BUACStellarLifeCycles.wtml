@@ -44,6 +44,9 @@
         <p>
           <a href="#">Hydrogen</a> atoms in the core are fusing to create <a href="#">helium</a>. The newly-formed <a href="#">helium</a> will remain in the core for the duration of this stellar stage.
         </p>
+        <ul>
+          <li><a href="#">H</a> &#8594; <a href="#">He</a></li>
+        </ul>
       </div>
       <div class="After">
         <h4>What's next?</h4>
@@ -86,7 +89,7 @@
         <p>
           Betelgeuse (pronounced “Beetlejuice”) is a <strong>supermassive red giant</strong> and is the 2<sup>nd</sup> brightest in the constellation Orion. If Betelgeuse replaced the Sun in our Solar System, it would swallow up all the inner planets Mercury, Venus, Earth, and Mars, and likely Jupiter too!
         </p>
-        <p>
+        <p class="constellation_para">
           <a class="orion_const constellation_link" href="#">See where the star Betelgeuse appears in the constellation Orion</a>
         </p>
       </div>
@@ -116,6 +119,12 @@
         <p>
           At first, <a href="#">helium</a> atoms in the core are fusing to create <a href="#">carbon</a>. When the core runs out of <a href="#">helium</a>, heavier elements will fuse in the core like <a href="#">neon</a>, <a href="#">oxygen</a>, <a href="#">silicon</a>, and <a href="#">iron</a>. The newly-formed elements will remain in the core for the duration of this stellar stage.
         </p>
+        <ul>
+          <li><a href="#">He</a> &#8594; <a href="#">C</a></li>
+          <li><a href="#">C</a> &#8594; <a href="#">Ne</a></li>
+          <li><a href="#">O</a> &#8594; <a href="#">Si</a></li>
+          <li><a href="#">Si</a> &#8594; <a href="#">Fe</a></li>
+        </ul>
       </div>
       <div class="After">
         <h4>What's next?</h4>
@@ -158,7 +167,7 @@
         <p>
           Aldebaran is a <strong>red giant</strong> in the constellation Taurus, which is latin for bull. If you look at a pictoral representation of the constellation, Aldebaran would be the “eye” of the bull.
         </p>
-        <p>
+        <p class="constellation_para">
           <a class="taurus_const constellation_link" href="#">See where the star Aldebaran appears in the constellation Taurus</a>
         </p>
       </div>
@@ -185,6 +194,9 @@
         <p>
           <a href="#">Helium</a> atoms in the core are fusing to create <a href="#">carbon</a>. The newly-formed <a href="#">carbon</a> will remain in the core for the duration of this stellar stage.
         </p>
+        <ul>
+          <li><a href="#">He</a> &#8594; <a href="#">C</a></li>
+        </ul>
       </div>
       <div class="After">
         <h4>What's next?</h4>
@@ -230,7 +242,7 @@
         <p>
           (The designation “sigma,” the 18th letter in the Greek alphabet, tells us that Sigma Orionis is the 18th brightest star in the constellation.)
         </p>
-        <p>
+        <p class="constellation_para">
           <a class="orion_const constellation_link" href="#">See where the star Sigma Orionis appears in the constellation Orion</a>
         </p>
       </div>
@@ -257,6 +269,9 @@
         <p>
           <a href="#">Hydrogen</a> atoms in the core are fusing to create <a href="#">helium</a>. The newly-formed <a href="#">helium</a> will remain in the core for the duration of this stellar stage.
         </p>
+        <ul>
+          <li><a href="#">H</a> &#8594; <a href="#">He</a></li>
+        </ul>
       </div>
       <div class="After">
         <h4>What's next?</h4>
@@ -307,7 +322,7 @@
         <p>
           The Orion Nebula is a large cloud of gas and dust. You can see the Orion Nebula with the unaided eye from a dark sky. It appears as the tip of a sword, below the middle star of Orion’s belt in the constellation Orion.
         </p>
-        <p>
+        <p class="constellation_para">
           <a class="orion_const constellation_link" href="#">See where HOPS-68 appears in the constellation Orion</a>
         </p>
       </div>
@@ -387,14 +402,14 @@
         <p>
           You can see the Orion Nebula with the unaided eye from a dark sky. It appears as the tip of a sword, below the middle star of Orion’s belt in the constelation Orion.
         </p>
-        <p>
+        <p class="constellation_para">
           <a class="orion_const constellation_link" href="#">See where the Orion Nebula appears in the constellation Orion</a>
         </p>
       </div>
       <div class="Before">
         <h4>Where did it come from?</h4>
         <p>
-          Before the Orion Nebula reached its current stage, it was just a large formless collection of hydrogen and helium and other elements that had formed and been released into space by <strong>planetary nebula</strong> and <strong>supernova remnants</strong>.
+          Before the Orion Nebula reached its current stage, it was just a large formless collection of <a href="#">hydrogen</a> and <a href="#">helium</a> and other elements that had formed and been released into space by <strong>planetary nebula</strong> and <strong>supernova remnants</strong>.
         </p>
         <p>
           As the gas begins to collapse inward, gravitational energy will convert to thermal energy, raising the temperature high enough to begin nuclear fusion, which is necessary to begin star formation.
@@ -465,52 +480,60 @@
         <p>
           The Crab Nebula is a colorful, chaotic cloud of gas surrounding a star that shines very brightly at energetic X-ray wavelengths. The central star is made of neutrons packed so tightly together that a teaspoon of the material weighs 10 million tons.
         </p>
-        <p>
-          <a class="taurus_const" href="#">See where the <strong>Crab Nebula</strong> appears in the constellation Taurus</a>
+        <p class="constellation_para">
+          <a class="taurus_const constellation_link" href="#">See where the Crab Nebula appears in the constellation Taurus</a>
         </p>
       </div>
       <div class="Before">
         <h4>Where did it come from?</h4>
         <p>
+          Before the Crab Nebula reached its current stage, it was a <strong>supermassive red giant</strong> that fused <a href="#">helium</a> to <a href="#">carbon</a>, then <a href="#">carbon</a> to <a href="#">neon</a>, then <a href="#">oxygen</a> to <a href="#">silicon</a>, then <a href="#">silicon</a> to <a href="#">iron</a> in its core.
+        </p>
+        <p>
+          Fusion reactions with <a href="#">iron</a> do not release energy, so once the <a href="#">silicon</a> in the core ran out, no more fusion processes could occur, and there was no longer any way to counteract the immense gravity of the star. Gravity compressed the core of the star, and eventually, an object more massive than our Sun was compressed into the size of a city!
+        </p>
+        <p>
+          Meanwhile, the outer layers of the star were also falling rapidly inward due to gravity...
         </p>
       </div>
       <div class="Process">
         <h4>What is happening now?</h4>
         <p>
-          Before the Crab Nebula reached its current stage, it was a <strong>supermassive red giant</strong> that fused <a href="#">helium</a> to <a href="#">carbon</a>, then carbon to <a href="#">neon</a>, then oxygen to <a href="#">silicon</a>, then silicon to <a href="#">iron</a> in its core.
-        </p>
-        <p>
-          Fusion reactions with iron do not release energy, so once the silicon in the core ran out, no more fusion processes could occur, and there was no longer any way to counteract the immense gravity of the star. Gravity compressed the core of the star, and eventually, an object more massive than our Sun was compressed into the size of a city!
-        </p>
-        <p>
-          Meanwhile, the outer layers of the star were also falling rapidly inward due to gravity. When they hit the dense core, an explosion blew apart the outer layers of the star. The immense amount of energy from this explosion fueled a process called “rapid neutron capture,” which created elements shown in red on this <a href="https://chandra.si.edu/photo/2017/casa_life/casa_life_periodic.jpg" target="_new">periodic table</a>.
+          When the outer layers of the star hit the dense core, an explosion blew apart the outer layers of the star. The immense amount of energy from this explosion fueled a process called “rapid neutron capture,” which created elements shown in red on this <a href="https://chandra.si.edu/photo/2017/casa_life/casa_life_periodic.jpg" target="_new">periodic table</a>.
         </p>
       </div>
       <div class="Elements">
         <h4>Element formation</h4>
         <p>
-          New elements do not form during this stage. However, new elements that were produced in the core of the supermassive red giant have now been released into space, where they can be recycled into new solar systems.
+          At the time of the supernova explosion, rapid neutron capture created elements shown in red on this <a href="https://chandra.si.edu/photo/2017/casa_life/casa_life_periodic.jpg" target="_new">periodic table</a>.
+        </p>
+        <p>
+          Following the explosion, new elements no longer form during this stage. However, new elements that had been produced in the core of the supermassive red giant have now been released into space, where they can be recycled into new solar systems.
         </p>
       </div>
       <div class="After">
         <h4>What's next?</h4>
         <p>
+          The gas and dust that has been released by the stellar explosion will disperse into space. Some of this material will accumulate with other gas and dust to form a new <strong>star-forming nebula</strong>, from which new stars can develop and emerge.
         </p>
       </div>
       <div class="Properties">
         <h4>Properties / Characteristics</h4>
         <ul>
-          <li>Distance from Earth: 6,500 light years (6.1 &#215; 10<sup>16</sup> km)</li>
-          <li><strong>Nebula</strong></li>
+          <li class="topbullet">Both (supernova remnant + neutron star)</li>
           <ul>
-            <li>Size (across): 5.5 light years across (5.2 &#215; 10<sup>13</sup> km)</li>
-            <li>Mass: 5 solar masses</li>
+            <li><strong>Distance from Earth:</strong> 6,500 light years (6.1 &#215; 10<sup>16</sup> km)</li>
           </ul>
-          <li><strong>Star</strong></li>
+          <li class="topbullet">Nebula (supernova remnant)</li>
           <ul>
-            <li>Radius: 10km (the star's diameter is only about 6 miles)</li>
-            <li>Mass: 1.4-2 solar masses</li>
-            <li>Temperature (surface): 1,600,000&#176;C</li>
+            <li><strong>Size (across):</strong> 5.5 light years across (5.2 &#215; 10<sup>13</sup> km)</li>
+            <li><strong>Mass:</strong> 5 solar masses</li>
+          </ul>
+          <li class="topbullet">Star (neutron star)</li>
+          <ul>
+            <li><strong>Radius:</strong> 10km (the star's diameter is only about 6 miles)</li>
+            <li><strong>Mass:</strong> 1.4-2 solar masses</li>
+            <li><strong>Temperature (surface):</strong> 1,600,000&#176;C</li>
           </ul>
         </ul>
       </div>
@@ -542,50 +565,58 @@
       <div class="What">
         <h4>What is it?</h4>
         <p>
-          The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star. The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. This star is mostly <a href="#">carbon</a>, surrounded by shells of <a href="#">helium</a> and <a href="#">hydrogen</a>.
+          The Ring Nebula is a colorful, circular cloud of gas surrounding a very bright white star. The star in the middle of the nebula has a surface temperature 20 times hotter than that of our Sun and is 200 times as bright. This star, a white dwarf, is mostly <a href="#">carbon</a>, surrounded by shells of <a href="#">helium</a> and <a href="#">hydrogen</a>.
         </p>
-        <p>
-          <a class="lyra_const" href="#">See where the <strong>Ring Nebula</strong> appears in the constellation Lyra</a>
+        <p class="constellation_para">
+          <a class="lyra_const constellation_link" href="#">See where the Ring Nebula appears in the constellation Lyra</a>
         </p>
       </div>
       <div class="Before">
         <h4>Where did it come from?</h4>
         <p>
+          Before the Ring Nebula reached its current stage, it was a <strong>red giant</strong> that fused <a href="#">helium</a> to <a href="#">carbon</a> in its core.
+        </p>
+        <p>
+          After the <a href="#">helium</a> in the core ran out, nuclear fusion could no longer occur for a star of this mass because gravity not sufficient to generate the amount of pressure needed to fuse <a href="#">carbon</a> into heavier elements. Gravity continued to compress the core of the star until more than half the mass of the original star compressed into a white dwarf, which is an Earth-sized object, but 200,000 times denser than our planet.
+        </p>
+        <p>
+          At the same time, winds blew the outer layers of gas outward from the core, creating the ring-like planetary nebula that surrounds the white dwarf.
         </p>
       </div>
       <div class="Process">
         <h4>What is happening now?</h4>
         <p>
-          Before the Ring Nebula reached its current stage, it was a medium-mass star that was fusing helium to carbon in its core. After the helium in the core ran out, no more nuclear fusion could occur for a star of this mass because there is not enough gravity to generate the amount of pressure needed to fuse carbon into heavier elements. Gravity continues to compress the core of the star, and eventually, more than half the mass of the original star will be compressed into an Earth-sized object that is 200,000 times denser than our planet.
-        </p>
-        <p>
-          Winds are blowing away the layers of gas outside the core, creating a ring-shaped nebula seen here. The Ring Nebula is expanding very slowly over time. The core of the star that is being exposed has such a high temperature that it shines white-hot, even though there is no energy source. As the star shines, it is getting cooler. It will eventually turn red and fade to black, but this will take more time than the current age of the whole Universe!
+          The Ring Nebula is expanding very slowly over time. The white dwarf has such a high temperature that it shines white-hot, even though there is no energy source. As the star shines, it is getting cooler. It will eventually turn red and fade to black, but this will take more time than the current age of the whole Universe!
         </p>
       </div>
       <div class="Elements">
         <h4>Element formation</h4>
-        <ul>
-          <li><em>Fusion is no longer occurring.</em></li>
-        </ul>
+        <p>
+          New elements no longer form during this stage. However, new elements that had been produced in the core of the red giant have now been released into space, where they can be recycled into new solar systems.
+        </p>
       </div>
       <div class="After">
         <h4>What's next?</h4>
         <p>
+          The gas and dust that has been released by the stellar explosion will disperse into space. Some of this material will accumulate with other gas and dust to form a new <strong>star-forming nebula</strong>, from which new stars can develop and emerge.
         </p>
       </div>
       <div class="Properties">
         <h4>Properties / Characteristics</h4>
         <ul>
-          <li>Distance from Earth: 2,300 light years (2.2 &#215; 10<sup>16</sup> km)</li>
-          <li><strong>Nebula</strong></li>
+          <li class="topbullet">Both (planetary nebula + white dwarf)</li>
           <ul>
-            <li>Size (across): 1 light year (9.5 &#215; 10<sup>12</sup> km)</li>
+            <li><strong>Distance from Earth:</strong> 2,300 light years (2.2 &#215; 10<sup>16</sup> km)</li>
           </ul>
-          <li><strong>Star</strong></li>
+          <li class="topbullet">Nebula (planetary nebula)</li>
           <ul>
-            <li>Radius: 0.3 solar radii (1.3 &#215; 10<sup>4</sup> km)</li>
-            <li>Mass: 0.6 solar masses</li>
-            <li>Temperature (surface): 112,000&#176;C</li>
+            <li><strong>Size (across):</strong> 1 light year (9.5 &#215; 10<sup>12</sup> km)</li>
+          </ul>
+          <li class="topbullet">Star (white dwarf)</li>
+          <ul>
+            <li><strong>Radius:</strong> 0.3 solar radii (1.3 &#215; 10<sup>4</sup> km)</li>
+            <li><strong>Mass:</strong> 0.6 solar masses</li>
+            <li><strong>Temperature (surface):</strong> 112,000&#176;C</li>
           </ul>
         </ul>
       </div>
