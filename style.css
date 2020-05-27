@@ -123,24 +123,26 @@ a, a:hover {
 #page_title {
 	position: absolute;
 	top: 30px;
-	left: 30px;
+	right: 0px;
+    padding: 10px 30px;
+    background-color: black;
     color: #44ff44;
     opacity: .80;
 }
 
 #wwtcanvas h1 {
+	margin: 0;
+    border-right: 3px solid #44ff44;
 	font-size: calc(12px + 1vw); 
 	font-weight: 700;
-	margin: 0;
 	user-select: none;
 	-webkit-user-select: none;
 }
 
 #reset_target {
     position: absolute;
-    top: 20px;
-    right: 20px;
-/*	font-family: 'FontAwesome';*/
+    bottom: 20px;
+    left: 20px;
     font-family: "Font Awesome 5 Free";
     color: #41BEECC0;
     font-size: 1.25em;
