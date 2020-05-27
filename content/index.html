@@ -9,6 +9,7 @@
 		<!-- load personal stylesheet and Bootstrap stylesheet -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="modal.css">
 		
 		<!-- import Roboto font -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -19,10 +20,9 @@
 		
 		<!-- Javascript links for jQuery and Bootstrap and FontAwesome -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-		
-<!--        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+        
         
         <!--  load font-awesome version 5, can prob remove the link to FA-4 above  -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -59,13 +59,35 @@
 			</div>
 			<br>
 		</div>
+        
+    				
+							
+        <!-- beginning of target object description modal -->
+        <div class="modal fade" id="objectModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">The Periodic Table</h3>
+                    </div>
+                    <div class="modal-body text-info">
+                        <img src="PeriodicTablePlaceholder@0.75x.png" class="object_banner" alt="banner">
+                    </div>
+                    <div class="modal-footer">
+                        <span class="target_object_description">This is the Periodic Table description</span>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of target object description modal -->
+        
 
 		<div id="colophon">
-			<p>Copyright 2020 the <a href="//wwtambassadors.org" class="colophon_link">WWT Ambassadors</a> program. Powered by <a href="http://worldwidetelescope.org/" class="colophon_link">AAS WorldWide Telescope</a> from the <a href="https://aas.org/" class="colophon_link">American Astronomical Society</a>&nbsp;<a href="http://worldwidetelescope.org/"><img src="logo_wwt.png" alt="WorldWide Telescope"></a> <a href="https://aas.org/"><img src="logo_aas.png" alt="American Astronomical Society"></a>
+			<p>Copyright 2020 the <a href="//wwtambassadors.org" class="colophon_link" target="_blank">WWT Ambassadors</a> program. Powered by <a href="http://worldwidetelescope.org/" class="colophon_link" target="_blank">AAS WorldWide Telescope</a> from the <a href="https://aas.org/" class="colophon_link" target="_blank">American Astronomical Society</a>&nbsp;<a href="http://worldwidetelescope.org/" target="_blank"><img src="logo_wwt.png" alt="WorldWide Telescope"></a> <a href="https://aas.org/" target="_blank"><img src="logo_aas.png" alt="American Astronomical Society"></a>
 			</p>
 		</div>
 
-	<script src="SLC_script.js"></script>
+	    <script src="SLC_script.js"></script>
 	</body>
 
 
